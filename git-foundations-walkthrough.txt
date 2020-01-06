@@ -326,7 +326,9 @@ git commit -m "Added '.DS_Store' to exclude macOS Spotlight Index"
 git status
 
 ### Notice your working branch and that you have no changes to commit
-### Optionally, you may edit commit comments with the following command:
+### Optionally, you may edit commit comments with the 'git commit --amend' command
+#### This command will open your configured Git file editor, VIM is the default
+#### After you view the file, press '<esc>' and type ':q!' to quit without saving changes
 
 git commit --amend
 
