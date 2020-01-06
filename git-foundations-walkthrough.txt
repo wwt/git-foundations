@@ -326,6 +326,9 @@ git commit -m "Added '.DS_Store' to exclude macOS Spotlight Index"
 git status
 
 ### Notice your working branch and that you have no changes to commit
+### Optionally, you may edit commit comments with the following command:
+
+git commit --amend
 
 ## Attempt to push your changes to GitHub with the following command:
 
