@@ -1,3 +1,6 @@
+# Local folders (starting with _)
+_*
+
 # macOS Spotlight Index
 .DS_Store
 
