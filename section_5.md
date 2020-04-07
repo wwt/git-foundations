@@ -6,5 +6,5 @@
 
 
 
-[Manage Your Local Git Branches]: section_6.md	"Manage Your Local Git Branches"
+[Next Section > Manage Your Local Git Branches](section_6.md "Manage Your Local Git Branches")
 

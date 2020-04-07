@@ -4,6 +4,4 @@
 
 
 
-
-
-[Setup a GitHub Repository]: section_3.md	"Setup a GitHub Repository"
+[Next Section > Setup a GitHub Repository](section_3.md "Setup a GitHub Repository")

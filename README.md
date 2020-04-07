@@ -14,5 +14,5 @@ You need an account on GitHub.com **Insert Link**
 
 
 
-[Hands-On Environment](section_1.md "Hands-On Environment")
+[Next Section > Hands-On Environment Setup](section_1.md "Hands-On Environment Setup")
 

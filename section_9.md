@@ -6,5 +6,5 @@
 
 
 
-[Stage, Commit, &amp;, Push Your New Changes to GitHub]: section_10.md	"Stage, Commit, &amp;, Push Your New Changes to GitHub"
+[Next Section > Stage, Commit, & Push Your New Changes to GitHub](section_10.md "Stage, Commit, & Push Your New Changes to GitHub")
 

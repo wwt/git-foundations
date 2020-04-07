@@ -6,5 +6,5 @@
 
 
 
-[Make Local Git Repository Changes with Atomic Commits]: section_9.md	"Make Local Git Repository Changes with Atomic Commits"
+[Next Section > Make Local Git Repository Changes with Atomic Commits](section_9.md "Make Local Git Repository Changes with Atomic Commits")
 
