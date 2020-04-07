@@ -1,5 +1,18 @@
 # Git Foundations Hands-On Walkthrough
 
-Use the instructions and commands in the file, '**git-foundations-walkthrough.txt**' to get practical, hands-on experience with the use of Git.
+Git is a distributed source control management (SCM) tool.  This guide is a practical, hands-on exercise to familiarize you with the use of Git and assumes you have a basic understanding of how Git works.
 
-To make the file more readable, rename the file to '**git-foundations-walkthrough.sh**' and open the file in a code editor like Visual Studio Code.  The colored text highlights will make the terminal commands stand out from the comments.
+
+
+### What your need
+
+Docker Desktop
+
+You need an account on GitHub.com **Insert Link**
+
+
+
+
+
+[Hands-On Environment]: section_1.md	"Hands-On Environment"
+
