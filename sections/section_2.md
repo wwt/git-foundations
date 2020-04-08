@@ -11,7 +11,7 @@ Either choice is just as good as the other.  In this environment we use SSH beca
 
 **Generate an SSH Key Pair**
 
-1. From the Docker Container prompt, generate an SSH key pair with the following command.
+1. From the Docker Container prompt, generate an SSH key pair with the following command:
 
 ```shell
 ssh-keygen
