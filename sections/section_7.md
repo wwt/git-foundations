@@ -1,75 +1,131 @@
-# Make Local Git Repository Changes
+# Manage Local Git Branches
 
 
 
-From your terminal, use the following command to view the status of your local repository:
-
-
+From your terminal, use the following command to list your local branches:
 
 ```shell
-git status
+git branch
 ```
 
 
 
-Notice your working branch and that you have no changes to commit
+Notice that only the 'master' branch cloned to your local repository
+This is the correct behavior; other branches do not clone to local repositories
 
-**The following requires a text editor and this guide uses VIM**
-**You may, alternatively, use the text editor of your choice**
+Use the following command to list all branches, local and remote:
 
-Open your .gitignore file in VIM to insert the name '.DS_Store'
-Adding the name '.DS_Store' will keep the macOS Spotlight index from syncing to GitHub
-Use the following command to open VIM:
+```shell
+git branch -a
+```
+
+
+
+Notice your local 'master' branch plus the remote branches
+
+Create a new, local branch:
 
 
 
 ```shell
-vi .gitignore
+git branch branch2
 ```
 
-Use the following VIM commands to insert the necessary text and save the changes:
-
-i enters 'Insert' mode
-macOS Spotlight Index
-
-Press the 'Return' or 'Enter' key to move to a new line
 
 
-```shell
-.DS_Store
-```
-
-Press the 'Return' or 'Enter' key, to keep the file format/readability consistency
-
-Press the 'esc' key
+Use the following command to, again, list your local branches:
 
 
 
 ```shell
-:wq
+git branch
 ```
 
-Press the 'Return' or 'Enter' key
 
-Use the following command to view your changes:
+
+Notice your new branch
+Notice the highlight of and asterisk next to the 'master' branch
+The highlight and asterisk indicate your current, working branch
+
+Use the following command to, again, list all branches, local and remote:
 
 
 
 ```shell
-git diff
+git branch -a
 ```
 
-Use the following command to view the status of your local repository:
+
+
+Notice the new local branch does not exist as a remote branch
+
+Switch to your new branch with the following command:
 
 
 
 ```shell
-git status
+git checkout branch2
 ```
 
-Notice the '.gitignore' file in the section, 'Changes not staged for commit'
+
+
+Use the following command to, again, list your local branches:
 
 
 
-[Next Section > Stage, Commit, & Push Changes to GitHub](section_8.md "Stage, Commit, & Push Changes to GitHub")
+```shell
+git branch
+```
+
+
+
+Notice the highlight of and asterisk your new branch
+
+Use the following command to simultaneously create and switch to a new branch
+
+
+
+```shell
+git checkout -b branch3
+```
+
+
+
+Use the following command to, again, list your local branches:
+
+
+
+```shell
+git branch
+```
+
+
+
+Notice the highlight of and asterisk your new branch
+
+Use the following command to delete one of your branches:
+
+
+
+```shell
+git branch -d Branch2
+```
+
+
+
+Use the following command to, again, list your local branches:
+
+
+
+```shell
+git branch
+```
+
+
+
+Notice the removal of your branch
+
+
+
+[Next Section > Make Local Git Repository Changes](section_7.md "Make Local Git Repository Changes")
 

@@ -2,6 +2,22 @@
 
 
 
+
+
+1. 
+
+![github-new-branch](../images/github-new-branch.png)
+
+
+
+2. 
+
+![github-branch-list](../images/github-branch-list.png)
+
+
+
+
+
 Log on to https://github.wwt.com (ATC VPN required)
 Open your Git repository
 From the home screen, your repository list is on the left

@@ -1,131 +1,77 @@
-# Manage Local Git Branches
+# View & Configure Local Git Settings
 
 
 
-From your terminal, use the following command to list your local branches:
+System-wide
+
+Global
+
+Local repository
+
+
+
+In this section we will explore the various local Git configuration settings and some 
+
+
+
+From your terminal, view your systemwide Git settings with the following command:
 
 ```shell
-git branch
+cat /usr/local/etc/gitconfig
 ```
 
 
 
-Notice that only the 'master' branch cloned to your local repository
-This is the correct behavior; other branches do not clone to local repositories
-
-Use the following command to list all branches, local and remote:
+Git global settings are user-specific and take precedence over over systemwide settings
+View your global Git settings with the following command:
 
 ```shell
-git branch -a
+cat ~/.gitconfig
 ```
 
 
 
-Notice your local 'master' branch plus the remote branches
-
-Create a new, local branch:
-
-
+Configure your global Git username and email address with the following commands:
 
 ```shell
-git branch BranchX
+git config --global user.name "Kris Smith"
+git config --global user.email "kris.smith@wwt.com"
 ```
 
 
 
-Use the following command to, again, list your local branches:
-
-
+Review the updated global Git configuration settings
 
 ```shell
-git branch
+cat ~/.gitconfig
 ```
 
 
 
-Notice your new branch
-Notice the highlight of and asterisk next to the 'master' branch
-The highlight and asterisk indicate your current, working branch
-
-Use the following command to, again, list all branches, local and remote:
+Every Git repository on your computer has its own configuration settings
+To view repository-specific settings use the following command:
 
 
 
 ```shell
-git branch -a
+cat .git/config
 ```
 
 
 
-Notice the new local branch does not exist as a remote branch
-
-Switch to your new branch with the following command:
+Within any Git repository on your computer, you may configure specific settings
+Repository-specific settings take precedence over global and systemwide settings
+From the Git repository directory, you can use commands like these:
 
 
 
 ```shell
-git checkout Branch2
+git config user.name "Kris Smith"
+git config user.email "kris.smith@wwt.com"
 ```
 
 
 
-Use the following command to, again, list your local branches:
 
 
-
-```shell
-git branch
-```
-
-
-
-Notice the highlight of and asterisk your new branch
-
-Use the following command to simultaneously create and switch to a new branch
-
-
-
-```shell
-git checkout -b Branch3
-```
-
-
-
-Use the following command to, again, list your local branches:
-
-
-
-```shell
-git branch
-```
-
-
-
-Notice the highlight of and asterisk your new branch
-
-Use the following command to delete one of your branches:
-
-
-
-```shell
-git branch -d BranchX
-```
-
-
-
-Use the following command to, again, list your local branches:
-
-
-
-```shell
-git branch
-```
-
-
-
-Notice the removal of your branch
-
-
-
-[Next Section > Make Local Git Repository Changes](section_7.md "Make Local Git Repository Changes")
-
+[Next Section > Setup a GitHub Repository](section_3.md "Setup a GitHub Repository")

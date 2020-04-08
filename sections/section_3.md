@@ -1,66 +1,39 @@
 # Setup a GitHub Repository
 
-
-
-Setup SSH Key Authentication
-
-Setup SSH key authentication with https://github.wwt.com
-
-From your terminal, Check to see if you already have an SSH key with the following command:
+You have the option to create Git repositories either on your local machine (within a Docker Container in our case) or on a remote Git environment; it's a mater of personal preference.  In either case, you can keep the Git repositories in sync.  In this example we will create a Git repository on GitHub and then, later, clone the repository to our local environment.
 
 
 
-```shell
-cat ~/.ssh/id_rsa.pub
-```
+**Create a new GitHub Repository**
+
+1. Navigate to [https://github.com/login](https://github.com/login) and log in
+2. The view you see may vary depending on whether your GitHub account is new.  You should see a green button on the left side of the window which reads either **Create repository**, **New repository**, or something similar.
+   - If you don't see the button, navigate to your GitHub home page with click to the GitHub logo in the upper-left corner of any GitHub window.
+
+![github-new-repo](../images/github-new-repo.png)
 
 
 
-If id_rsa.pub does not exist, generate an ssh key pair with the following command:
+3. You need to enter some information and choose some options to create the repository.
+   - **Name** - ***git-repo-1***
+   - **Description** - ***Git Repository \#1***
+   - Set your repository to **Public**
+   - Tick the box to **Initialize this repository with a README**
+     - Note - the **Name** and **Description** values provide the initial title and contents for the repository README file.
+   - Expand the **Add .gitignore** dropdown and type or choose **Python**
+   - Click the **Create repository** button
+
+![github-new-repo-details](../images/github-new-repo-details.png)
 
 
 
-```shell
-ssh-keygen
-```
+4. Take a look at your new repository!  You have two files, **.gitignore** and **README.md**.
+
+![github-new-repo-complete](../images/github-new-repo-complete.png)
 
 
 
-Use the output of the following command to view the entire contents of your SSH key:
-
-
-
-```shell
-cat ~/.ssh/id_rsa.pub
-```
-
-
-
-Copy the entire contents to your clipboard
-Log on to https://github.wwt.com (ATC VPN required)
-Click on your profile icon in the upper-right corner of the screen
-Choose 'Settings' and select the 'SSH and GPG keys' menu option
-Click the 'New SSH key' button
-Give your key a title and paste the key contents into the 'Key' input box
-Click 'Add SSH key'
-
-
-
-A best practice is to create/initialize all Git repositories from the central repository
-This provides the benefit of automatically generating README and .gitignore files
-In our case, that is https://github.wwt.com
-
-Log on to https://github.wwt.com (ATC VPN required)
-Click the, 'Start a project' button to create a new repository
-Give your new repository a name and a description
-The name and description values pre-populate the README file
-Choose to make your repository public or private
-Tick the box to 'Initialize this repository with a README'
-Expand the 'Add a '.gitignore:' dropdown and type or choose 'Python'
-Click the 'Create repository' button
-Review the '.gitignore' and 'README.md' files in your repository
-
-
+Our new repository is ready for use.  We will briefly look at GitHub branches before next.  Click the link below to continue:
 
 [Next Section > Create a New Branch in a GitHub Repository](section_4.md "Create a New Branch in a GitHub Repository")
 

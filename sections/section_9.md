@@ -1,22 +1,13 @@
-# Make Local Git Repository Changes with Atomic Commits
+# Stage, Commit, &, Push Changes to GitHub
 
 
 
-From your terminal, create a simple python script within your local repository
-Use the the following command:
-
-
-
-```shell
-touch myScript.py
-```
-
-Confirm your python script file, 'myScript.py' exists with the following command:
+From your terminal, Add your '.gitcommit' file to the staging area with the following command:
 
 
 
 ```shell
-ls -l
+git add .gitignore
 ```
 
 Use the following command to view the status of your local repository:
@@ -27,15 +18,17 @@ Use the following command to view the status of your local repository:
 git status
 ```
 
-Notice the 'myScript.py' file in the section, 'Untracked files'
+Notice the '.gitignore' file in the section, 'Changes to be committed'
 
-Add the 'myScript.py' file to the staging area with the following command:
+De-commit the stage of the '.gitignore' file with the following command:
 
 
 
 ```shell
-git add myScript.py
+git restore --staged .gitignore
 ```
+
+This command is useful to upstage a commit
 
 Use the following command to view the status of your local repository:
 
@@ -45,115 +38,23 @@ Use the following command to view the status of your local repository:
 git status
 ```
 
-Notice the 'myScript.py' file in the section, 'Changes to be committed'
-
-Commit the 'myScript.py' file to your local repository with the following command:
+Re-add your '.gitcommit' file to the staging area with the following command:
 
 
 
 ```shell
-git commit -m "Initial commit of 'myScript.py'"
+git add .gitignore
 ```
 
-Use the following command to view the status of your local repository:
+Commit your '.gitignore' file to your local repository with the following command:
 
 
 
 ```shell
-git status
+git commit -m "Added '.DS_Store' to exclude macOS Spotlight Index"
 ```
 
-Notice your working branch and that you have no changes to commit
-
-Check your commits which still require a push to GitHub with the following command:
-
-
-
-```shell
-git cherry -v
-```
-
-Notice the SHA1 hash and comment for the commit
-
-**The following requires a text editor and this guide uses VIM**
-**You may, alternatively, use the text editor of your choice**
-
-Open the 'myScript.py' file in VIM to insert some python code
-Use the following VIM commands to insert the necessary text and save the changes:
-
-
-
-```shell
-vi myScript.py
-```
-
-i enters 'Insert' mode
-
-
-
-```python
-! /usr/bin/env python
-This script says hello and requires Python version 3.x
-
-name = input('What is your name: ')
-print(f'\nWell hello, {name}.  It is nice to meet you.\n')
-```
-
-
-
-Press the 'esc' key
-
-
-
-```shell
-:wq
-```
-
-Press the 'Return' or 'Enter' key
-
-Use the following command to view your changes:
-
-
-
-```shell
-git diff
-```
-
-Use the following command to view the status of your local repository:
-
-
-
-```shell
-git status
-```
-
-Notice the 'myScript.py' file in the section, 'Changes not staged for commit'
-
-Add the 'myScript.py' file to the staging area with the following command:
-
-
-
-```shell
-git add myScript.py
-```
-
-Use the following command to view the status of your local repository:
-
-
-
-```shell
-git status
-```
-
-Notice the 'myScript.py' file in the section, 'Changes to be committed'
-
-Commit the 'myScript.py' file to your local repository with the following command:
-
-
-
-```shell
-git commit -m "Added 'input' and 'print' commands to 'myScript.py'"
-```
+The '-m' indicates a comment follows; Git requires a comment with every commit
 
 Use the following command to view the status of your local repository:
 
@@ -164,18 +65,46 @@ git status
 ```
 
 Notice your working branch and that you have no changes to commit
-
-Check your commits which still require a push to GitHub with the following command:
+Optionally, you may edit commit comments with the 'git commit --amend' command
+This command will open your configured Git file editor, VIM is the default
+After you view the file, press '<esc>' and type ':q!' to quit without saving changes
 
 
 
 ```shell
-git cherry -v
+git commit --amend
 ```
 
-Notice the SHA1 hashes and comments for the commits
+Attempt to push your changes to GitHub with the following command:
 
 
 
-[Next Section > Stage, Commit, & Push New Changes to GitHub](section_10.md "Stage, Commit, & Push New Changes to GitHub")
+```shell
+git push
+```
+
+Notice the error message
+This error occurs because the local branch does not yet exist in GitHub
+
+Push your local branch and committed changes to GitHub with the following command:
+
+
+
+```shell
+git push --set-upstream origin Branch3
+```
+
+Notice the output indicating a new branch on GitHub:
+'To github.wwt.com:hullt/ex1.git'
+ '* [new branch]      Branch3 -> Branch3'
+
+Log on to https://github.wwt.com (ATC VPN required)
+Open your Git repository
+From the home screen, your repository list is on the left
+Click the 'Branch:' button and choose your new branch
+Notice the comment and timestamp for the '.gitignore' file within the new branch
+
+
+
+[Next Section > Make Local Git Repository Changes with Atomic Commits](section_9.md "Make Local Git Repository Changes with Atomic Commits")
 

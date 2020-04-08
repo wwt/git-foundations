@@ -1,16 +1,8 @@
-# Stage, Commit, &, Push Changes to GitHub
+# Make Local Git Repository Changes
 
 
 
-From your terminal, Add your '.gitcommit' file to the staging area with the following command:
-
-
-
-```shell
-git add .gitignore
-```
-
-Use the following command to view the status of your local repository:
+From your terminal, use the following command to view the status of your local repository:
 
 
 
@@ -18,93 +10,66 @@ Use the following command to view the status of your local repository:
 git status
 ```
 
-Notice the '.gitignore' file in the section, 'Changes to be committed'
 
-De-commit the stage of the '.gitignore' file with the following command:
-
-
-
-```shell
-git restore --staged .gitignore
-```
-
-This command is useful to upstage a commit
-
-Use the following command to view the status of your local repository:
-
-
-
-```shell
-git status
-```
-
-Re-add your '.gitcommit' file to the staging area with the following command:
-
-
-
-```shell
-git add .gitignore
-```
-
-Commit your '.gitignore' file to your local repository with the following command:
-
-
-
-```shell
-git commit -m "Added '.DS_Store' to exclude macOS Spotlight Index"
-```
-
-The '-m' indicates a comment follows; Git requires a comment with every commit
-
-Use the following command to view the status of your local repository:
-
-
-
-```shell
-git status
-```
 
 Notice your working branch and that you have no changes to commit
-Optionally, you may edit commit comments with the 'git commit --amend' command
-This command will open your configured Git file editor, VIM is the default
-After you view the file, press '<esc>' and type ':q!' to quit without saving changes
+
+**The following requires a text editor and this guide uses VIM**
+**You may, alternatively, use the text editor of your choice**
+
+Open your .gitignore file in VIM to insert the name '.DS_Store'
+Adding the name '.DS_Store' will keep the macOS Spotlight index from syncing to GitHub
+Use the following command to open VIM:
 
 
 
 ```shell
-git commit --amend
+vi .gitignore
 ```
 
-Attempt to push your changes to GitHub with the following command:
+Use the following VIM commands to insert the necessary text and save the changes:
+
+i enters 'Insert' mode
+macOS Spotlight Index
+
+Press the 'Return' or 'Enter' key to move to a new line
+
+
+```shell
+.DS_Store
+```
+
+Press the 'Return' or 'Enter' key, to keep the file format/readability consistency
+
+Press the 'esc' key
 
 
 
 ```shell
-git push
+:wq
 ```
 
-Notice the error message
-This error occurs because the local branch does not yet exist in GitHub
+Press the 'Return' or 'Enter' key
 
-Push your local branch and committed changes to GitHub with the following command:
+Use the following command to view your changes:
 
 
 
 ```shell
-git push --set-upstream origin Branch3
+git diff
 ```
 
-Notice the output indicating a new branch on GitHub:
-'To github.wwt.com:hullt/ex1.git'
- '* [new branch]      Branch3 -> Branch3'
-
-Log on to https://github.wwt.com (ATC VPN required)
-Open your Git repository
-From the home screen, your repository list is on the left
-Click the 'Branch:' button and choose your new branch
-Notice the comment and timestamp for the '.gitignore' file within the new branch
+Use the following command to view the status of your local repository:
 
 
 
-[Next Section > Make Local Git Repository Changes with Atomic Commits](section_9.md "Make Local Git Repository Changes with Atomic Commits")
+```shell
+git status
+```
+
+Notice the '.gitignore' file in the section, 'Changes not staged for commit'
+
+
+
+[Next Section > Stage, Commit, & Push Changes to GitHub](section_8.md "Stage, Commit, & Push Changes to GitHub")
 

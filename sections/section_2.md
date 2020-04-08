@@ -1,72 +1,77 @@
-# View & Configure Local Git Settings
+# Setup a GitHub Repository
+
+Before we setup the GitHub repository, it's a good idea to consider how our local environment will authenticate to GitHub during synchronization.  GitHub supports two types of secure transport, each with their own authentication mechanism(s):
+
+1. HTTPS with basic authentication (username and password) or API key
+2. SSH with public/private key authentication
+
+Either choice is just as good as the other.  In this environment we use SSH because it allows us to secure communication without having manage credentials or API keys.  We will setup SSH authentication before we create a GitHub repository.
 
 
 
-From your terminal, view your systemwide Git settings with the following command:
+**Generate an SSH Key Pair**
 
-```shell
-cat /usr/local/etc/gitconfig
-```
-
-
-
-Git global settings are user-specific and take precedence over over systemwide settings
-View your global Git settings with the following command:
-
-
+1. From the Docker Container prompt generate an SSH key pair with the following command.
 
 ```shell
-cat ~/.gitconfig
+ssh-keygen
 ```
 
+   
 
+2. Press your Return/Enter key to accept the default location for the key and to accept and confirm the default, blank passphrase.  Your terminal output will look something like this:
 
-Configure your global Git username and email address with the following commands
+![container-ssh-keygen](../images/container-ssh-keygen.png)
 
+   
 
+3. Print the new SSH public key file to the terminal with this command:
 
 ```shell
-git config --global user.name "Kris Smith"
-git config --global user.email "kris.smith@wwt.com"
+cat ~/.ssh/id_rsa.pub
 ```
 
-
-
-git config --global user.name "Kris Smith"
-git config --global user.email "kris.smith@wwt.com"
+![container-ssh-key](../images/container-ssh-key.png)
 
 
 
-```shell
-cat ~/.gitconfig
-```
+4. Copy the full contents of the file to your clipboard including the **ssh-rsa** at the beginning of the file and the **root@container_id** at the end of the file.  We will share the text from this file with GitHub to establish mutual trust between our container and GitHub.
 
 
 
-Every Git repository on your computer has its own configuration settings
-To view repository-specific settings use the following command:
+**Setup GitHub SSH Key Authentication**
+
+1. Navigate to [https://github.com/login](https://github.com/login), log in, click the **Profile** icon in the upper-right corner of the window, and choose **Settings**.
+
+![github-settings](../images/github-settings.png)
 
 
 
-```shell
-cat .git/config
-```
+2. Click on the **SSH and GPG keys** tab on the left side of the window.
+
+![github-profile](../images/github-profile.png)
 
 
 
-Within any Git repository on your computer, you may configure specific settings
-Repository-specific settings take precedence over global and systemwide settings
-From the Git repository directory, you can use commands like these:
+3. Click the green, **New SSH key** button
+
+![github-ssh-keys](../images/github-ssh-keys.png)
 
 
 
-```shell
-git config user.name "Kris Smith"
-git config user.email "kris.smith@wwt.com"
-```
+4. Provide a title for the SSH key, paste the SSH key file text from your container into the **Key** field, and click the green, **Add SSH key** button.
+
+![github-add-ssh-key](../images/github-add-ssh-key.png)
 
 
 
+5. Confirm that GitHub now has a copy of your container's SSH public key.
+
+![github-new-ssh-key](../images/github-new-ssh-key.png)
 
 
-[Next Section > Setup a GitHub Repository](section_3.md "Setup a GitHub Repository")
+
+SSH authentication setup is complete and we are ready to create a new GitHub repository.  Click the link below to continue:
+
+[Next Section > Create a New Branch in a GitHub Repository](section_4.md "Create a New Branch in a GitHub Repository")
+
