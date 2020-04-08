@@ -1,33 +1,26 @@
 # Create a New Branch in a GitHub Repository
 
+It is common for several people to work on the code or contents within a GitHub repository at the same time.  Each person can work within their own branch, an isolated copy of the repository code, so their changes don't accidentally step on each other.
+
+Before we clone our new repository to our Docker Container, let's create a new branch from the default, **master** branch to simulate the scenario that someone else already started working on changes to the repository within their own branch.
+
+**Note - it is more common and a best practice to create new branches within local development environments and then to push those branches to GitHub.  This step illustrates a point which we will review in a subsequent section**
 
 
 
-
-1. 
+1. Click the **Branch: master** button to expand the **Branch** drop-down menu.  Type the name **branch1** for the new branch and then click the text **Create branch: branch1 from 'master'**.
 
 ![github-new-branch](../images/github-new-branch.png)
 
 
 
-2. 
+2. Click the **Branch: branch1** button to expand the **Branch** drop-down menu and notice there are now two branches, **master** and **branch1**.
 
 ![github-branch-list](../images/github-branch-list.png)
 
 
 
-
-
-Log on to https://github.wwt.com (ATC VPN required)
-Open your Git repository
-From the home screen, your repository list is on the left
-Click the 'Branch: master' button
-Type the name for your new branch (Branch1) and click the 'Create branch' button
-Notice you now have two branches; 'master' and your new branch
-
-
-
-
+It's time to get a copy of our GitHub repository to our Docker environment.  Click the link below to continue:
 
 [Next Section > Clone a GitHub Repository to Your Computer](section_5.md "Clone a GitHub Repository to Your Computer")
 
