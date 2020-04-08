@@ -1,4 +1,4 @@
-# Create a New Branch in your GitHub Repository
+# Create a New Branch in a GitHub Repository
 
 
 
@@ -13,5 +13,5 @@ Notice you now have two branches; 'master' and your new branch
 
 
 
-[Next Section > Clone Your GitHub Repository to Your Computer](section_5.md "Clone Your GitHub Repository to Your Computer")
+[Next Section > Clone a GitHub Repository to Your Computer](section_5.md "Clone a GitHub Repository to Your Computer")
 

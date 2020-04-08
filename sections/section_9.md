@@ -177,5 +177,5 @@ Notice the SHA1 hashes and comments for the commits
 
 
 
-[Next Section > Stage, Commit, & Push Your New Changes to GitHub](section_10.md "Stage, Commit, & Push Your New Changes to GitHub")
+[Next Section > Stage, Commit, & Push New Changes to GitHub](section_10.md "Stage, Commit, & Push New Changes to GitHub")
 

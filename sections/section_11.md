@@ -28,5 +28,5 @@ Click the 'Delete branch' to close the pull request and remove 'Branch3'
 
 
 
-[Next Section > Review The Pull Request Impact to your Local Git Repository](section_12.md "Review The Pull Request Impact to your Local Git Repository")
+[Next Section > Review The Pull Request Impact to Your Local Git Repository](section_12.md "Review The Pull Request Impact to Your Local Git Repository")
 

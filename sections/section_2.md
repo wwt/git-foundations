@@ -1,4 +1,4 @@
-# View & Configure Your Local Git Settings
+# View & Configure Local Git Settings
 
 
 

@@ -1,4 +1,4 @@
-# Stage, Commit, &, Push Your Changes/Branches to GitHub
+# Stage, Commit, &, Push Changes to GitHub
 
 
 

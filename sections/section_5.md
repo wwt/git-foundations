@@ -1,4 +1,4 @@
-# Clone Your GitHub Repository to Your Computer
+# Clone a GitHub Repository to Your Computer
 
 
 
@@ -100,5 +100,5 @@ This is a good way to check the your central repository target
 
 
 
-[Next Section > Manage Your Local Git Branches](section_6.md "Manage Your Local Git Branches")
+[Next Section > Manage Local Git Branches](section_6.md "Manage Local Git Branches")
 

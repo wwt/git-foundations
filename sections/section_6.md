@@ -1,4 +1,4 @@
-# Manage Your Local Git Branches
+# Manage Local Git Branches
 
 
 
