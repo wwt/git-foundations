@@ -34,7 +34,7 @@ The result of that command should look something like this:
 
 
 
-Here is a quick reference for some other Docker commands which may be helpful:
+Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:
 
 ```shell
 control + d (key sequence) # Stops your Container and returns you to your terminal prompt
