@@ -20,7 +20,7 @@ We mentioned GitHub supports two transports, HTTPS and SSH.  GitHub defaults to 
 
 
 
-**Clone The Repository**
+**Clone & Review The Repository**
 
 1. From the Docker Container prompt, type the command **git clone** and then paste your repository URL as follows:
 
