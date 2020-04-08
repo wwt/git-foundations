@@ -22,7 +22,7 @@ Git has several tiers of configuration files and we will explore the three most 
 
 ```shell
 git config --system user.name "Your Name - System"
-git config --system user.email "system@your_domain.com"
+git config --system user.email "git_docker_container@your_domain.com"
 ```
 
 
