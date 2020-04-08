@@ -10,6 +10,7 @@ Git is a distributed source control management (SCM) tool.  This walkthough is a
 
 1. A Windows or macOS computer with [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download")
 2. A [GitHub](https://github.com/join "Join GitHub") account
+3. Your favorite terminal/shell program (iTerm, PowerShell, Bash, etc.)
 
 ------
 
