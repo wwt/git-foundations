@@ -10,6 +10,20 @@ Local repository
 
 
 
+View the contents of the repository 'config' file in your .git directory
+Use the following command:
+
+```shell
+cat .git/config
+```
+
+
+
+Notice the URL in the '[remote "origin"]' section
+This is one way to check the your central repository target
+
+
+
 In this section we will explore the various local Git configuration settings and some 
 
 

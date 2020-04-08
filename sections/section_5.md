@@ -1,94 +1,95 @@
 # Clone a GitHub Repository to Your Computer
 
+Now it's time for us to work with our GitHub repository and we start by copying or **cloning** the repository to our Docker environment.  
 
 
-1. 
+
+**Copy The Repository SSH URL**
+
+We mentioned GitHub supports two transports, HTTPS and SSH.  GitHub defaults to HTTPS transport which adds an extra step to the cloning process.
+
+1. Click the green **Clone or download button** and notice that GitHub displays an HTTPS URL.  Click the **Use SSH** link to change the display to an SSH URL.
 
 ![github-clone-https](../images/github-clone-https.png)
 
 
 
-2. 
+2. Click the **Copy** icon, just to the right of the SSH URL, to store the URL on your clipboard.
 
 ![github-clone-ssh](../images/github-clone-ssh.png)
 
 
 
+**Clone The Repository**
 
-
-
-
-Log on to https://github.wwt.com (ATC VPN required)
-Open your Git repository
-From the home screen, your repository list is on the left
-Click the green 'Clone or download' button
-From the expanded menu choose either SSH or HTTPS
-Click the 'Copy to clipboard' button to the right of the URL
-
-1. From your terminal, type the command **git clone** and then paste your repository URL as follows:
+1. From the Docker Container prompt, type the command **git clone** and then paste your repository URL as follows:
 
 
 ```shell
-git clone git@github.wwt.com:smithk/myRepo1.git
+git clone git@github.com:wwt-git-foundations/git-repo-1.git
 ```
 
 
 
-2. List your directory contents to confirm your repository folder downloaded
-   Use the following command:
+**Note - you may see a prompt which asks you to confirm the authenticity of GitHub's SSH RSA fingerprint.  You may safely continue.**
+
+The result of that command should look something like this:
+
+![git-clone](../images/git-clone.png)
+
+
+
+2. List your directory contents to view your repository folder, **git-repo-1**, with the following command:
 
 ```shell
 ls -l
 ```
 
+![container-root-ls](../images/container-root-ls.png)
 
 
-3. In the output, look for a directory name which matches that of your repository.  Change to your repository with the following sample command:
+
+3. Change to your repository directory with the following command:
 
 ```shell
-cd myRepo1
+cd git-repo-1
 ```
 
+![container-cd-repo](../images/container-cd-repo.png)
 
 
-4. Look at the contents of your repository directory, including hidden files
-   Use the following command:
+
+4. Let's take a quick look at the contents of your repository directory, including the hidden files with the following command.
 
 ```shell
 ls -la
 ```
 
+![container-repo-ls](../images/container-repo-ls.png)
 
 
-5. View the contents of your 'README.md' file with the following command:
+
+5. Notice that both of the files in your GitHub repository (**.gitignore** and **README.md**) are now in our Docker container.  View the contents of the **README.md** file with the following command:
 
 ```shell
 cat README.md
 ```
 
+![container-cat-readme](../images/container-cat-readme.png)
 
 
-6. View the contents of the .git directory with the following command:
+
+6. There is one item in our repository directory which isn't in our GitHub repository, the **.git** directory.  This directory contains all of the details about your local repository and, for the most part, you should not have to interact with these files.  Just to see what the contents of this folder look like, use the follwoing command:
 
 ```shell
 ls -l .git
 ```
 
-
-
-7. View the contents of the repository 'config' file in your .git directory
-   Use the following command:
-
-```shell
-cat .git/config
-```
+![container-ls-git](../images/container-ls-git.png)
 
 
 
-Notice the URL in the '[remote "origin"]' section
-This is one way to check the your central repository target
-
-
+We now have a copy of our GitHub repo in our Docker environment.  Before we make changes to our local copy of the repository, we need to configure a few local Git settings.  Click the link below to continue:
 
 [Next Section > View & Configure Local Git Settings](section_6.md "View & Configure Local Git Settings")
 
