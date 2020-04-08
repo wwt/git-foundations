@@ -2,8 +2,8 @@
 
 Before we setup the GitHub repository, it's a good idea to consider how our local environment will authenticate to GitHub during synchronization.  GitHub supports two types of secure transport, each with their own authentication mechanism(s):
 
-1. HTTPS with basic authentication (username and password) or API key
-2. SSH with public/private key authentication
+1. HTTPS with basic authentication (username and password) or API key.
+2. SSH with public/private key authentication.
 
 Either choice is just as good as the other.  In this environment we use SSH because it allows us to secure communication without having manage credentials or API keys.  We will setup SSH authentication before we create a GitHub repository.
 
