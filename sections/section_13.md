@@ -67,5 +67,5 @@ Notice the only branch in your local repository is 'master'
 
 
 
-[Next Section > Clone Another Repository, Make Changes, and Create a New Pull Request](section_13.md "Clone Another Repository, Make Changes, and Create a New Pull Request")
+[Next Section > Clone Another Repository, Make Changes, and Create a New Pull Request](section_14.md "Clone Another Repository, Make Changes, and Create a New Pull Request")
 

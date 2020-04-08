@@ -71,5 +71,5 @@ Notice the '.gitignore' file in the section, 'Changes not staged for commit'
 
 
 
-[Next Section > Stage, Commit, & Push Changes to GitHub](section_8.md "Stage, Commit, & Push Changes to GitHub")
+[Next Section > Stage, Commit, & Push Changes to GitHub](section_9.md "Stage, Commit, & Push Changes to GitHub")
 

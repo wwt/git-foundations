@@ -90,5 +90,5 @@ This is one way to check the your central repository target
 
 
 
-[Next Section > Manage Local Git Branches](section_6.md "Manage Local Git Branches")
+[Next Section > View & Configure Local Git Settings](section_6.md "View & Configure Local Git Settings")
 

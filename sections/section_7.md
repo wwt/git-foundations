@@ -127,5 +127,5 @@ Notice the removal of your branch
 
 
 
-[Next Section > Make Local Git Repository Changes](section_7.md "Make Local Git Repository Changes")
+[Next Section > Make Local Git Repository Changes](section_8.md "Make Local Git Repository Changes")
 

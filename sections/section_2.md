@@ -1,4 +1,4 @@
-# Setup a GitHub Repository
+# Setup GitHub Authentication
 
 Before we setup the GitHub repository, it's a good idea to consider how our local environment will authenticate to GitHub during synchronization.  GitHub supports two types of secure transport, each with their own authentication mechanism(s):
 
@@ -73,5 +73,5 @@ cat ~/.ssh/id_rsa.pub
 
 SSH authentication setup is complete and we are ready to create a new GitHub repository.  Click the link below to continue:
 
-[Next Section > Create a New Branch in a GitHub Repository](section_4.md "Create a New Branch in a GitHub Repository")
+[Next Section > Setup a GitHub Repository](section_3.md "Setup a GitHub Repository")
 

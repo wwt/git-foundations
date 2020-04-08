@@ -17,18 +17,19 @@ Git is a distributed source control management (SCM) tool.  This walkthough is a
 ### Contents
 
 1. [Hands-On Environment Setup](sections/section_1.md "Hands-On Environment Setup")
-2. [View & Configure Local Git Settings](sections/section_2.md "View & Configure Local Git Settings")
+2. [Setup GitHub Authentication](sections/section_2.md "Setup GitHub Authentication")
 3. [Setup a GitHub Repository](sections/section_3.md "Setup a GitHub Repository")
 4. [Create a New Branch in a GitHub Repository](sections/section_4.md "Create a New Branch in a GitHub Repository")
 5. [Clone a GitHub Repository to Your Computer](sections/section_5.md "Clone a GitHub Repository to Your Computer")
-6. [Manage Local Git Branches](sections/section_6.md "Manage Local Git Branches")
-7. [Make Local Git Repository Changes](sections/section_7.md "Make Local Git Repository Changes")
-8. [Stage, Commit, & Push Changes to GitHub](sections/section_8.md "Stage, Commit, & Push Changes to GitHub")
-9. [Make Local Git Repository Changes with Atomic Commits](sections/section_9.md "Make Local Git Repository Changes with Atomic Commits")
-10. [Stage, Commit, & Push New Changes to GitHub](sections/section_10.md "Stage, Commit, & Push New Changes to GitHub")
-11. [Pull/Merge Changes on GitHub](sections/section_11.md "Pull/Merge Changes on GitHub")
-12. [Review The Pull Request Impact to Your Local Git Repository](sections/section_12.md "Review The Pull Request Impact to Your Local Git Repository")
-13. [Clone Another Repository, Make Changes, and Create a New Pull Request](sections/section_13.md "Clone Another Repository, Make Changes, and Create a New Pull Request")
+6. [View & Configure Local Git Settings](sections/section_6.md "View & Configure Local Git Settings")
+7. [Manage Local Git Branches](sections/section_7.md "Manage Local Git Branches")
+8. [Make Local Git Repository Changes](sections/section_8.md "Make Local Git Repository Changes")
+9. [Stage, Commit, & Push Changes to GitHub](sections/section_9.md "Stage, Commit, & Push Changes to GitHub")
+10. [Make Local Git Repository Changes with Atomic Commits](sections/section_10.md "Make Local Git Repository Changes with Atomic Commits")
+11. [Stage, Commit, & Push New Changes to GitHub](sections/section_11.md "Stage, Commit, & Push New Changes to GitHub")
+12. [Pull/Merge Changes in GitHub](sections/section_12.md "Pull/Merge Changes in GitHub")
+13. [Review The Pull Request Impact to Your Local Git Repository](sections/section_13.md "Review The Pull Request Impact to Your Local Git Repository")
+14. [Clone Another Repository, Make Changes, and Create a New Pull Request](sections/section_14.md "Clone Another Repository, Make Changes, and Create a New Pull Request")
 
 ------
 

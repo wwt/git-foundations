@@ -72,6 +72,4 @@ git config user.email "kris.smith@wwt.com"
 
 
 
-
-
-[Next Section > Setup a GitHub Repository](section_3.md "Setup a GitHub Repository")
+[Next Section > Manage Local Git Branches](section_7.md "Manage Local Git Branches")

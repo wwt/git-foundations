@@ -61,5 +61,5 @@ docker container rm git-foundations # Destroys your container so you can start o
 
 Your environment is setup and ready to use!  Not to painful so far, right?  Click the link below to get started with Git:
 
-[Next Section > View & Configure Local Git Settings](section_2.md "View & Configure Local Git Settings")
+[Next Section > Setup GitHub Authentication](section_2.md "Setup GitHub Authentication")
 
