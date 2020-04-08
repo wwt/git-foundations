@@ -1,17 +1,19 @@
 # Git Foundations Hands-On Walkthrough
 
+### Overview
+
 Git is a distributed source control management (SCM) tool.  This walkthough is a series of practical, hands-on exercises to familiarize you with the use of Git and assumes you have a basic understanding Git use cases, terminology, and file areas (working, staging, & HEAD).
 
-
+------
 
 ### What You Need
 
 1. A Windows or macOS computer with [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download")
 2. A [GitHub](https://github.com/join "Join GitHub") account
 
+------
 
-
-### Overview
+### Contents
 
 1. [Hands-On Environment Setup](sections/section_1.md "Hands-On Environment Setup")
 2. [View & Configure Local Git Settings](sections/section_2.md "View & Configure Local Git Settings")
@@ -27,7 +29,7 @@ Git is a distributed source control management (SCM) tool.  This walkthough is a
 12. [Review The Pull Request Impact to Your Local Git Repository](sections/section_12.md "Review The Pull Request Impact to Your Local Git Repository")
 13. [Clone Another Repository, Make Changes, and Create a New Pull Request](sections/section_13.md "Clone Another Repository, Make Changes, and Create a New Pull Request")
 
-
+------
 
 ### Get Started
 
