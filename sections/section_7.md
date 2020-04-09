@@ -1,131 +1,140 @@
 # Manage Local Git Branches
 
+Our Git environment is ready for us to start work on our repository.  Typically, especially on a project with many contributors, Git branches allow each contributor to have as many non-overlapping copies of the repository as they need to make and manage their changes.  We will do some basic work with branches so we can, later, contribute our changes to the master branch of the GitHub repository.
 
 
-From your terminal, use the following command to list your local branches:
+
+**View, Create, Switch To & Remove Branches**
+
+1. From the Docker Container prompt, list your *local* branches with the following command:
 
 ```shell
 git branch
 ```
 
+![git-branch-1](../images/git-branch-1.png)
 
 
-Notice that only the 'master' branch cloned to your local repository
-This is the correct behavior; other branches do not clone to local repositories
 
-Use the following command to list all branches, local and remote:
+2. Notice that only the **master** branch cloned to your local repository from GitHub.
+   - This is normal/correct behavior; only the **master** branch clones from GitHub because other branches (like the **branch1** branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the master copy of the repository.
+   - The asterisk to the left of **master** indicates that **master** is our current, working branch.
+
+3. List all repository branches, local *and* remote, with the following command:
 
 ```shell
 git branch -a
 ```
 
+![git-branch-a-1](../images/git-branch-a-1.png)
 
 
-Notice your local 'master' branch plus the remote branches
 
-Create a new, local branch:
+4. Notice how we see a **master** branch plus an **origin/master** branch.
+   - **Origin** is how our local repository refers to GitHub so **origin/master** represents the **master** branch on GitHub.
 
-
+5. Create a new, local branch named **branch2**, with the following command:
 
 ```shell
 git branch branch2
 ```
 
+![git-branch-branch2](../images/git-branch-branch2.png)
 
 
-Use the following command to, again, list your local branches:
 
-
+6. List your local branches again with the following command:
 
 ```shell
 git branch
 ```
 
+![git-branch-2](../images/git-branch-2.png)
 
 
-Notice your new branch
-Notice the highlight of and asterisk next to the 'master' branch
-The highlight and asterisk indicate your current, working branch
 
-Use the following command to, again, list all branches, local and remote:
-
-
+7. Notice your new branch, **branch2** and also that the asterisk next to **master** tells us that, even though we just created **branch2**, our working branch is still **master**.
+8. Again, list all branches, local and remote, with the following command:
 
 ```shell
 git branch -a
 ```
 
+![git-branch-a-2](../images/git-branch-a-2.png)
 
 
-Notice the new local branch does not exist as a remote branch
 
-Switch to your new branch with the following command:
+9. Notice that **branch2** does not exist as a remote branch in GitHub.  This is normal behavior and something we will work with later on.
 
-
+10. Switch your working branch to **branch2** with the following command:
 
 ```shell
 git checkout branch2
 ```
 
+![git-checkout-branch2](../images/git-checkout-branch2.png)
 
 
-Use the following command to, again, list your local branches:
 
-
+11. Verify your current, working branch with the following command:
 
 ```shell
 git branch
 ```
 
+![git-branch-3](../images/git-branch-3.png)
 
 
-Notice the highlight of and asterisk your new branch
 
-Use the following command to simultaneously create and switch to a new branch
-
-
+12. Notice the asterisk next to **branch2** to indicate that **branch2** is our current, working branch.
+13. Create and simultaneously switch to a new branch with the following command:
 
 ```shell
 git checkout -b branch3
 ```
 
-
-
-Use the following command to, again, list your local branches:
-
-
-
-```shell
-git branch
-```
+![git-checkout-b-branch3](../images/git-checkout-b-branch3.png)
 
 
 
-Notice the highlight of and asterisk your new branch
-
-Use the following command to delete one of your branches:
-
-
-
-```shell
-git branch -d Branch2
-```
-
-
-
-Use the following command to, again, list your local branches:
-
-
+14. The **git checkout** command allows you to switch between branches and the **-b** flag creates a new branch *and* switches to the new branch.  This is just a shortcut for **git branch *branch_name*** followed by **git checkout *branch_name***.
+15. List your local branches again with the following command:
 
 ```shell
 git branch
 ```
 
+![git-branch-4](../images/git-branch-4.png)
 
 
-Notice the removal of your branch
+
+16. Notice the asterisk next to **branch3** to indicate that **branch3** is our current, working branch.
+
+17. For our purpose we only need one branch, in addition to the **master** branch, so we can remove one of our new branches with the following command:
+
+```shell
+git branch -d branch2
+```
+
+![git-branch-d-branch2](../images/git-branch-d-branch2.png)
 
 
+
+18. Review your branches with the following command:
+
+```shell
+git branch
+```
+
+![git-branch-5](../images/git-branch-5.png)
+
+
+
+19. Notice that **branch2** is no longer available.
+
+
+
+We can make some changes to our repository within **branch3** without impacting the **master** branch.  Clickthe link below to continue:
 
 [Next Section > Make Local Git Repository Changes](section_8.md "Make Local Git Repository Changes")
 
