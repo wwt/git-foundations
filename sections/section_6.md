@@ -25,7 +25,7 @@ For the purpose of familiarization with the process to configure different Git c
 
 **Edit Git Configuration Files**
 
-1. Configure a **system-wide** Git **username** and **email address** with the following commands:
+1. From your Docker container prompt, configure a **system-wide** Git **username** and **email address** with the following commands:
 
 
 ```shell
