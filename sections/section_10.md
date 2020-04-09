@@ -1,4 +1,4 @@
-# Stage, Commit, &, Push New Changes to GitHub
+# Review Changes in the GitHub Repository
 
 
 
