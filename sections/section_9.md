@@ -43,6 +43,8 @@ git status
 
 5. Issue commands to:
    - Commit the **my_script.py** file to the local Git repository.
+     - The **-m** flag represents the required message that accompanies the commit.
+     - There are other ways to add a message to a commit although a message is required for each commit.
    - Review the Git repository status.
 
 ```shell
