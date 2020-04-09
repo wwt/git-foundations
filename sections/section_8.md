@@ -1,75 +1,58 @@
 # Make Local Git Repository Changes
 
+Let's make a change to one of the files in our local repository and see how Git reacts to that change.
 
 
-From your terminal, use the following command to view the status of your local repository:
 
+**Append the README.md File**
+
+1. From the Docker Container prompt, view the Git status of your local repository with the following command:
 
 
 ```shell
 git status
 ```
 
+![git-status-1](../images/git-status-1.png)
 
 
-Notice your working branch and that you have no changes to commit
 
-**The following requires a text editor and this guide uses VIM**
-**You may, alternatively, use the text editor of your choice**
-
-Open your .gitignore file in VIM to insert the name '.DS_Store'
-Adding the name '.DS_Store' will keep the macOS Spotlight index from syncing to GitHub
-Use the following command to open VIM:
-
-
+2. Notice your working branch, **branch3** and that you have no changes to commit.
+3. Write a new line to the **README.md** file with the following command:
 
 ```shell
-vi .gitignore
+echo 'This is a new line in the README.md file' >> README.md
 ```
 
-Use the following VIM commands to insert the necessary text and save the changes:
-
-i enters 'Insert' mode
-macOS Spotlight Index
-
-Press the 'Return' or 'Enter' key to move to a new line
-
-
-```shell
-.DS_Store
-```
-
-Press the 'Return' or 'Enter' key, to keep the file format/readability consistency
-
-Press the 'esc' key
+![container-echo-readme](../images/container-echo-readme.png)
 
 
 
-```shell
-:wq
-```
-
-Press the 'Return' or 'Enter' key
-
-Use the following command to view your changes:
-
-
+4. VIew the changes between the copy of **README.md** in the working directory and the local repository with the following command:
 
 ```shell
 git diff
 ```
 
-Use the following command to view the status of your local repository:
+![git-diff-readme-1](../images/git-diff-readme-1.png)
 
 
+
+5. View the Git status of your local repository with the following command:
 
 ```shell
 git status
 ```
 
-Notice the '.gitignore' file in the section, 'Changes not staged for commit'
+![git-status-2](../images/git-status-2.png)
 
 
 
-[Next Section > Stage, Commit, & Push Changes to GitHub](section_9.md "Stage, Commit, & Push Changes to GitHub")
+6. Notice the **README.md** file in the section, **Changes not staged for commit**.
+
+
+
+We made a change to one of the files in our working directory and next up is the process to move files from the working directory, to the staging area, and to the local repository (HEAD).  Click  the link below to continue:
+
+[Next Section > Make Local Git Repository Changes With Atomic Commits](section_9.md "SMake Local Git Repository Changes With Atomic Commits")
 
