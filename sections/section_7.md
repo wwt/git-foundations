@@ -134,7 +134,7 @@ git branch
 
 
 
-We can make some changes to our repository within **branch3** without impacting the **master** branch.  Clickthe link below to continue:
+We can make some changes to our repository within **branch3** without impacting the **master** branch.  Click the link below to continue:
 
 [Next Section > Make Local Git Repository Changes](section_8.md "Make Local Git Repository Changes")
 
