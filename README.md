@@ -24,12 +24,11 @@ Git is a distributed source control management (SCM) tool.  This walkthough is a
 6. [View & Configure Local Git Settings](sections/section_6.md "View & Configure Local Git Settings")
 7. [Manage Local Git Branches](sections/section_7.md "Manage Local Git Branches")
 8. [Make Local Git Repository Changes](sections/section_8.md "Make Local Git Repository Changes")
-9. [Stage, Commit, & Push Changes to GitHub](sections/section_9.md "Stage, Commit, & Push Changes to GitHub")
-10. [Make Local Git Repository Changes with Atomic Commits](sections/section_10.md "Make Local Git Repository Changes with Atomic Commits")
-11. [Review Changes in the GitHub Repository](sections/section_11.md "Review Changes in the GitHub Repository")
-12. [Pull/Merge Changes in GitHub](sections/section_12.md "Pull/Merge Changes in GitHub")
-13. [Review The Pull Request Impact to Your Local Git Repository](sections/section_13.md "Review The Pull Request Impact to Your Local Git Repository")
-14. [Clone Another Repository, Make Changes, and Create a New Pull Request](sections/section_14.md "Clone Another Repository, Make Changes, and Create a New Pull Request")
+9. [Make Local Git Repository Changes With Atomic Commits](sections/section_9.md "Make Local Git Repository Changes With Atomic Commits")
+10. [Review Changes in the GitHub Repository](sections/section_10.md "Review Changes in the GitHub Repository")
+11. [Pull/Merge Changes in GitHub](sections/section_11.md "Pull/Merge Changes in GitHub")
+12. [Review The Pull Request Impact to Your Local Git Repository](sections/section_12.md "Review The Pull Request Impact to Your Local Git Repository")
+13. [Clone Another Repository, Make Changes, and Create a New Pull Request](sections/section_13.md "Clone Another Repository, Make Changes, and Create a New Pull Request")
 
 ------
 

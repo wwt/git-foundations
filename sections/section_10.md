@@ -2,14 +2,6 @@
 
 
 
-From your terminal, push your changes to GitHub with the following command:
-
-
-
-```shell
-git push
-```
-
 Log on to https://github.wwt.com (ATC VPN required)
 Open your Git repository
 From the home screen, your repository list is on the left
