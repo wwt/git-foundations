@@ -1,32 +1,65 @@
 # Pull/Merge Changes in GitHub
 
+A **pull request** is GitHub's terminology for starting the process to merge changes from one branch into another.  In this example, we will merge changes from **branch3** into **master**, effectively updating the mainline copy of our repository. 
 
 
-Log on to https://github.wwt.com (ATC VPN required)
-Open your Git repository
-From the home screen, your repository list is on the left
 
-Locate and click the green, 'Compare & pull request' button in the header
+**Create a Pull Request**
 
-Review the 'Open a pull request' page and observe the following:
-The pull request defaults to merging your current branch (Branch3) to 'master'
-You may use the text input boxes to assign a title and comments to your pull request
-You may use the fields on the right side of the page to assign reviewers/assignees
-Presumably, someone would review your changes before merging the changes
-You may review the commits, changed files, and contributors at the bottom of the page
+1. Locate and click the green **Compare & pull request** button:
 
-Locate and click the green, 'Create pull request' button below the text input boxes
-The ensuing page will give you a final opportunity to review changes
-
-Locate and click the green, 'Merge pull request' button to start the merge
-Click the 'Confirm merge' button to complete the merge
-You will see messages which read:
-'Pull request successfully merged and closed'
-'You’re all set—the Branch3 branch can be safely deleted'
-
-Click the 'Delete branch' to close the pull request and remove 'Branch3'
+![github-pull-request-initiate](../images/github-pull-request-initiate.png)
 
 
+
+2. Add the following details to the **pull request**:
+   - **Title - *Branch3***
+   - **Comment - *Merge of changes from \*\* branch3\*\* to \*\*master\*\****
+   - Add your own GitHub account to the **Assignees** list.
+     - Typically, you would not assign a pull request to yourself.  Instead, you would assign the pull request to a peer for a review by a second set of eyes.  For the purpose of this walkthough, it's okay to choose your own account.
+3. Click the green **Create pull request** button:
+
+![github-pull-request-open](../images/github-pull-request-open.png)
+
+
+
+**Merge the Pull Request**
+
+1. Since you are the assignee for this **pull request**, you get the opportunity to review all of the commits.
+2. Review the details of the **pull request** and click the green **Merge pull request** button:
+
+![github-pull-request-merge](../images/github-pull-request-merge.png)
+
+
+
+3. GitHub gives you one more prompt to confirm the merge action - click the green **Confirm merge** button to complete the **pull request**.
+
+![github-pull-request-merge-confirm](../images/github-pull-request-merge-confirm.png)
+
+
+
+**Remove Branch3 from GitHub**
+
+1. Just in case you didn't confirm the merge action enough already, GitHub gives you the option to revert the operation.  For our purpose, we can skip this step.
+2. In some cases, you may want to retain branches after you merge their changes into **master** or any other branch.  In our case, we will remove **branch3** to keep from cluttering the repo with a history of all branches.  Click the **Delete branch** button to remove **branch3** from GitHub.
+
+![github-pull-branch-delete](../images/github-pull-branch-delete.png)
+
+
+
+2. Click the **git-repo-1** link at the top of the window to return to the repository home page.
+
+![github-pull-branch-delete-done](../images/github-pull-branch-delete-done.png)
+
+
+
+3. Notice the message which indicates the merge of the **pull request**.
+
+![github-pull-request-complete](../images/github-pull-request-complete.png)
+
+
+
+We are just about done.  Next up, we will look at how the merge of the **pull request** in GitHub impacts our local Git repository.  Click the link below to continue:
 
 [Next Section > Review The Pull Request Impact to Your Local Git Repository](section_12.md "Review The Pull Request Impact to Your Local Git Repository")
 
