@@ -39,6 +39,8 @@ Let's take a look at how the changes we pushed from our local repository impact 
 
 
 
+6. Click the **git-repo-1** link at the top of the window to return to the repository home page.
+
 Now we can start the process to merge our local changes to the repository, from **branch3**, into the **master** branch.  Click the link below to continue:
 
 [Next Section > Pull/Merge Changes in GitHub](section_11.md "Pull/Merge Changes in GitHub")
