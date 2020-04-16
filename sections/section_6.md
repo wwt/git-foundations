@@ -111,7 +111,7 @@ cat .git/config
 
 ```shell
 git config user.name
-git config email.address
+git config user.email
 ```
 
 ![git-config-repo-check](../images/git-config-repo-check.png)
@@ -134,6 +134,10 @@ git config user.email
 
 4. Outside of our repository we see the both the **user.name** and **user.email** values come from the **global** configuration file (notice the name suffix).
 5. Change the working directory back to our local repository before we continue with the following command:
+
+```shell
+cd git-repo-1
+```
 
 ![container-cd-repo](../images/container-cd-repo.png)
 
