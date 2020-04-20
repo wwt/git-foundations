@@ -2,7 +2,10 @@
 
 ### Overview
 
-Git is a distributed source control management (SCM) tool.  This walkthough is a series of practical, hands-on exercises to familiarize you with the use of Git and assumes you have a basic understanding of Git use cases, terminology, and file areas (working, staging, & HEAD).
+Git is a distributed source control management (SCM) tool.  This walkthough is a series of practical, hands-on exercises to familiarize you with the use of Git and assumes you understand some Git use cases, terminology, and file areas (working, staging, & HEAD).  If you need some quick and dirty Git background information, check out these resources:
+
+- [Verson Control 101 - WWT Video (16 minutes)](https://www.wwt.com/video/introduction-to-version-control)
+- [WWT Programmability Foundations Lab - Version Control Section](https://www.wwt.com/lab/programmability-foundations-lab)
 
 ------
 
