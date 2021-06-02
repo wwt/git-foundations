@@ -1,6 +1,6 @@
 # Pull/Merge Changes in GitHub
 
-A **pull request** is GitHub's terminology for starting the process to merge changes from one branch into another. In this example, we will merge changes from **branch3** into **master**, effectively updating the mainline copy of our repository.
+A **pull request** is GitHub's terminology for starting the process to merge changes from one branch into another. In this example, we will merge changes from **branch3** into **main**, effectively updating the mainline copy of our repository.
 
 ## **Create a Pull Request**
 
@@ -10,7 +10,7 @@ A **pull request** is GitHub's terminology for starting the process to merge cha
 
 2. Add the following details to the **pull request**:
    - **Title - _Branch3_**
-   - **Comment - \*Merge of changes from \*\* branch3\*\* to \*\*master\*\*\***
+   - **Comment - \*Merge of changes from \*\* branch3\*\* to \*\*main\*\*\***
    - Add your own GitHub account to the **Assignees** list.
      - Typically, you would not assign a pull request to yourself. Instead, you would assign the pull request to a peer for a review by a second set of eyes. For the purpose of this walkthrough, it's okay to choose your own account.
 3. Click the green **Create pull request** button:
@@ -31,7 +31,7 @@ A **pull request** is GitHub's terminology for starting the process to merge cha
 ## **Remove Branch3 from GitHub**
 
 1. Just in case you didn't confirm the merge action enough already, GitHub gives you the option to revert the operation. For our purpose, we can skip this step.
-2. In some cases, you may want to retain branches after you merge their changes into **master** or any other branch. In our case, we will remove **branch3** to keep from cluttering the repo with a history of all branches. Click the **Delete branch** button to remove **branch3** from GitHub.
+2. In some cases, you may want to retain branches after you merge their changes into **main** or any other branch. In our case, we will remove **branch3** to keep from cluttering the repo with a history of all branches. Click the **Delete branch** button to remove **branch3** from GitHub.
 
 ![github-pull-branch-delete](../images/github-pull-branch-delete.png)
 

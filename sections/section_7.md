@@ -1,6 +1,6 @@
 # Manage Local Git Branches
 
-Our Git environment is ready for us to start work on our repository. Typically, especially on a project with many contributors, Git branches allow each contributor to have as many non-overlapping copies of the repository as they need to make and manage their changes. We will do some basic work with branches, so we can, later, contribute our changes to the master branch of the GitHub repository.
+Our Git environment is ready for us to start work on our repository. Typically, especially on a project with many contributors, Git branches allow each contributor to have as many non-overlapping copies of the repository as they need to make and manage their changes. We will do some basic work with branches, so we can, later, contribute our changes to the main branch of the GitHub repository.
 
 ## **View, Create, Switch To & Remove Branches**
 
@@ -12,10 +12,10 @@ git branch
 
 ![git-branch-1](../images/git-branch-1.png)
 
-2. Notice that only the **master** branch cloned to your local repository from GitHub.
+2. Notice that only the **main** branch cloned to your local repository from GitHub.
 
-   - This is normal/correct behavior; only the **master** branch clones from GitHub because other branches (like the **branch1** branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the master copy of the repository.
-   - The asterisk to the left of **master** indicates that **master** is our current, working branch.
+   - This is normal/correct behavior; only the **main** branch clones from GitHub because other branches (like the **branch1** branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the main copy of the repository.
+   - The asterisk to the left of **main** indicates that **main** is our current, working branch.
 
 3. List all repository branches, local _and_ remote, with the following command:
 
@@ -25,9 +25,9 @@ git branch -a
 
 ![git-branch-a-1](../images/git-branch-a-1.png)
 
-4. Notice how we see a **master** branch plus an **origin/master** branch.
+4. Notice how we see a **main** branch plus an **origin/main** branch.
 
-   - **Origin** is how our local repository refers to GitHub so **origin/master** represents the **master** branch on GitHub.
+   - **Origin** is how our local repository refers to GitHub so **origin/main** represents the **main** branch on GitHub.
 
 5. Create a new, local branch named **branch2**, with the following command:
 
@@ -45,7 +45,7 @@ git branch
 
 ![git-branch-2](../images/git-branch-2.png)
 
-7. Notice your new branch, **branch2** and also that the asterisk next to **master** tells us that, even though we just created **branch2**, our working branch is still **master**.
+7. Notice your new branch, **branch2** and also that the asterisk next to **main** tells us that, even though we just created **branch2**, our working branch is still **main**.
 8. Again, list all branches, local and remote, with the following command:
 
 ```shell
@@ -92,7 +92,7 @@ git branch
 
 16. Notice the asterisk next to **branch3** to indicate that **branch3** is our current, working branch.
 
-17. For our purpose we only need one branch, in addition to the **master** branch, so we can remove one of our new branches with the following command:
+17. For our purpose we only need one branch, in addition to the **main** branch, so we can remove one of our new branches with the following command:
 
 ```shell
 git branch -d branch2
@@ -110,6 +110,6 @@ git branch
 
 19. Notice that **branch2** is no longer available.
 
-We can make some changes to our repository within **branch3** without impacting the **master** branch. Click the link below to continue:
+We can make some changes to our repository within **branch3** without impacting the **main** branch. Click the link below to continue:
 
 [Next Section > Make Local Git Repository Changes](section_8.md "Make Local Git Repository Changes")

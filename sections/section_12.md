@@ -1,6 +1,6 @@
 # Review The Pull Request Impact to Your Local Git Repository
 
-The GitHub repository has a new version of the **master** branch, but our local repository isn't aware of the change yet. Before we make new changes to our local repository, let's get it back in sync with GitHub and clean up the branch (**branch3**) which is no longer in GitHub.
+The GitHub repository has a new version of the **main** branch, but our local repository isn't aware of the change yet. Before we make new changes to our local repository, let's get it back in sync with GitHub and clean up the branch (**branch3**) which is no longer in GitHub.
 
 ## **Pull Changes from GitHub**
 
@@ -25,26 +25,26 @@ git branch
 ![git-branch-5](../images/git-branch-5.png)
 
 4. Notice **branch3** remains in your local repository.
-5. Change your working branch to **master** with the following command:
+5. Change your working branch to **main** with the following command:
 
 ```shell
-git checkout master
+git checkout main
 ```
 
-![git-checkout-master](../images/git-checkout-master.png)
+![git-checkout-main](../images/git-checkout-main.png)
 
-6. Notice the message which indicates the local branch **master** is behind the GitHub **master** branch (**origin/master**) by three commits and can be fast-forwarded.
+6. Notice the message which indicates the local branch **main** is behind the GitHub **main** branch (**origin/main**) by three commits and can be fast-forwarded.
 
-7. Merge the GitHub **master** branch with your local repository **master** branch using the following command:
+7. Merge the GitHub **main** branch with your local repository **main** branch using the following command:
 
 ```shell
 git pull
 ```
 
-![git-pull-master](../images/git-pull-master.png)
+![git-pull-main](../images/git-pull-main.png)
 
 8. Notice the output which indicates the file changes and insertions.
-9. Since our local **master** branch now in sync with the latest copy of the GitHub repository, we no longer need our local copy of **branch3**. Remove **branch3** from the local repository with the following command:
+9. Since our local **main** branch now in sync with the latest copy of the GitHub repository, we no longer need our local copy of **branch3**. Remove **branch3** from the local repository with the following command:
 
 ```shell
 git branch -d branch3
@@ -60,7 +60,7 @@ git branch
 
 ![git-branch-7](../images/git-branch-7.png)
 
-11. Notice that **master** is now the only branch in your local repository.
+11. Notice that **main** is now the only branch in your local repository.
 
 You did it! You:
 
