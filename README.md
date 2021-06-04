@@ -25,7 +25,7 @@ Git is a distributed source control management (SCM) tool. This walkthrough is a
 3. [Create a GitHub Repository](sections/section_3.md "Create a GitHub Repository")
 4. [Create a New Branch in a GitHub Repository](sections/section_4.md "Create a New Branch in a GitHub Repository")
 5. [Clone a GitHub Repository to Your Computer](sections/section_5.md "Clone a GitHub Repository to Your Computer")
-6. [View & Configure Local Git Settings on your Computer](sections/section_6.md "View & Configure Local Git Settings on your Computer")
+6. [View & Configure Local Git Settings on Your Computer](sections/section_6.md "View & Configure Local Git Settings on Your Computer")
 7. [Manage Local Git Branches](sections/section_7.md "Manage Local Git Branches")
 8. [Make Local Git Repository Changes](sections/section_8.md "Make Local Git Repository Changes")
 9. [Make Local Git Repository Changes With Atomic Commits](sections/section_9.md "Make Local Git Repository Changes With Atomic Commits")

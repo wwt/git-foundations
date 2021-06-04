@@ -1,6 +1,6 @@
 # Hands-On Environment Setup
 
-A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. You don't need any Docker experience for these exercises. Just make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download") running on your Windows or macOS computer, and we will walk you through the environment setup.
+A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. You don't need any Docker experience for these exercises. Just make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download") running on your Windows or macOS computer, and we will walk you through the development environment setup.
 
 It's a two-step process (download and then run) to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps with a single command.
 

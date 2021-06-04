@@ -1,4 +1,4 @@
-# View & Configure Local Git Settings
+# View & Configure Local Git Settings on Your Computer
 
 Git requires very little information before we can start to make local repository changes and then push those changes to GitHub. We just need to tell Git the **name** and **email address** of the person contributing changes, as a way to help all repository viewers and contributors understand who contributes what. We provide Git our **name** and **email address** in one or more configuration files.
 

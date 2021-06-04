@@ -70,4 +70,4 @@ ls -l .git
 
 We now have a copy of our GitHub repo in our Docker environment. Before we make changes to our local copy of the repository, we need to configure a few local Git settings. Click the link below to continue:
 
-[Next Section > View & Configure Local Git Settings](section_6.md "View & Configure Local Git Settings")
+[Next Section > View & Configure Local Git Settings on Your Computer](section_6.md "View & Configure Local Git Settings on Your Computer")

@@ -1,4 +1,4 @@
-# Set up a GitHub Repository
+# Create a GitHub Repository
 
 You have the option to create Git repositories either on your local machine (within a Docker Container in our case) or on a remote Git environment; it's a mater of personal preference. In either case, you can keep the Git repositories in sync. In this example we will create a Git repository on GitHub and then, later, clone the repository to our local environment.
 

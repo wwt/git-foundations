@@ -53,4 +53,4 @@ cat ~/.ssh/id_rsa.pub
 
 SSH authentication setup is complete, and we are ready to create a new GitHub repository. Click the link below to continue:
 
-[Next Section > Set up a GitHub Repository](section_3.md "Setup a GitHub Repository")
+[Next Section > Create a GitHub Repository](section_3.md "Create a GitHub Repository")
