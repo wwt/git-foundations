@@ -10,15 +10,17 @@ docker info
 
 :clap: If your output looks something like this, you are all set:
 
-// SCREENSHOT
+![docker-container-run](../images/docker-info.png "docker info")
+
+---
 
 :exclamation: If you see an error message similiar to the examples below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
 
-// SCREENSHOT
-
-There are two-steps in the process (download and then run) to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps with a single command.
+![docker-container-run](../images/docker-info-bad.png "docker info - Docker not running")
 
 ---
+
+There are two-steps in the process (download and then run) to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps with a single command.
 
 1. Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and enter the following command:
 
@@ -36,7 +38,7 @@ Expect the first run of this command to take a few minutes, while Docker Desktop
 
 You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt changes to `/development#`:
 
-![docker-container-run](../images/docker-container-run.png)
+![docker-container-run](../images/docker-container-run.png "docker container run -it --name git-foundations wwt01/alpine-network-dev")
 
 ---
 
@@ -51,7 +53,7 @@ cat /etc/*-release
 
 3. You are in the Docker Container environment if your output looks like this:
 
-![container-release-info](../images/container-release-info.png)
+![container-release-info](../images/container-release-info.png "cat /etc/*-release")
 
 ---
 
@@ -63,9 +65,13 @@ git --version
 
 The result of that command should look something like this:
 
-![git-version](../images/git-version.png)
+![git-version](../images/git-version.png "git --version")
 
-**Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:**
+---
+
+Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:
+
+:bulb: **Note: Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.**
 
 ```shell
 control + d (key sequence) # Stops your Container and returns you to your terminal prompt
