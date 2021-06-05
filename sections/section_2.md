@@ -20,6 +20,8 @@ ssh-keygen
 
 ![container-ssh-keygen](../images/container-ssh-keygen.png)
 
+---
+
 3. Display the new SSH public key file to the terminal with this command:
 
 ```shell
@@ -37,17 +39,25 @@ cat ~/.ssh/id_rsa.pub
 
 ![github-settings](../images/github-settings.png)
 
+---
+
 2. Click on the **SSH and GPG keys** tab on the left side of the window.
 
 ![github-profile](../images/github-profile.png)
+
+---
 
 3. Click the green, **New SSH key** button
 
 ![github-ssh-keys](../images/github-ssh-keys.png)
 
+---
+
 4. Provide a title for the SSH key, paste the SSH key file text from your container into the **Key** field, and click the green, **Add SSH key** button.
 
 ![github-add-ssh-key](../images/github-add-ssh-key.png)
+
+---
 
 5. Confirm that GitHub now has a copy of your container's SSH public key.
 

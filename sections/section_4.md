@@ -10,6 +10,8 @@ Before we clone our new repository to our Docker Container, let's create a new b
 
 ![github-new-branch](../images/github-new-branch.png)
 
+---
+
 2. Click the **Branch: branch1** button to expand the **Branch** drop-down menu and notice there are now two branches, **main** and **branch1**.
 
 ![github-branch-list](../images/github-branch-list.png)

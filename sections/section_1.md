@@ -38,6 +38,8 @@ You will know your Docker Container environment is ready for the Git hands-on ex
 
 ![docker-container-run](../images/docker-container-run.png)
 
+---
+
 2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
 
 :bulb: **Note: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.** 
@@ -50,6 +52,8 @@ cat /etc/*-release
 3. You are in the Docker Container environment if your output looks like this:
 
 ![container-release-info](../images/container-release-info.png)
+
+---
 
 4. Check the version of Git in the environment with the following command:
 

@@ -10,6 +10,8 @@ You have the option to create Git repositories either on your local machine (wit
 
 ![github-new-repo](../images/github-new-repo.png)
 
+---
+
 3. You need to enter some information and choose some options to create the repository.
    - **Name** — **_git-repo-1_**
    - **Description** — **_Git Repository \#1_**
@@ -20,6 +22,8 @@ You have the option to create Git repositories either on your local machine (wit
    - Click the **Create repository** button
 
 ![github-new-repo-details](../images/github-new-repo-details.png)
+
+---
 
 4. Take a look at your new repository! You have two files, **.gitignore** and **README.md**.
 
