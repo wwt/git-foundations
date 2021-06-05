@@ -80,7 +80,7 @@ git branch
 
 11. Notice that **main** is now the only branch in your local repository.
 
-You did it! You:
+:star: You did it! You:
 
 - Set up a new GitHub repository.
 - Set up a local Git environment in a Docker Container.
