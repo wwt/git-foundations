@@ -8,7 +8,7 @@ You have the option to create Git repositories either on your local machine (wit
 2. The view you see may vary depending on whether your GitHub account is new. You should see a green button on the left side of the window which reads either **Create repository**, **New repository**, or something similar.
    - If you don't see the button, navigate to your GitHub home page with click to the GitHub logo in the upper-left corner of any GitHub window.
 
-![github-new-repo](../images/github-new-repo.png)
+![github-new-repo](../images/github-new-repo.png "Create new repository")
 
 ---
 
@@ -21,13 +21,13 @@ You have the option to create Git repositories either on your local machine (wit
    - Expand the **Add .gitignore** dropdown and type or choose **Python**
    - Click the **Create repository** button
 
-![github-new-repo-details](../images/github-new-repo-details.png)
+![github-new-repo-details](../images/github-new-repo-details.png "Add new repository details")
 
 ---
 
 4. Take a look at your new repository! You have two files, **.gitignore** and **README.md**.
 
-![github-new-repo-complete](../images/github-new-repo-complete.png)
+![github-new-repo-complete](../images/github-new-repo-complete.png "New repository files")
 
 Our new repository is ready for use. We will briefly look at GitHub branches before next. Click the link below to continue:
 
