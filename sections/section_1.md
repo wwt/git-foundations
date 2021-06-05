@@ -8,7 +8,7 @@ A WWT-built Docker Image provides a ready-to-use environment for the Git hands-o
 docker info
 ```
 
-:white_check_mark: If your output looks something like this, you are all set:
+:clap: If your output looks something like this, you are all set:
 
 // SCREENSHOT
 
