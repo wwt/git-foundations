@@ -10,13 +10,13 @@ docker info
 
 :clap: If your output looks something like this, you are all set:
 
-![docker-container-run](../images/docker-info.png "docker info")
+![docker-info](../images/docker-info.png "docker info")
 
 ---
 
 :exclamation: If you see an error message similiar to the examples below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
 
-![docker-container-run](../images/docker-info-bad.png "docker info - Docker not running")
+![docker-info-bad](../images/docker-info-bad.png "docker info - Docker not running")
 
 ---
 
@@ -79,6 +79,8 @@ docker container start git-foundations # Restarts your Container in the backgrou
 docker container attach git-foundations # Returns you to the Container prompt
 docker container rm git-foundations # Destroys your container so you can start over
 ```
+
+---
 
 Your environment is set up and ready to use! Not to painful so far, right? Click the link below to get started with Git:
 
