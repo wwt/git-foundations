@@ -29,7 +29,7 @@ cat ~/.ssh/id_rsa.pub
 
 ![container-ssh-key](../images/container-ssh-key.png)
 
-4. Copy the full contents of the file to your clipboard including the **ssh-rsa** at the beginning of the file and the **root@container_id** at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.
+4. Copy the full contents of the file to your clipboard including the **ssh-rsa** at the beginning of the file and the **root@_container_id_** at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.
 
 ## **Setup GitHub SSH Key Authentication**
 
