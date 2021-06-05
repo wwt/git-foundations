@@ -9,4 +9,4 @@ The best way to become and stay familiar with Git is, as with so many things, is
 5. Create a merge request and wait for the repository owner to merge your changes.
 6. Pull the merged changes into your local Git repository.
 
-[Back to Repository Home](../README.md "Back to Repository Home")
+[Back to Repository Home](../index.md "Back to Repository Home")
