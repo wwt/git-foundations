@@ -4,8 +4,8 @@
 
 Git is a distributed source control management (SCM) tool. This walkthrough is a series of practical, hands-on exercises to familiarize you with the use of Git and assumes you understand some Git use cases, terminology, and file areas (working, staging, & HEAD). If you need some quick and dirty Git background information, check out these resources:
 
-- [Version Control 101 — WWT Video (16 minutes)](https://www.wwt.com/video/introduction-to-version-control "WWT Version Control 101")
-- [WWT Programmability Foundations Lab — Version Control Section](https://www.wwt.com/lab/programmability-foundations-lab " WWT Programmability Foundations - Version Control")
+- :video_camera: [Version Control 101 — WWT Video (16 minutes)](https://www.wwt.com/video/introduction-to-version-control "WWT Version Control 101")
+- :computer: [WWT Programmability Foundations Lab — Version Control Section](https://www.wwt.com/lab/programmability-foundations-lab " WWT Programmability Foundations - Version Control")
 
 ---
 
@@ -13,11 +13,11 @@ Git is a distributed source control management (SCM) tool. This walkthrough is a
 
 1. A Windows or macOS computer with [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download").
 
-   - [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
+   - If you are new to Docker, here are the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
 
    - Alternatively, you can [install Docker in a Linux Environment](https://docs.docker.com/engine/install/ "Install Docker in a Linux Environment") and complete the walkthrough.
 
-2. An account on [github.com](https://github.com/join "Join GitHub") account.
+2. An account on [github.com](https://github.com/join "Join GitHub").
 
 3. Your favorite terminal/shell program (iTerm, PowerShell, Bash, etc.).
 
