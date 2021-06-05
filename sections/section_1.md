@@ -2,23 +2,45 @@
 
 A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. You don't need any Docker experience for these exercises. Just make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download") running on your Windows or macOS computer, and we will walk you through the development environment setup.
 
-It's a two-step process (download and then run) to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps with a single command.
-
-1. Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and type the following command:
+:bulb:**Note: You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:**
 
 ```shell
+docker info
+```
+
+:white_check_mark: If your output looks something like this, you are all set:
+
+// SCREENSHOT
+
+:exclamation: If you see an error message similiar to the examples below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
+
+// SCREENSHOT
+
+There are two-steps in the process (download and then run) to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps with a single command.
+
+---
+
+1. Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and enter the following command:
+
+```shell
+# This command will download the 'wwt01/alpine-network-dev' Image from Docker Hub,
+# create a Docker Container with the name 'git-foundations',
+# and attach to the terminal of the 'git-foundations' Container.
 docker container run -it --name git-foundations wwt01/alpine-network-dev
 ```
 
-Expect the first run of this command to take a few minutes, while Docker Desktop downloads the Image from Docker Hub. Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.
+Expect the first run of this command to take a few minutes, while Docker Desktop downloads the [Image from Docker Hub](https://hub.docker.com/r/wwt01/alpine-network-dev "WWT Development Docker Image"). Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.
 
-You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt reads **/development**:
+You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt changes to `/development#`:
 
 ![docker-container-run](../images/docker-container-run.png)
 
-2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to double-check:
+2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
+
+:bulb: **Note: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.** 
 
 ```shell
+# This command displays the content of the Container operating system release file 
 cat /etc/*-release
 ```
 
