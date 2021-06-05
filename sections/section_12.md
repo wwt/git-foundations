@@ -7,6 +7,7 @@ The GitHub repository has a new version of the **main** branch, but our local re
 1. From your terminal, pull the latest changes from GitHub to your local repository with the following command:
 
 ```shell
+# Download and merge changes from the remote repository to the local repository
 git pull
 ```
 
@@ -16,18 +17,25 @@ git pull
 
    - However, Git was unable to locate **branch3** in GitHub because, of course, we deleted **branch3** in GitHub after merging our **pull request**.
 
+---
+
 3. List your local branches with the following command:
 
 ```shell
+# Display all local git branches
 git branch
 ```
 
 ![git-branch-5](../images/git-branch-5.png)
 
 4. Notice **branch3** remains in your local repository.
+
+---
+
 5. Change your working branch to **main** with the following command:
 
 ```shell
+# Switch the working branch from 'branch3' to 'main'
 git checkout main
 ```
 
@@ -35,26 +43,36 @@ git checkout main
 
 6. Notice the message which indicates the local branch **main** is behind the GitHub **main** branch (**origin/main**) by three commits and can be fast-forwarded.
 
+---
+
 7. Merge the GitHub **main** branch with your local repository **main** branch using the following command:
 
 ```shell
+# Download and merge changes from the remote repository to the local repository
 git pull
 ```
 
 ![git-pull-main](../images/git-pull-main.png)
 
 8. Notice the output which indicates the file changes and insertions.
+
+---
+
 9. Since our local **main** branch now in sync with the latest copy of the GitHub repository, we no longer need our local copy of **branch3**. Remove **branch3** from the local repository with the following command:
 
 ```shell
+# Delete the local branch named 'branch3'
 git branch -d branch3
 ```
 
 ![git-branch-d-branch3](../images/git-branch-d-branch3.png)
 
+---
+
 10. Confirm **branch3** no longer exists with the following command:
 
 ```shell
+# Display all local git branches
 git branch
 ```
 
@@ -66,7 +84,7 @@ You did it! You:
 
 - Set up a new GitHub repository.
 - Set up a local Git environment in a Docker Container.
-- Managed Git branches.
+- Managed local Git branches.
 - Staged and committed local repository changes.
 - Pushed branches and changes from your local Git environment to GitHub.
 - Merged changes in GitHub with a pull request.
