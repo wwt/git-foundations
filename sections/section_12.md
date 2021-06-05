@@ -82,13 +82,13 @@ git branch
 
 :star: You did it! You:
 
-- Set up a new GitHub repository.
-- Set up a local Git environment in a Docker Container.
-- Managed local Git branches.
-- Staged and committed local repository changes.
-- Pushed branches and changes from your local Git environment to GitHub.
-- Merged changes in GitHub with a pull request.
-- Synchronized merged GitHub changes to your local Git environment.
+:white_check_mark: Set up a new GitHub repository.
+:white_check_mark: Set up a local Git environment in a Docker Container.
+:white_check_mark: Managed local Git branches.
+:white_check_mark: Staged and committed local repository changes.
+:white_check_mark: Pushed branches and changes from your local Git environment to GitHub.
+:white_check_mark: Merged changes in GitHub with a pull request.
+:white_check_mark: Synchronized merged GitHub changes to your local Git environment.
 
 Click the link below to go to the last section and finish things up:
 
