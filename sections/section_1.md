@@ -23,13 +23,16 @@ There are two-steps in the process (download and then run) to create the Docker 
 1. Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and enter the following command:
 
 ```shell
-# This command will download the 'wwt01/alpine-network-dev' Image from Docker Hub,
-# create a Docker Container with the name 'git-foundations',
-# and attach to the terminal of the 'git-foundations' Container.
 docker container run -it --name git-foundations wwt01/alpine-network-dev
 ```
 
-Expect the first run of this command to take a few minutes, while Docker Desktop downloads the [Image from Docker Hub](https://hub.docker.com/r/wwt01/alpine-network-dev "WWT Development Docker Image"). Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.
+This command performs the following actions:
+
+- Downloads the 'wwt01/alpine-network-dev' Image from [Docker Hub](https://hub.docker.com/r/wwt01/alpine-network-dev "WWT Development Docker Image on Docker Hub").
+- Creates a Docker Container with the name 'git-foundations'.
+- Attaches to the terminal of the 'git-foundations' Container.
+
+Expect the first run of this command to take a few minutes, while Docker Desktop downloads the Image from Docker Hub. Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.
 
 You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt changes to `/development#`:
 
@@ -40,7 +43,7 @@ You will know your Docker Container environment is ready for the Git hands-on ex
 :bulb: **Note: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.** 
 
 ```shell
-# This command displays the content of the Container operating system release file 
+# Display the contents of the Container operating system release file 
 cat /etc/*-release
 ```
 

@@ -1,6 +1,6 @@
 # Setup GitHub Authentication
 
-Before we set up the GitHub repository, it's a good idea to consider how our local environment will authenticate to GitHub during synchronization. GitHub supports two types of secure transport, each with their own authentication mechanism(s):
+Before we setup a GitHub repository, it's a good idea to consider how our local environment (the 'git-foundations' Container) will authenticate to GitHub during synchronization. GitHub supports two types of secure transport, each with their own authentication mechanism(s):
 
 1. HTTPS with basic authentication (username and password) or API key.
 2. SSH with public/private key authentication.
@@ -12,6 +12,7 @@ Either choice is just as good as the other. In this environment we use SSH becau
 1. From the Docker Container prompt, generate an SSH key pair with the following command:
 
 ```shell
+# Generate a new public/private SSH key pair
 ssh-keygen
 ```
 
@@ -19,15 +20,16 @@ ssh-keygen
 
 ![container-ssh-keygen](../images/container-ssh-keygen.png)
 
-3. Print the new SSH public key file to the terminal with this command:
+3. Display the new SSH public key file to the terminal with this command:
 
 ```shell
+# Displays the contents of the new SSH public key file
 cat ~/.ssh/id_rsa.pub
 ```
 
 ![container-ssh-key](../images/container-ssh-key.png)
 
-4. Copy the full contents of the file to your clipboard including the **ssh-rsa** at the beginning of the file and the **root@container_id** at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our container and GitHub.
+4. Copy the full contents of the file to your clipboard including the **ssh-rsa** at the beginning of the file and the **root@container_id** at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.
 
 ## **Setup GitHub SSH Key Authentication**
 
@@ -51,6 +53,6 @@ cat ~/.ssh/id_rsa.pub
 
 ![github-new-ssh-key](../images/github-new-ssh-key.png)
 
-SSH authentication setup is complete, and we are ready to create a new GitHub repository. Click the link below to continue:
+SSH authentication setup is complete and we are ready to create a new GitHub repository. Click the link below to continue:
 
 [Next Section > Create a GitHub Repository](section_3.md "Create a GitHub Repository")
