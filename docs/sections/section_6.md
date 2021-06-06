@@ -173,7 +173,7 @@ cd git-repo-1
 pwd
 ```
 
-![container-cd-repo](../images/container-cd-repo.png "Return to the git repository directory")
+![container-cd-repo-1](../images/container-cd-repo-1.png "Return to the git repository directory")
 
 We have all the Git configuration settings in place to start working with our Git repository. Click the link below to continue:
 
