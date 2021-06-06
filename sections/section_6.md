@@ -13,13 +13,17 @@ Git has several tiers of configuration files, and we will explore the three most
   - Applies to a single repository.
   - Supersedes any overlapping **global** and **system-wide** settings.
 
-## **Git Name & Email Address Configuration**
+---
+
+## Git Name & Email Address Configuration
 
 It is most typical for people to add their **name** and **email address** to their **global** configuration settings, thereby making it possible to perform Git operations on any repository within their user profile. If a few Git repositories within a user profile require a different **name** or **email address** combination, it is typical to set those at the **local repository** level, on a case-by-case basis.
 
 For the purpose of familiarization with the process to configure different Git configuration files, we will configure our Docker environment in a non-typical, although functional way.
 
-## **Edit Git Configuration Files**
+---
+
+## Edit Git Configuration Files
 
 1. From your Docker container prompt, configure a **system-wide** Git **username** and **email address** with the following commands:
 
@@ -102,7 +106,9 @@ cat .git/config
 
 9. Notice there is a **name** value but no **email** value in the **local repository** configuration file.
 
-## **Review Effective Git Configuration Settings**
+---
+
+## Review Effective Git Configuration Settings
 
 1. Since we set Git configuration values in three separate places, we need to determine which values Git will use when we commit changes to the repository. To do that enter the following commands:
 

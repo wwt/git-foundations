@@ -2,7 +2,9 @@
 
 Let's take a look at how the changes we pushed from our local repository impact the GitHub repository.
 
-## **Local Repository Push Review**
+---
+
+## Local Repository Push Review
 
 1. Return to GitHub and notice some a few things about the repository:
    - There is still just one commit on the **main** branch; we haven't yet _merged_ the changes we pushed from **branch3** to GitHub.

@@ -2,7 +2,9 @@
 
 You have the option to create Git repositories either on your local machine (within a Docker Container in our case) or on a remote Git environment; it's a mater of personal preference. In either case, you can keep the Git repositories in sync. In this example we will create a Git repository on GitHub and then, later, clone the repository to our local environment.
 
-## **Create a new GitHub Repository**
+---
+
+## Create a new GitHub Repository
 
 1. Navigate to [https://github.com/login](https://github.com/login) and log in
 2. The view you see may vary depending on whether your GitHub account is new. You should see a green button on the left side of the window which reads either **Create repository**, **New repository**, or something similar.

@@ -2,7 +2,9 @@
 
 It is possible to commit many changes to a single file at once although doing so can make it difficult to find and roll-back individual changes within a commit. Alternatively, atomic commits are those which involve a separate commit for each change to a file. While atomic commits can be more tedious, they provide the benefit of isolating individual changes to individual commits.
 
-## **Create and Commit a New Python Script to the Repository**
+---
+
+## Create and Commit a New Python Script to the Repository
 
 1. Let's create a new file, a simple Python script, in our repository. The file will be blank to start, but we will add some code to the file shortly. In one series of commands we will:
    - Create a Python script.
@@ -77,7 +79,9 @@ git status
 
 6. Notice there are no changes to commit. The **README.md** file does have changes although isn't yet staged for commit; we will work on that shortly.
 
-## **Add Python Code to the my_script.py File**
+---
+
+## Add Python Code to the my_script.py File
 
 1. To make changes to the **my_script.py** file, we will add some executable Python code. Use the following commands to add some executable Python code to **my_script.py**:
 
@@ -138,9 +142,9 @@ git status
 # Commit all staged files to the repository with a descriptive comment
 git commit -m "Appended line to README.md and added commands to my_script.py"
 ```
->Replace this image 
+
 ![git-add-all](../images/git-add-all.png "Stage and commit 'my_script.py' and 'README.md' to the repository")
->Replace this image
+
 6. Notice the output from the `git status` command shows two files in the staging area, in the **Changes to be committed** section of the output.
 7. Also notice the output from the `git commit` command shows **two files with changes** and **a total of five new lines** (insertions).
 
@@ -165,7 +169,9 @@ git status
 
 10. Notice how information about the most recent commit is at the top of the `git log` output, and how the **commit messages** for each commit in the log provides important information about the changes a particular commit includes.  This is one reason descriptive commit messages are important.
 
-## **Push Committed Changes to GitHub**
+---
+
+## Push Committed Changes to GitHub
 
 1. We now have several atomic commits in our local repository that we can push to our GitHub repository. A **push** action will synchronize the local Git repository changes with the GitHub repository.
 

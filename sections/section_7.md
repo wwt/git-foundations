@@ -2,7 +2,9 @@
 
 Our Git environment is ready for us to start work on our repository. Typically, especially on a project with many contributors, Git branches allow each contributor to have as many non-overlapping copies of the repository as they need to make and manage their changes. We will do some basic work with branches, so we can, later, contribute our changes to the main branch of the GitHub repository.
 
-## **View, Create, Switch To, & Remove Branches**
+---
+
+## View, Create, Switch To, & Remove Branches
 
 1. From the Docker Container prompt, list your _local_ branches with the following command:
 

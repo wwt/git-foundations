@@ -2,7 +2,9 @@
 
 Let's make a change to one of the files in our local repository and see how Git reacts to that change.
 
-## **Append the README.md File**
+---
+
+## Append the README.md File
 
 1. From the Docker Container prompt, view the Git status of your local repository with the following command:
 

@@ -2,7 +2,9 @@
 
 Now it's time for us to work with our GitHub repository, and we start by copying or **cloning** the repository to our local Docker Container environment.
 
-## **Copy The Repository SSH URL**
+---
+
+## Copy The Repository SSH URL
 
 We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to HTTPS transport which adds an extra step (entering your username and password) to the cloning process.  The SSH keys we setup in [Section 2](section_2.md "Setup GitHub Authentication") allows our Docker Container and GitHub to communicate with each other without repeatedly prompting for credentials.
 
@@ -16,7 +18,9 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
 
 ![github-clone-ssh](../images/github-clone-ssh.png "Copy repository SSH URL")
 
-## **Clone & Review The Repository**
+---
+
+## Clone & Review The Repository
 
 1. From the Docker Container prompt, type the command `git clone` and then paste **_your repository URL_** as in this **_example_** (your repository URL will be different than in the example below):
 
