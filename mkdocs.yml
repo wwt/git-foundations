@@ -1,0 +1,70 @@
+---
+site_name: "Git Foundations Hands-On Walktrough"
+nav:
+  - Home: index.md
+  - Setup:
+    - Hands-On Environment Setup: sections/section_1.md
+    - Set up GitHub Authentication: sections/section_2.md
+  - Getting Started:
+    - Set up a GitHub Repository: sections/section_3.md
+    - Create a New Branch in a GitHub Repository: sections/section_4.md
+    - Clone a GitHub Repository to Your Computer: sections/section_5.md
+  - Working Locally:
+    - View & Configure Local Git Settings: sections/section_6.md
+    - Manage Local Git Branches: sections/section_7.md
+    - Make Local Git Repository Changes: sections/section_8.md
+    - Make Local Git Repository Changes With Atomic Commits: sections/section_9.md
+  - Collaboration:
+    - Review Changes in the GitHub Repository: sections/section_10.md
+    - Pull/Merge Changes in GitHub: sections/section_11.md
+    - Review The Pull Request Impact to Your Local Git Repository: sections/section_12.md
+    - Clone Another Repository, Make Changes, and Create a New Pull Request: sections/section_13.md
+
+# Repository
+repo_name: "wwt/git-foundations"
+repo_url: "https://github.com/wwt/git-foundations"
+edit_uri: ""
+
+
+
+# Configuration
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.tabs
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: img/logo.svg
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - attr_list
+  - pymdownx.tasklist
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.keys
+
