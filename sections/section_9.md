@@ -1,6 +1,6 @@
 # Make Local Git Repository Changes With Atomic Commits
 
-It is possible to commit many changes to a single file at once although doing so can make it difficult to find and roll back individual changes within a commit. Alternatively, atomic commits are those which involve a separate commit for each change to a file. While atomic commits can be more tedious, they provide the benefit of isolating individual changes to individual commits.
+It is possible to commit many changes to a single file at once although doing so can make it difficult to find and roll-back individual changes within a commit. Alternatively, atomic commits are those which involve a separate commit for each change to a file. While atomic commits can be more tedious, they provide the benefit of isolating individual changes to individual commits.
 
 ## **Create and Commit a New Python Script to the Repository**
 
@@ -24,7 +24,7 @@ ls -l
 git status
 ```
 
-![container-touch-my_script](../images/container-touch-my_script.png)
+![container-touch-my_script](../images/container-touch-my_script.png "Create a new Python script file")
 
 2. Notice the following:
 
@@ -47,25 +47,33 @@ git add my_script.py
 git status
 ```
 
-![git-add-my_script](../images/git-add-my_script.png)
+![git-add-my_script](../images/git-add-my_script.png "Add 'my_script.py' to the staging area")
 
 4. Notice that the **my_script.py** is now in the **Changes to be committed** section.
-   - This indicates **my_script.py** is now in the Git staging area.
+   - This indicates **my_script.py** is in the Git staging area.
 
 ---
 
 5. Issue commands to:
    - Commit the **my_script.py** file to the local Git repository.
-     - The **-m** flag represents the required message that accompanies the commit.
-     - There are other ways to add a message to a commit, although a message is required for each commit.
+     - The `-m` command option prefixes the **required message** that accompanies a commit to a Git repository.
+     - There are other ways to add a message to a commit, although the `-m` option is, generally, the simplest.
    - Review the Git repository status.
+
+:bulb: **Note: Commits to a Git repository require a commit message and the message should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.**
+
+:exclamation: **The `-m` option after the `git commit` command allows you to enter a commit message inline.  If you omit the `-m` option, Git will open the default text editor for the OS (VIM is the default editor for most Linux distributions) and prompt for a commit message.**
 
 ```shell
 # Move the file 'my_script.py' from the staging area to the repository
 git commit -m "Initial commit of 'my_script.py'"
 ```
 
-![git-commit-my_script](../images/git-commit-my_script.png)
+```shell
+# Display status information for the current git repository
+git status
+```
+![git-commit-my_script](../images/git-commit-my_script.png "Commit 'my_script.py' to the local repository")
 
 6. Notice there are no changes to commit. The **README.md** file does have changes although isn't yet staged for commit; we will work on that shortly.
 
@@ -123,10 +131,6 @@ git add .
 git commit -m "Appended line to README.md and added commands to my_script.py"
 ```
 
-:bulb: **Note: Commits to a Git repository require a commit message and the message should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.**
-
-:exclamation: **The `-m` option after the `git commit` command allows you to enter a commit message inline.  If you omit the `-m` option, Git will open the default text editor for the OS (VIM for most Linux distributions) and prompt for a commit message.**
-
 ![git-add-all](../images/git-add-all.png)
 
 ---
@@ -179,3 +183,7 @@ git push --set-upstream origin branch3
 Next we will take a look at our GitHub repository to review the changes we pushed from our local repository. Click the link below to continue:
 
 [Next Section > Review Changes in the GitHub Repository](section_10.md "Review Changes in the GitHub Repository")
+
+
+
+## Git Log
