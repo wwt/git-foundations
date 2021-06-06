@@ -2,7 +2,9 @@
 
 A **pull request** is GitHub's terminology for starting the process to merge changes from one branch into another. In this example, we will merge changes from **branch3** into **main**, effectively updating the mainline copy of our repository.
 
-## **Create a Pull Request**
+---
+
+## Create a Pull Request
 
 1. Locate and click the green **Compare & pull request** button:
 
@@ -17,7 +19,9 @@ A **pull request** is GitHub's terminology for starting the process to merge cha
 
 ![github-pull-request-open](../images/github-pull-request-open.png "Create pull request")
 
-## **Merge the Pull Request**
+---
+
+## Merge the Pull Request
 
 1. Since you are the assignee for this **pull request**, you get the opportunity to review all the commits.
 2. Review the details of the **pull request** and click the green **Merge pull request** button:
@@ -30,7 +34,9 @@ GitHub gives you one more prompt to confirm the merge action — click the green
 
 ![github-pull-request-merge-confirm](../images/github-pull-request-merge-confirm.png "Confirm pull request merge")
 
-## **Remove Branch3 from GitHub**
+---
+
+## Remove Branch3 from GitHub
 
 1. Just in case you didn't confirm the merge action enough already, GitHub gives you the option to revert the operation. For the purpose of this walkthrough, we can skip this step.
 2. In some cases, you may want to retain branches after you merge their changes into **main** or any other branch. In this case, we will remove **branch3** to keep from cluttering the repository with a history of all branches. Click the **Delete branch** button to remove **branch3** from GitHub.

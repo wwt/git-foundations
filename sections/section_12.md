@@ -1,8 +1,10 @@
 # Review The Pull Request Impact to Your Local Git Repository
 
-The GitHub repository has a new version of the **main** branch, but our local repository isn't aware of the change yet. Before we make new changes to our local repository, let's get it back in sync with GitHub and clean up the branch (**branch3**) which is no longer in GitHub.
+The GitHub repository has a new version of the **main** branch, but the **main** branch in our local repository isn't aware of the changes yet (only our local **branch3** branch is aware of the changes). Before we make new changes to our local repository, let's get it in sync with GitHub and clean up the branch (**branch3**) which is no longer in GitHub.
 
-## **Pull Changes from GitHub**
+---
+
+## Pull Changes from GitHub
 
 1. From your terminal, pull the latest changes from GitHub to your local repository with the following command:
 
@@ -11,7 +13,7 @@ The GitHub repository has a new version of the **main** branch, but our local re
 git pull
 ```
 
-![git-pull-branch3](../images/git-pull-branch3.png)
+![git-pull-branch3](../images/git-pull-branch3.png "Pull branch3 from GitHub")
 
 2. Notice the last two lines of the output which indicate Git attempted to pull changes from GitHub and merge those changes with **branch3** in the local repository.
 
@@ -26,7 +28,7 @@ git pull
 git branch
 ```
 
-![git-branch-5](../images/git-branch-5.png)
+![git-branch-6](../images/git-branch-6.png "Display local git branches")
 
 4. Notice **branch3** remains in your local repository.
 
@@ -39,7 +41,7 @@ git branch
 git checkout main
 ```
 
-![git-checkout-main](../images/git-checkout-main.png)
+![git-checkout-main](../images/git-checkout-main.png "Switch to branch 'main'")
 
 6. Notice the message which indicates the local branch **main** is behind the GitHub **main** branch (**origin/main**) by three commits and can be fast-forwarded.
 
@@ -52,7 +54,7 @@ git checkout main
 git pull
 ```
 
-![git-pull-main](../images/git-pull-main.png)
+![git-pull-main](../images/git-pull-main.png "Pull the branch 'main' from GitHub and merge changes with the local branch 'main'")
 
 8. Notice the output which indicates the file changes and insertions.
 
@@ -65,7 +67,7 @@ git pull
 git branch -d branch3
 ```
 
-![git-branch-d-branch3](../images/git-branch-d-branch3.png)
+![git-branch-d-branch3](../images/git-branch-d-branch3.png "Delete branch 'branch3'")
 
 ---
 
@@ -76,7 +78,7 @@ git branch -d branch3
 git branch
 ```
 
-![git-branch-7](../images/git-branch-7.png)
+![git-branch-7](../images/git-branch-7.png "Display local branches")
 
 11. Notice that **main** is now the only branch in your local repository.
 
