@@ -679,14 +679,16 @@
                 
                 
                 <h1 id="review-the-pull-request-impact-to-your-local-git-repository">Review The Pull Request Impact to Your Local Git Repository</h1>
-<p>The GitHub repository has a new version of the <strong>main</strong> branch, but our local repository isn't aware of the change yet. Before we make new changes to our local repository, let's get it back in sync with GitHub and clean up the branch (<strong>branch3</strong>) which is no longer in GitHub.</p>
-<h2 id="pull-changes-from-github"><strong>Pull Changes from GitHub</strong></h2>
+<p>The GitHub repository has a new version of the <strong>main</strong> branch, but the <strong>main</strong> branch in our local repository isn't aware of the changes yet (only our local <strong>branch3</strong> branch is aware of the changes). Before we make new changes to our local repository, let's get it in sync with GitHub and clean up the branch (<strong>branch3</strong>) which is no longer in GitHub.</p>
+<hr />
+<h2 id="pull-changes-from-github">Pull Changes from GitHub</h2>
 <ol>
 <li>From your terminal, pull the latest changes from GitHub to your local repository with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git pull
+<div class="highlight"><pre><span></span><code><span class="c1"># Download and merge changes from the remote repository to the local repository</span>
+git pull
 </code></pre></div>
-<p><img alt="git-pull-branch3" src="../../images/git-pull-branch3.png" /></p>
+<p><img alt="git-pull-branch3" src="../../images/git-pull-branch3.png" title="Pull branch3 from GitHub" /></p>
 <ol>
 <li>
 <p>Notice the last two lines of the output which indicate Git attempted to pull changes from GitHub and merge those changes with <strong>branch3</strong> in the local repository.</p>
@@ -694,57 +696,67 @@
 <li>
 <p>However, Git was unable to locate <strong>branch3</strong> in GitHub because, of course, we deleted <strong>branch3</strong> in GitHub after merging our <strong>pull request</strong>.</p>
 </li>
-<li>
-<p>List your local branches with the following command:</p>
-</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch
+<hr />
+<ol>
+<li>List your local branches with the following command:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># Display all local git branches</span>
+git branch
 </code></pre></div>
-<p><img alt="git-branch-5" src="../../images/git-branch-5.png" /></p>
+<p><img alt="git-branch-6" src="../../images/git-branch-6.png" title="Display local git branches" /></p>
 <ol>
 <li>Notice <strong>branch3</strong> remains in your local repository.</li>
+</ol>
+<hr />
+<ol>
 <li>Change your working branch to <strong>main</strong> with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git checkout main
+<div class="highlight"><pre><span></span><code><span class="c1"># Switch the working branch from &#39;branch3&#39; to &#39;main&#39;</span>
+git checkout main
 </code></pre></div>
-<p><img alt="git-checkout-main" src="../../images/git-checkout-main.png" /></p>
+<p><img alt="git-checkout-main" src="../../images/git-checkout-main.png" title="Switch to branch 'main'" /></p>
 <ol>
-<li>
-<p>Notice the message which indicates the local branch <strong>main</strong> is behind the GitHub <strong>main</strong> branch (<strong>origin/main</strong>) by three commits and can be fast-forwarded.</p>
-</li>
-<li>
-<p>Merge the GitHub <strong>main</strong> branch with your local repository <strong>main</strong> branch using the following command:</p>
-</li>
+<li>Notice the message which indicates the local branch <strong>main</strong> is behind the GitHub <strong>main</strong> branch (<strong>origin/main</strong>) by three commits and can be fast-forwarded.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git pull
+<hr />
+<ol>
+<li>Merge the GitHub <strong>main</strong> branch with your local repository <strong>main</strong> branch using the following command:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># Download and merge changes from the remote repository to the local repository</span>
+git pull
 </code></pre></div>
-<p><img alt="git-pull-main" src="../../images/git-pull-main.png" /></p>
+<p><img alt="git-pull-main" src="../../images/git-pull-main.png" title="Pull the branch 'main' from GitHub and merge changes with the local branch 'main'" /></p>
 <ol>
 <li>Notice the output which indicates the file changes and insertions.</li>
+</ol>
+<hr />
+<ol>
 <li>Since our local <strong>main</strong> branch now in sync with the latest copy of the GitHub repository, we no longer need our local copy of <strong>branch3</strong>. Remove <strong>branch3</strong> from the local repository with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch -d branch3
+<div class="highlight"><pre><span></span><code><span class="c1"># Delete the local branch named &#39;branch3&#39;</span>
+git branch -d branch3
 </code></pre></div>
-<p><img alt="git-branch-d-branch3" src="../../images/git-branch-d-branch3.png" /></p>
+<p><img alt="git-branch-d-branch3" src="../../images/git-branch-d-branch3.png" title="Delete branch 'branch3'" /></p>
+<hr />
 <ol>
 <li>Confirm <strong>branch3</strong> no longer exists with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch
+<div class="highlight"><pre><span></span><code><span class="c1"># Display all local git branches</span>
+git branch
 </code></pre></div>
-<p><img alt="git-branch-7" src="../../images/git-branch-7.png" /></p>
+<p><img alt="git-branch-7" src="../../images/git-branch-7.png" title="Display local branches" /></p>
 <ol>
 <li>Notice that <strong>main</strong> is now the only branch in your local repository.</li>
 </ol>
-<p>You did it! You:</p>
-<ul>
-<li>Set up a new GitHub repository.</li>
-<li>Set up a local Git environment in a Docker Container.</li>
-<li>Managed Git branches.</li>
-<li>Staged and committed local repository changes.</li>
-<li>Pushed branches and changes from your local Git environment to GitHub.</li>
-<li>Merged changes in GitHub with a pull request.</li>
-<li>Synchronized merged GitHub changes to your local Git environment.</li>
-</ul>
+<p><img alt="⭐" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2b50.svg" title=":star:" /> You did it! You:</p>
+<p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> Set up a new GitHub repository.
+<img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> Set up a local Git environment in a Docker Container.
+<img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> Managed local Git branches.
+<img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> Staged and committed local repository changes.
+<img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> Pushed branches and changes from your local Git environment to GitHub.
+<img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> Merged changes in GitHub with a pull request.
+<img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> Synchronized merged GitHub changes to your local Git environment.</p>
 <p>Click the link below to go to the last section and finish things up:</p>
 <p><a href="../section_13/" title="Clone Another Repository, Make Changes, and Create a New Pull Request">Next Section &gt; Clone Another Repository, Make Changes, and Create a New Pull Request</a></p>
                 

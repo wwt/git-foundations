@@ -634,38 +634,60 @@
                 
                 
                 <h1 id="hands-on-environment-setup">Hands-On Environment Setup</h1>
-<p>A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. You don't need any Docker experience for these exercises. Just make sure you have <a href="https://www.docker.com/products/docker-desktop" title="Docker Desktop Download">Docker Desktop</a> running on your Windows or macOS computer, and we will walk you through the environment setup.</p>
-<p>It's a two-step process (download and then run) to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps with a single command.</p>
+<p>A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. The Docker Container already has Git software installed and you don't need any Docker experience for these exercises. Just make sure you have <a href="https://www.docker.com/products/docker-desktop" title="Docker Desktop Download">Docker Desktop</a> installed and running on your Windows or macOS computer and we will walk you through the development environment setup.</p>
+<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /><strong>Note: You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:</strong></p>
+<div class="highlight"><pre><span></span><code>docker info
+</code></pre></div>
+<p><img alt="👏" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f44f.svg" title=":clap:" /> If your output looks something like this, you are all set:</p>
+<p><img alt="docker-info" src="../../images/docker-info.png" title="docker info" /></p>
+<hr />
+<p><img alt="❗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2757.svg" title=":exclamation:" /> If you see an error message similiar to the examples below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the <a href="https://docs.docker.com/desktop/" title="Docker Desktop Installation Documentation">Docker Desktop Installation Documentation</a>.</p>
+<p><img alt="docker-info-bad" src="../../images/docker-info-bad.png" title="docker info - Docker not running" /></p>
+<hr />
+<p>There are two-steps in the process (download and then run) to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps with a single command.</p>
 <ol>
-<li>Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and type the following command:</li>
+<li>Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and enter the following command:</li>
 </ol>
 <div class="highlight"><pre><span></span><code>docker container run -it --name git-foundations wwt01/alpine-network-dev
 </code></pre></div>
+<p>This command performs the following actions:</p>
+<ul>
+<li>Downloads the 'wwt01/alpine-network-dev' Image from <a href="https://hub.docker.com/r/wwt01/alpine-network-dev" title="WWT Development Docker Image on Docker Hub">Docker Hub</a>.</li>
+<li>Creates a Docker Container with the name 'git-foundations'.</li>
+<li>Attaches to the terminal of the 'git-foundations' Container.</li>
+</ul>
 <p>Expect the first run of this command to take a few minutes, while Docker Desktop downloads the Image from Docker Hub. Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.</p>
-<p>You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt reads <strong>/development</strong>:</p>
-<p><img alt="docker-container-run" src="../../images/docker-container-run.png" /></p>
+<p>You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt changes to <code>/development#</code>:</p>
+<p><img alt="docker-container-run" src="../../images/docker-container-run.png" title="docker container run -it --name git-foundations wwt01/alpine-network-dev" /></p>
+<hr />
 <ol>
-<li>If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to double-check:</li>
+<li>If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>cat /etc/*-release
+<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /> <strong>Note: The Container will ignore any commands/lines that begin with the <code>#</code> character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.</strong> </p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the Container operating system release file </span>
+cat /etc/*-release
 </code></pre></div>
 <ol>
 <li>You are in the Docker Container environment if your output looks like this:</li>
 </ol>
-<p><img alt="container-release-info" src="../../images/container-release-info.png" /></p>
+<p><img alt="container-release-info" src="../../images/container-release-info.png" title="cat /etc/*-release" /></p>
+<hr />
 <ol>
 <li>Check the version of Git in the environment with the following command:</li>
 </ol>
 <div class="highlight"><pre><span></span><code>git --version
 </code></pre></div>
 <p>The result of that command should look something like this:</p>
-<p><img alt="git-version" src="../../images/git-version.png" /></p>
-<p><strong>Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:</strong></p>
+<p><img alt="git-version" src="../../images/git-version.png" title="git --version" /></p>
+<hr />
+<p>Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:</p>
+<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /> <strong>Note: Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.</strong></p>
 <div class="highlight"><pre><span></span><code>control + d <span class="o">(</span>key sequence<span class="o">)</span> <span class="c1"># Stops your Container and returns you to your terminal prompt</span>
 docker container start git-foundations <span class="c1"># Restarts your Container in the background</span>
 docker container attach git-foundations <span class="c1"># Returns you to the Container prompt</span>
 docker container rm git-foundations <span class="c1"># Destroys your container so you can start over</span>
 </code></pre></div>
+<hr />
 <p>Your environment is set up and ready to use! Not to painful so far, right? Click the link below to get started with Git:</p>
 <p><a href="../section_2/" title="Setup GitHub Authentication">Next Section &gt; Setup GitHub Authentication</a></p>
                 

@@ -391,6 +391,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#github-version-control-overview" class="md-nav__link">
+    GitHub Version Control Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-authentication-overview" class="md-nav__link">
+    GitHub Authentication Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#generate-an-ssh-key-pair" class="md-nav__link">
     Generate an SSH Key Pair
   </a>
@@ -666,6 +680,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#github-version-control-overview" class="md-nav__link">
+    GitHub Version Control Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-authentication-overview" class="md-nav__link">
+    GitHub Authentication Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#generate-an-ssh-key-pair" class="md-nav__link">
     Generate an SSH Key Pair
   </a>
@@ -693,54 +721,77 @@
                 
                 
                 <h1 id="setup-github-authentication">Setup GitHub Authentication</h1>
-<p>Before we set up the GitHub repository, it's a good idea to consider how our local environment will authenticate to GitHub during synchronization. GitHub supports two types of secure transport, each with their own authentication mechanism(s):</p>
+<h2 id="github-version-control-overview">GitHub Version Control Overview</h2>
+<p>Git is a distributed Version Control System (VCS) which means any copy of any Git repository can function independently of any other copies of the same Git repository. A Git repository can reside on any single computer, Container, etc. and there are also hosted or managed Git solutions which provide a central location to aggregate changes to version-controlled files.</p>
+<p><a href="https://github.com" title="GitHub.com">GitHub</a> is one example of a hosted or managed Git solution.  These hosted/managed solutions allow many people to run local instances of Git software on their computers and keep their version-controlled files, source code, documentation, etc. (container within Git repositories) in sync with one another.</p>
+<ul>
+<li>This remainder of this walkthrough will show you how to:</li>
+<li>Create a centralized Git repository on GitHub.</li>
+<li>Synchronize the GitHub repository with our local Git environment (the 'git-foundations' Docker Container).</li>
+<li>Make changes to the local Git repository.</li>
+<li>Merge local Git repository changes to GitHub.</li>
+</ul>
+<hr />
+<h2 id="github-authentication-overview">GitHub Authentication Overview</h2>
+<p>Before we setup a GitHub repository, it's a good idea to consider how our local Git environment (the 'git-foundations' Container) will authenticate to GitHub during repository synchronization events (clone, pull, push, etc). GitHub supports two types of secure transport, each with their own authentication mechanism(s):</p>
 <ol>
 <li>HTTPS with basic authentication (username and password) or API key.</li>
 <li>SSH with public/private key authentication.</li>
 </ol>
 <p>Either choice is just as good as the other. In this environment we use SSH because it allows us to secure communication without having manage credentials or API keys. We will set up SSH authentication before we create a GitHub repository.</p>
-<h2 id="generate-an-ssh-key-pair"><strong>Generate an SSH Key Pair</strong></h2>
+<hr />
+<h2 id="generate-an-ssh-key-pair">Generate an SSH Key Pair</h2>
 <ol>
 <li>From the Docker Container prompt, generate an SSH key pair with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>ssh-keygen
+<div class="highlight"><pre><span></span><code><span class="c1"># Generate a new public/private SSH key pair</span>
+ssh-keygen
 </code></pre></div>
 <ol>
-<li>Press your Return/Enter key to accept the default location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:</li>
+<li>After you enter this command and press your Return/Enter key, you may press your Return/Enter three more times, to accept the default storage location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:</li>
 </ol>
-<p><img alt="container-ssh-keygen" src="../../images/container-ssh-keygen.png" /></p>
+<p><img alt="container-ssh-keygen" src="../../images/container-ssh-keygen.png" title="ssh-keygen" /></p>
+<hr />
 <ol>
-<li>Print the new SSH public key file to the terminal with this command:</li>
+<li>Display the new SSH public key file in the terminal with this command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>cat ~/.ssh/id_rsa.pub
+<div class="highlight"><pre><span></span><code><span class="c1"># Displays the contents of the new SSH public key file</span>
+cat ~/.ssh/id_rsa.pub
 </code></pre></div>
-<p><img alt="container-ssh-key" src="../../images/container-ssh-key.png" /></p>
+<p><img alt="❗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2757.svg" title=":exclamation:" /> <strong>Note: Treat your SSH keys as if they were any other form of credentials and do not share them with anyone.</strong></p>
+<p><img alt="container-ssh-key" src="../../images/container-ssh-key.png" title="cat ~/.ssh/id_rsa.pub" /></p>
 <ol>
-<li>Copy the full contents of the file to your clipboard including the <strong>ssh-rsa</strong> at the beginning of the file and the <strong>root@container_id</strong> at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our container and GitHub.</li>
+<li>Copy the full contents of the file to your clipboard, including the <strong>ssh-rsa</strong> at the beginning of the file and the <strong>root@<em>container_id</em></strong> at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.</li>
 </ol>
-<h2 id="setup-github-ssh-key-authentication"><strong>Setup GitHub SSH Key Authentication</strong></h2>
+<hr />
+<h2 id="setup-github-ssh-key-authentication">Setup GitHub SSH Key Authentication</h2>
 <ol>
-<li>Navigate to <a href="https://github.com/login">https://github.com/login</a>, log in, click the <strong>Profile</strong> icon in the upper-right corner of the window, and choose <strong>Settings</strong>.</li>
+<li>Navigate to <a href="https://github.com/login" title="GitHub Login">https://github.com/login</a>, log in, click the <strong>Profile</strong> icon in the upper-right corner of the window, and choose <strong>Settings</strong>.</li>
 </ol>
-<p><img alt="github-settings" src="../../images/github-settings.png" /></p>
+<p><img alt="github-settings" src="../../images/github-settings.png" title="GitHub settings access" /></p>
+<hr />
 <ol>
 <li>Click on the <strong>SSH and GPG keys</strong> tab on the left side of the window.</li>
 </ol>
-<p><img alt="github-profile" src="../../images/github-profile.png" /></p>
+<p><img alt="github-profile" src="../../images/github-profile.png" title="GitHub profile" /></p>
+<hr />
 <ol>
 <li>Click the green, <strong>New SSH key</strong> button</li>
 </ol>
-<p><img alt="github-ssh-keys" src="../../images/github-ssh-keys.png" /></p>
+<p><img alt="github-ssh-keys" src="../../images/github-ssh-keys.png" title="GitHub SSH keys" /></p>
+<hr />
 <ol>
-<li>Provide a title for the SSH key, paste the SSH key file text from your container into the <strong>Key</strong> field, and click the green, <strong>Add SSH key</strong> button.</li>
+<li>Provide a title for the SSH key (any title you like is just fine), paste the SSH key file text from your Container into the <strong>Key</strong> field, and click the green, <strong>Add SSH key</strong> button.</li>
 </ol>
-<p><img alt="github-add-ssh-key" src="../../images/github-add-ssh-key.png" /></p>
+<p><img alt="github-add-ssh-key" src="../../images/github-add-ssh-key.png" title="GitHub create SSH key" /></p>
+<hr />
 <ol>
 <li>Confirm that GitHub now has a copy of your container's SSH public key.</li>
 </ol>
-<p><img alt="github-new-ssh-key" src="../../images/github-new-ssh-key.png" /></p>
-<p>SSH authentication setup is complete, and we are ready to create a new GitHub repository. Click the link below to continue:</p>
-<p><a href="../section_3/" title="Setup a GitHub Repository">Next Section &gt; Set up a GitHub Repository</a></p>
+<p><img alt="github-new-ssh-key" src="../../images/github-new-ssh-key.png" title="GitHub new SSH key" /></p>
+<hr />
+<p>SSH authentication setup is complete and we are ready to create a new GitHub repository. Click the link below to continue:</p>
+<p><a href="../section_3/" title="Create a GitHub Repository">Next Section &gt; Create a GitHub Repository</a></p>
                 
               
               

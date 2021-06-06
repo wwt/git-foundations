@@ -512,7 +512,7 @@
       
         <li class="md-nav__item">
   <a href="#view-create-switch-to-remove-branches" class="md-nav__link">
-    View, Create, Switch To &amp; Remove Branches
+    View, Create, Switch To, &amp; Remove Branches
   </a>
   
 </li>
@@ -660,7 +660,7 @@
       
         <li class="md-nav__item">
   <a href="#view-create-switch-to-remove-branches" class="md-nav__link">
-    View, Create, Switch To &amp; Remove Branches
+    View, Create, Switch To, &amp; Remove Branches
   </a>
   
 </li>
@@ -680,105 +680,139 @@
                 
                 <h1 id="manage-local-git-branches">Manage Local Git Branches</h1>
 <p>Our Git environment is ready for us to start work on our repository. Typically, especially on a project with many contributors, Git branches allow each contributor to have as many non-overlapping copies of the repository as they need to make and manage their changes. We will do some basic work with branches, so we can, later, contribute our changes to the main branch of the GitHub repository.</p>
-<h2 id="view-create-switch-to-remove-branches"><strong>View, Create, Switch To &amp; Remove Branches</strong></h2>
+<hr />
+<h2 id="view-create-switch-to-remove-branches">View, Create, Switch To, &amp; Remove Branches</h2>
 <ol>
 <li>From the Docker Container prompt, list your <em>local</em> branches with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch
+<div class="highlight"><pre><span></span><code><span class="c1"># Display all local git branches</span>
+git branch
 </code></pre></div>
-<p><img alt="git-branch-1" src="../../images/git-branch-1.png" /></p>
+<p><img alt="git-branch-1" src="../../images/git-branch-1.png" title="Display local git branches" /></p>
 <ol>
 <li>
 <p>Notice that only the <strong>main</strong> branch cloned to your local repository from GitHub.</p>
 </li>
 <li>
-<p>This is normal/correct behavior; only the <strong>main</strong> branch clones from GitHub because other branches (like the <strong>branch1</strong> branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the main copy of the repository.</p>
+<p>This is normal/correct behavior; only the <strong>main</strong> branch clones from GitHub because other branches (like the <strong>branch1</strong> branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the <strong>main</strong> branch of the repository.</p>
 </li>
-<li>
-<p>The asterisk to the left of <strong>main</strong> indicates that <strong>main</strong> is our current, working branch.</p>
-</li>
-<li>
-<p>List all repository branches, local <em>and</em> remote, with the following command:</p>
-</li>
+<li>The asterisk to the left of <strong>"main"</strong> indicates that <strong>main</strong> is our current, working branch.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch -a
-</code></pre></div>
-<p><img alt="git-branch-a-1" src="../../images/git-branch-a-1.png" /></p>
+<hr />
 <ol>
-<li>
-<p>Notice how we see a <strong>main</strong> branch plus an <strong>origin/main</strong> branch.</p>
+<li>List all Git repository branches, local <em>and</em> remote, with the following command:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># Display all local and remote repository git branches</span>
+git branch -a
+</code></pre></div>
+<p><img alt="git-branch-a-1" src="../../images/git-branch-a-1.png" title="Display all local and remote git repository branches" /></p>
+<ol>
+<li>Notice how we see:</li>
+<li>A <strong>main</strong> branch.<ul>
+<li>This is our local copy of the <strong>main</strong> branch.</li>
+</ul>
 </li>
-<li>
-<p><strong>Origin</strong> is how our local repository refers to GitHub so <strong>origin/main</strong> represents the <strong>main</strong> branch on GitHub.</p>
+<li>An <strong>origin/main</strong> branch alias (for <strong>remotes/origin/HEAD</strong>).<ul>
+<li>This is the copy of the <strong>main</strong> branch in Github.</li>
+</ul>
 </li>
-<li>
-<p>Create a new, local branch named <strong>branch2</strong>, with the following command:</p>
+<li>And an <strong>origin/remotes/branch1</strong> branch.<ul>
+<li>This is the copy of the <strong>branch1</strong> branch in Github.</li>
+</ul>
 </li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch branch2
+<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /> <strong>NOTE: <em>Origin</em> is how our local repository refers to GitHub so <em>origin/main</em> represents the <em>main</em> branch on GitHub.</strong></p>
+<hr />
+<ol>
+<li>Create a new, local branch named <strong>branch2</strong>, with the following command:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># Create a new local git branch named &#39;branch2&#39;</span>
+git branch branch2
 </code></pre></div>
-<p><img alt="git-branch-branch2" src="../../images/git-branch-branch2.png" /></p>
+<p><img alt="git-branch-branch2" src="../../images/git-branch-branch2.png" title="Create a new local branch named 'branch2'" /></p>
+<hr />
 <ol>
 <li>List your local branches again with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch
+<div class="highlight"><pre><span></span><code><span class="c1"># Display all local git branches</span>
+git branch
 </code></pre></div>
-<p><img alt="git-branch-2" src="../../images/git-branch-2.png" /></p>
+<p><img alt="git-branch-2" src="../../images/git-branch-2.png" title="Display all local git branches" /></p>
 <ol>
 <li>Notice your new branch, <strong>branch2</strong> and also that the asterisk next to <strong>main</strong> tells us that, even though we just created <strong>branch2</strong>, our working branch is still <strong>main</strong>.</li>
+</ol>
+<hr />
+<ol>
 <li>Again, list all branches, local and remote, with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch -a
+<div class="highlight"><pre><span></span><code><span class="c1"># Display all local and remote repository git branches</span>
+git branch -a
 </code></pre></div>
-<p><img alt="git-branch-a-2" src="../../images/git-branch-a-2.png" /></p>
+<p><img alt="git-branch-a-2" src="../../images/git-branch-a-2.png" title="Display all local and remote git repository branches" /></p>
 <ol>
-<li>
-<p>Notice that <strong>branch2</strong> does not exist as a remote branch in GitHub. This is normal behavior and something we will work with later on.</p>
-</li>
-<li>
-<p>Switch your working branch to <strong>branch2</strong> with the following command:</p>
-</li>
+<li>Notice that <strong>branch2</strong> does not exist as a remote branch in GitHub. This is normal behavior and something we will work with later on.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git checkout branch2
+<hr />
+<ol>
+<li>Switch your working branch to <strong>branch2</strong> with the following command:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># Switch the working branch from &#39;main&#39; to &#39;branch2&#39;</span>
+git checkout branch2
 </code></pre></div>
-<p><img alt="git-checkout-branch2" src="../../images/git-checkout-branch2.png" /></p>
+<p><img alt="git-checkout-branch2" src="../../images/git-checkout-branch2.png" title="Switch to branch 'branch2'" /></p>
+<hr />
 <ol>
 <li>Verify your current, working branch with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch
+<div class="highlight"><pre><span></span><code><span class="c1"># Display all local git branches</span>
+git branch
 </code></pre></div>
-<p><img alt="git-branch-3" src="../../images/git-branch-3.png" /></p>
+<p><img alt="git-branch-3" src="../../images/git-branch-3.png" title="Display local git branches" /></p>
 <ol>
-<li>Notice the asterisk next to <strong>branch2</strong> to indicate that <strong>branch2</strong> is our current, working branch.</li>
+<li>Notice the asterisk next to <strong>branch2</strong> which indicates that <strong>branch2</strong> is our current, working branch.</li>
+</ol>
+<hr />
+<ol>
 <li>Create and simultaneously switch to a new branch with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git checkout -b branch3
+<div class="highlight"><pre><span></span><code><span class="c1"># Create and switch the working branch to a new local git branch named &#39;branch3&#39;</span>
+git checkout -b branch3
 </code></pre></div>
-<p><img alt="git-checkout-b-branch3" src="../../images/git-checkout-b-branch3.png" /></p>
+<p><img alt="git-checkout-b-branch3" src="../../images/git-checkout-b-branch3.png" title="Create and switch to a new branch named 'branch3'" /></p>
 <ol>
-<li>The <strong>git checkout</strong> command allows you to switch between branches and the <strong>-b</strong> flag creates a new branch <em>and</em> switches to the new branch. This is just a shortcut for <strong>git branch <em>branch_name</em></strong> followed by <strong>git checkout <em>branch_name</em></strong>.</li>
+<li>The <code>git checkout</code> command allows you to switch between branches.<ul>
+<li>The <code>git checkout</code> command with the <code>-b</code> flag creates a new branch <em>and</em> switches to the new branch.</li>
+<li><code>git checkout -b branch_name</code> is just a shortcut for <code>git branch branch_name</code> followed by <code>git checkout branch_name</code>.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<ol>
 <li>List your local branches again with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch
+<div class="highlight"><pre><span></span><code><span class="c1"># Display all local git branches</span>
+git branch
 </code></pre></div>
-<p><img alt="git-branch-4" src="../../images/git-branch-4.png" /></p>
+<p><img alt="git-branch-4" src="../../images/git-branch-4.png" title="Display local git branches" /></p>
 <ol>
-<li>
-<p>Notice the asterisk next to <strong>branch3</strong> to indicate that <strong>branch3</strong> is our current, working branch.</p>
-</li>
-<li>
-<p>For our purpose we only need one branch, in addition to the <strong>main</strong> branch, so we can remove one of our new branches with the following command:</p>
-</li>
+<li>Notice the asterisk next to <strong>branch3</strong> to indicate that <strong>branch3</strong> is our current, working branch.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch -d branch2
+<hr />
+<ol>
+<li>For our purpose, we only need one branch, in addition to the <strong>main</strong> branch, so we can remove one of our new branches with the following command:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># Delete the local branch named &#39;branch2&#39;</span>
+git branch -d branch2
 </code></pre></div>
-<p><img alt="git-branch-d-branch2" src="../../images/git-branch-d-branch2.png" /></p>
+<p><img alt="git-branch-d-branch2" src="../../images/git-branch-d-branch2.png" title="Delete branch 'branch2'" /></p>
+<hr />
 <ol>
 <li>Review your branches with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git branch
+<div class="highlight"><pre><span></span><code><span class="c1"># Display all local git branches</span>
+git branch
 </code></pre></div>
-<p><img alt="git-branch-5" src="../../images/git-branch-5.png" /></p>
+<p><img alt="git-branch-5" src="../../images/git-branch-5.png" title="Display local git branches" /></p>
 <ol>
 <li>Notice that <strong>branch2</strong> is no longer available.</li>
 </ol>

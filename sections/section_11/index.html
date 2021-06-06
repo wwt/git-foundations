@@ -708,46 +708,50 @@
                 
                 <h1 id="pullmerge-changes-in-github">Pull/Merge Changes in GitHub</h1>
 <p>A <strong>pull request</strong> is GitHub's terminology for starting the process to merge changes from one branch into another. In this example, we will merge changes from <strong>branch3</strong> into <strong>main</strong>, effectively updating the mainline copy of our repository.</p>
-<h2 id="create-a-pull-request"><strong>Create a Pull Request</strong></h2>
+<hr />
+<h2 id="create-a-pull-request">Create a Pull Request</h2>
 <ol>
 <li>Locate and click the green <strong>Compare &amp; pull request</strong> button:</li>
 </ol>
-<p><img alt="github-pull-request-initiate" src="../../images/github-pull-request-initiate.png" /></p>
+<p><img alt="github-pull-request-initiate" src="../../images/github-pull-request-initiate.png" title="Initiate pull request" /></p>
 <ol>
 <li>Add the following details to the <strong>pull request</strong>:</li>
 <li><strong>Title - <em>Branch3</em></strong></li>
-<li><strong>Comment - *Merge of changes from ** branch3** to **main***</strong></li>
-<li>Add your own GitHub account to the <strong>Assignees</strong> list.<ul>
-<li>Typically, you would not assign a pull request to yourself. Instead, you would assign the pull request to a peer for a review by a second set of eyes. For the purpose of this walkthrough, it's okay to choose your own account.</li>
+<li><strong>Comment - Merge of changes from ** branch3** to **main**</strong></li>
+<li>Add your own GitHub account to the <strong>Reviewers</strong> list.<ul>
+<li>Typically, you would not assign a pull request review to yourself. Instead, you would assign the pull request to a peer, for a review by a second set of eyes. For the purpose of this walkthrough, it's okay to assign yourself as the reviewer.</li>
 </ul>
 </li>
 <li>Click the green <strong>Create pull request</strong> button:</li>
 </ol>
-<p><img alt="github-pull-request-open" src="../../images/github-pull-request-open.png" /></p>
-<h2 id="merge-the-pull-request"><strong>Merge the Pull Request</strong></h2>
+<p><img alt="github-pull-request-open" src="../../images/github-pull-request-open.png" title="Create pull request" /></p>
+<hr />
+<h2 id="merge-the-pull-request">Merge the Pull Request</h2>
 <ol>
 <li>Since you are the assignee for this <strong>pull request</strong>, you get the opportunity to review all the commits.</li>
 <li>Review the details of the <strong>pull request</strong> and click the green <strong>Merge pull request</strong> button:</li>
 </ol>
-<p><img alt="github-pull-request-merge" src="../../images/github-pull-request-merge.png" /></p>
+<p><img alt="github-pull-request-merge" src="../../images/github-pull-request-merge.png" title="Merge pull request" /></p>
+<hr />
+<p>GitHub gives you one more prompt to confirm the merge action — click the green <strong>Confirm merge</strong> button to complete the <strong>pull request</strong>.</p>
+<p><img alt="github-pull-request-merge-confirm" src="../../images/github-pull-request-merge-confirm.png" title="Confirm pull request merge" /></p>
+<hr />
+<h2 id="remove-branch3-from-github">Remove Branch3 from GitHub</h2>
 <ol>
-<li>GitHub gives you one more prompt to confirm the merge action — click the green <strong>Confirm merge</strong> button to complete the <strong>pull request</strong>.</li>
+<li>Just in case you didn't confirm the merge action enough already, GitHub gives you the option to revert the operation. For the purpose of this walkthrough, we can skip this step.</li>
+<li>In some cases, you may want to retain branches after you merge their changes into <strong>main</strong> or any other branch. In this case, we will remove <strong>branch3</strong> to keep from cluttering the repository with a history of all branches. Click the <strong>Delete branch</strong> button to remove <strong>branch3</strong> from GitHub.</li>
 </ol>
-<p><img alt="github-pull-request-merge-confirm" src="../../images/github-pull-request-merge-confirm.png" /></p>
-<h2 id="remove-branch3-from-github"><strong>Remove Branch3 from GitHub</strong></h2>
-<ol>
-<li>Just in case you didn't confirm the merge action enough already, GitHub gives you the option to revert the operation. For our purpose, we can skip this step.</li>
-<li>In some cases, you may want to retain branches after you merge their changes into <strong>main</strong> or any other branch. In our case, we will remove <strong>branch3</strong> to keep from cluttering the repo with a history of all branches. Click the <strong>Delete branch</strong> button to remove <strong>branch3</strong> from GitHub.</li>
-</ol>
-<p><img alt="github-pull-branch-delete" src="../../images/github-pull-branch-delete.png" /></p>
+<p><img alt="github-pull-branch-delete" src="../../images/github-pull-branch-delete.png" title="Delete branch 'branch3'" /></p>
+<hr />
 <ol>
 <li>Click the <strong>git-repo-1</strong> link at the top of the window to return to the repository home page.</li>
 </ol>
-<p><img alt="github-pull-branch-delete-done" src="../../images/github-pull-branch-delete-done.png" /></p>
+<p><img alt="github-pull-branch-delete-done" src="../../images/github-pull-branch-delete-done.png" title="Return to repository home page" /></p>
+<hr />
 <ol>
 <li>Notice the message which indicates the merge of the <strong>pull request</strong>.</li>
 </ol>
-<p><img alt="github-pull-request-complete" src="../../images/github-pull-request-complete.png" /></p>
+<p><img alt="github-pull-request-complete" src="../../images/github-pull-request-complete.png" title="Review pull request success message" /></p>
 <p>We are just about done. Next up, we will look at how the merge of the <strong>pull request</strong> in GitHub impacts our local Git repository. Click the link below to continue:</p>
 <p><a href="../section_12/" title="Review The Pull Request Impact to Your Local Git Repository">Next Section &gt; Review The Pull Request Impact to Your Local Git Repository</a></p>
                 

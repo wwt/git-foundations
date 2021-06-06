@@ -693,58 +693,78 @@
                 
                 
                 <h1 id="clone-a-github-repository-to-your-computer">Clone a GitHub Repository to Your Computer</h1>
-<p>Now it's time for us to work with our GitHub repository, and we start by copying or <strong>cloning</strong> the repository to our Docker environment.</p>
-<h2 id="copy-the-repository-ssh-url"><strong>Copy The Repository SSH URL</strong></h2>
-<p>We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to HTTPS transport which adds an extra step to the cloning process.</p>
+<p>Now it's time for us to work with our GitHub repository, and we start by copying or <strong>cloning</strong> the repository to our local Docker Container environment.</p>
+<hr />
+<h2 id="copy-the-repository-ssh-url">Copy The Repository SSH URL</h2>
+<p>We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to HTTPS transport which adds an extra step (entering your username and password) to the cloning process.  The SSH keys we setup in <a href="../section_2/" title="Setup GitHub Authentication">Section 2</a> allows our Docker Container and GitHub to communicate with each other without repeatedly prompting for credentials.</p>
 <ol>
-<li>Click the green <strong>Clone or download button</strong> and notice that GitHub displays an HTTPS URL. Click the <strong>Use SSH</strong> link to change the display to an SSH URL.</li>
+<li>Click the green <strong>Clone</strong> button and notice that GitHub displays an HTTPS URL. Click the <strong>SSH</strong> link to change the display to an SSH URL.</li>
 </ol>
-<p><img alt="github-clone-https" src="../../images/github-clone-https.png" /></p>
+<p><img alt="github-clone-https" src="../../images/github-clone-https.png" title="Clone repository button default transport" /></p>
+<hr />
 <ol>
 <li>Click the <strong>Copy</strong> icon, just to the right of the SSH URL, to store the URL on your clipboard.</li>
 </ol>
-<p><img alt="github-clone-ssh" src="../../images/github-clone-ssh.png" /></p>
-<h2 id="clone-review-the-repository"><strong>Clone &amp; Review The Repository</strong></h2>
+<p><img alt="github-clone-ssh" src="../../images/github-clone-ssh.png" title="Copy repository SSH URL" /></p>
+<hr />
+<h2 id="clone-review-the-repository">Clone &amp; Review The Repository</h2>
 <ol>
-<li>From the Docker Container prompt, type the command <strong>git clone</strong> and then paste <strong><em>your repository URL</em></strong> as in this <strong><em>example</em></strong> (your repository URL will be different):</li>
+<li>From the Docker Container prompt, type the command <code>git clone</code> and then paste <strong><em>your repository URL</em></strong> as in this <strong><em>example</em></strong> (your repository URL will be different than in the example below):</li>
 </ol>
-<div class="highlight"><pre><span></span><code>git clone git@github.com:your-repository-url/git-repo-1.git
+<div class="highlight"><pre><span></span><code><span class="c1"># Download a new copy of a GitHub repository to a local system (our Container, in this case)</span>
+git clone git@github.com:your-repository-url/git-repo-1.git
 </code></pre></div>
-<p><strong>Note - you may see a prompt which asks you to confirm the authenticity of GitHub's SSH RSA fingerprint. You may safely continue.</strong></p>
+<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /><strong>Note - you will likely see a prompt which asks you to confirm the authenticity of GitHub's SSH RSA fingerprint. You may safely type <code>yes</code> and press Return/Enter to continue.</strong></p>
 <p>The result of that command should look something like this:</p>
-<p><img alt="git-clone" src="../../images/git-clone.png" /></p>
+<p><img alt="git-clone" src="../../images/git-clone.png" title="Clone GitHub repository" /></p>
+<hr />
 <ol>
 <li>List your directory contents to view your repository folder, <strong>git-repo-1</strong>, with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>ls -l
+<div class="highlight"><pre><span></span><code><span class="c1"># List the contents of the current directory in long format</span>
+ls -l
 </code></pre></div>
-<p><img alt="container-root-ls" src="../../images/container-root-ls.png" /></p>
+<p><img alt="container-root-ls" src="../../images/container-root-ls.png" title="List directory contents" /></p>
+<hr />
 <ol>
-<li>Change to your repository directory with the following command:</li>
+<li>Change to your repository directory and display your current working directory with the following commands:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> git-repo-1
+<div class="highlight"><pre><span></span><code><span class="c1"># Change the current working directory from development to /development/git-repo-1</span>
+<span class="nb">cd</span> git-repo-1
 </code></pre></div>
-<p><img alt="container-cd-repo" src="../../images/container-cd-repo.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Display the current working directory</span>
+<span class="nb">pwd</span>
+</code></pre></div>
+<p><img alt="container-cd-repo" src="../../images/container-cd-repo.png" title="Change to the respository directory" /></p>
+<hr />
 <ol>
-<li>Let's take a quick look at the contents of your repository directory, including the hidden files with the following command.</li>
+<li>Let's take a quick look at the contents of your repository directory, including the hidden files, with the following command.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>ls -la
+<div class="highlight"><pre><span></span><code><span class="c1"># List the contents of the current directory, including hidden files, in long format</span>
+ls -la
 </code></pre></div>
-<p><img alt="container-repo-ls" src="../../images/container-repo-ls.png" /></p>
+<p><img alt="container-repo-ls" src="../../images/container-repo-ls.png" title="List all repository files" /></p>
 <ol>
-<li>Notice that both of the files in your GitHub repository (<strong>.gitignore</strong> and <strong>README.md</strong>) are now in our Docker container. View the contents of the <strong>README.md</strong> file with the following command:</li>
+<li>Notice that both of the files in your GitHub repository (<strong>.gitignore</strong> and <strong>README.md</strong>) are now in our Docker Container.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>cat README.md
-</code></pre></div>
-<p><img alt="container-cat-readme" src="../../images/container-cat-readme.png" /></p>
+<hr />
 <ol>
-<li>There is one item in our repository directory which isn't in our GitHub repository, the <strong>.git</strong> directory. This directory contains all the details about your local repository and, for the most part, you should not have to interact with these files. Just to see what the contents of this folder look like, use the following command:</li>
+<li>View the contents of the <strong>README.md</strong> file with the following command:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>ls -l .git
+<div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the file &#39;README.md&#39;</span>
+cat README.md
 </code></pre></div>
-<p><img alt="container-ls-git" src="../../images/container-ls-git.png" /></p>
+<p><img alt="container-cat-readme" src="../../images/container-cat-readme.png" title="Display the README.md file contents" /></p>
+<hr />
+<ol>
+<li>There is one item in our repository directory which isn't in our GitHub repository, the <strong>.git</strong> directory. This directory contains all the details about your local repository and you should rarely, if ever, have to interact with these files. Just to see what the contents of this folder look like, use the following command:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># List the contents of the .git directory in long format</span>
+ls -l .git
+</code></pre></div>
+<p><img alt="container-ls-git" src="../../images/container-ls-git.png" title="List the contents of the .git directory" /></p>
 <p>We now have a copy of our GitHub repo in our Docker environment. Before we make changes to our local copy of the repository, we need to configure a few local Git settings. Click the link below to continue:</p>
-<p><a href="../section_6/" title="View &amp; Configure Local Git Settings">Next Section &gt; View &amp; Configure Local Git Settings</a></p>
+<p><a href="../section_6/" title="View &amp; Configure Local Git Settings on Your Computer">Next Section &gt; View &amp; Configure Local Git Settings on Your Computer</a></p>
                 
               
               
