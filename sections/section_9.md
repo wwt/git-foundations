@@ -49,7 +49,7 @@ git add my_script.py
 git status
 ```
 
-![git-add-my_script](../images/git-add-my_script.png "Add 'my_script.py' to the staging area")
+![git-add-my-script](../images/git-add-my-script.png "Add 'my_script.py' to the staging area")
 
 4. Notice that the **my_script.py** is now in the **Changes to be committed** section.
    - This indicates **my_script.py** is in the Git staging area.
@@ -75,7 +75,7 @@ git commit -m "Initial commit of 'my_script.py'"
 # Display status information for the current git repository
 git status
 ```
-![git-commit-my_script](../images/git-commit-my_script.png "Commit 'my_script.py' to the local repository")
+![git-commit-my-script](../images/git-commit-my-script.png "Commit 'my_script.py' to the local repository")
 
 6. Notice there are no changes to commit. The **README.md** file does have changes although isn't yet staged for commit; we will work on that shortly.
 
@@ -93,7 +93,7 @@ echo 'name = input("What is your name? ")' >> my_script.py
 echo 'print(f"It is nice to meet you, {name})' >> my_script.py
 ```
 
-![container-echo-my_script](../images/container-echo-my_script.png "Add code to 'my_script.py'")
+![container-echo-my-script](../images/container-echo-my-script.png "Add code to 'my_script.py'")
 
 ---
 
