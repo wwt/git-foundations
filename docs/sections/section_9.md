@@ -62,7 +62,10 @@ git status
      - There are other ways to add a message to a commit, although the `-m` option is, generally, the simplest.
    - Review the Git repository status.
 
-:bulb: **Note: Commits to a Git repository require a commit message and the message should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.**
+```
+!!! note
+    :warning: Commits to a Git repository require a commit message and the message should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.
+```
 
 :exclamation: **The `-m` option after the `git commit` command allows you to enter a commit message inline.  If you omit the `-m` option, Git will open the default text editor for the OS (VIM is the default editor for most Linux distributions) and prompt for a commit message.**
 
@@ -75,6 +78,7 @@ git commit -m "Initial commit of 'my_script.py'"
 # Display status information for the current git repository
 git status
 ```
+
 ![git-commit-my-script](../images/git-commit-my-script.png "Commit 'my_script.py' to the local repository")
 
 6. Notice there are no changes to commit. The **README.md** file does have changes although isn't yet staged for commit; we will work on that shortly.
@@ -180,7 +184,8 @@ git status
 
 ```
 !!! note
-    :bulb: To determine which remote repository a `git push` will send changes to, use either of the commands `git remote --verbose`, `git remote -v`, or `cat .git/config` .**
+    :bulb: To determine which remote repository a `git push` will send changes to, use either of the commands `git remote --verbose`, `git remote -v`, or `cat .git/config` .
+```
 
 ```shell
 # Determine the remote repository URL

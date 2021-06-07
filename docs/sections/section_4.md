@@ -22,4 +22,3 @@ Before we clone our new repository to our Docker Container, let's create a new b
 It's time to get a copy of our GitHub repository to our Docker environment. Click the link below to continue:
 
 [Next Section > Clone a GitHub Repository to Your Computer](section_5.md "Clone a GitHub Repository to Your Computer")
-
