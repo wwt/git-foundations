@@ -131,7 +131,10 @@ git status
 git add .
 ```
 
-:bulb: **Note: You may also commit individual files to the staging area.  For example, to stage only the README.md file, use the command `git add README.md`. **
+```
+!!! note
+    :bulb: You may also commit individual files to the staging area.  For example, to stage only the README.md file, use the command `git add README.md`.
+```
 
 ```shell
 # Display status information for the current git repository
@@ -175,7 +178,9 @@ git status
 
 1. We now have several atomic commits in our local repository that we can push to our GitHub repository. A **push** action will synchronize the local Git repository changes with the GitHub repository.
 
-:bulb: **Note: To determine which remote repository a `git push` will send changes to, use either of the commands `git remote --verbose`, `git remote -v`, or `cat .git/config` .**
+```
+!!! note
+    :bulb: To determine which remote repository a `git push` will send changes to, use either of the commands `git remote --verbose`, `git remote -v`, or `cat .git/config` .**
 
 ```shell
 # Determine the remote repository URL

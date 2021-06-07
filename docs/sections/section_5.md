@@ -29,7 +29,10 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
 git clone git@github.com:your-repository-url/git-repo-1.git
 ```
 
-:bulb:**Note - you will likely see a prompt which asks you to confirm the authenticity of GitHub's SSH RSA fingerprint. You may safely type `yes` and press Return/Enter to continue.**
+```
+!!! note
+    :warning: You will likely see a prompt which asks you to confirm the authenticity of GitHub's SSH RSA fingerprint. You may safely type `yes` and press Return/Enter to continue.
+```
 
 The result of that command should look something like this:
 

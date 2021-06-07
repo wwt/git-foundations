@@ -4,7 +4,7 @@ A WWT-built Docker Image provides a ready-to-use environment for the Git hands-o
 
 ```
 !!! note
-    :warning: You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:
+    :bulb: You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:
 ```
 
 ```shell
@@ -17,7 +17,7 @@ docker info
 
 ---
 
-:exclamation: If you see an error message similiar to the examples below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
+:exclamation: If you see an error message similiar to the example below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
 
 ![docker-info-bad](../images/docker-info-bad.png "docker info - Docker not running")
 
@@ -47,7 +47,10 @@ You will know your Docker Container environment is ready for the Git hands-on ex
 
 2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
 
-:bulb: **Note: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.**
+```
+!!! note
+    :bulb: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
+```
 
 ```shell
 # Display the contents of the Container operating system release file 
@@ -74,7 +77,10 @@ The result of that command should look something like this:
 
 Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:
 
-:bulb: **Note: Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.**
+```
+!!! note
+    :warning: Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.
+```
 
 ```shell
 control + d (key sequence) # Stops your Container and returns you to your terminal prompt

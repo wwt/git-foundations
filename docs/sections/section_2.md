@@ -47,7 +47,10 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 ```
 
-:exclamation: **Note: Treat your SSH keys as if they were any other form of credentials and do not share them with anyone.**
+```
+!!! note
+    :exclamation: Treat your SSH keys as if they were any other form of credentials and do not share them with anyone.
+```
 
 ![container-ssh-key](../images/container-ssh-key.png "cat ~/.ssh/id_rsa.pub")
 

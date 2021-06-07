@@ -19,7 +19,7 @@ You have the option to create Git repositories either on your local machine (wit
    - **Description** — **_Git Repository \#1_**
    - Set your repository to **Public**
    - Tick the box to **Initialize this repository with a README**
-     - Note — the **Name** and **Description** values provide the initial title and contents for the repository README file.
+     - :warning: The **Name** and **Description** values provide the initial title and contents for the repository README file.
    - Expand the **Add .gitignore** dropdown and type or choose **Python**
    - Click the **Create repository** button
 
