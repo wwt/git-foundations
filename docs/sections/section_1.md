@@ -27,23 +27,23 @@ There are two-steps in the process (download and then run) to create the Docker 
 
 1. Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and enter the following command:
 
-```shell
-docker container run -it --name git-foundations wwt01/alpine-network-dev
-```
+    ```shell
+    docker container run -it --name git-foundations wwt01/alpine-network-dev
+    ```
 
-This command performs the following actions:
+    This command performs the following actions:
 
-- Downloads the 'wwt01/alpine-network-dev' Image from [Docker Hub](https://hub.docker.com/r/wwt01/alpine-network-dev "WWT Development Docker Image on Docker Hub").
-- Creates a Docker Container with the name 'git-foundations'.
-- Attaches to the terminal of the 'git-foundations' Container.
+    - Downloads the 'wwt01/alpine-network-dev' Image from [Docker Hub](https://hub.docker.com/r/wwt01/alpine-network-dev "WWT Development Docker Image on Docker Hub").
+    - Creates a Docker Container with the name 'git-foundations'.
+    - Attaches to the terminal of the 'git-foundations' Container.
 
-Expect the first run of this command to take a few minutes, while Docker Desktop downloads the Image from Docker Hub. Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.
+    Expect the first run of this command to take a few minutes, while Docker Desktop downloads the Image from Docker Hub. Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.
 
-You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt changes to `/development#`:
+    You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt changes to `/development#`:
 
-![docker-container-run](../images/docker-container-run.png "docker container run -it --name git-foundations wwt01/alpine-network-dev")
+    ![docker-container-run](../images/docker-container-run.png "docker container run -it --name git-foundations wwt01/alpine-network-dev")
 
----
+    ---
 
 2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
 
