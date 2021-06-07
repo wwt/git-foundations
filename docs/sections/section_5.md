@@ -24,79 +24,81 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
 
 1. Return to your Docker Container prompt, type the command `git clone`, paste **_your repository URL_**, as shown in the example below (your repository URL will be different than the example in the in the following code block), and press your Return/Enter key:
 
-```shell
-# Download a new copy of a GitHub repository to a local system (our Container, in this case)
-git clone git@github.com:your-repository-url/git-repo-1.git
-```
+    ```shell
+    # Download a new copy of a GitHub repository to a local system (our Container, in this case)
+    git clone git@github.com:your-repository-url/git-repo-1.git
+    ```
 
-!!! attention
-    You will likely see a prompt which asks you to confirm the authenticity of GitHub's SSH RSA fingerprint. You may safely type `yes` and press Return/Enter to continue.
+    !!! attention
+        You will likely see a prompt which asks you to confirm the authenticity of GitHub's SSH RSA fingerprint. You may safely type `yes` and press Return/Enter to continue.
 
-The result of the `git clone` command should look something like this:
+    The result of the `git clone` command should look something like this:
 
-![git-clone](../images/git-clone.png "Clone GitHub repository")
+    ![git-clone](../images/git-clone.png "Clone GitHub repository")
 
----
+    ---
 
 2. List your directory contents to view your repository folder, **git-repo-1**, with the following command:
 
-```shell
-# List the contents of the current directory in long format
-ls -l
-```
+    ```shell
+    # List the contents of the current directory in long format
+    ls -l
+    ```
 
-![container-root-ls](../images/container-root-ls.png "List directory contents")
+    ![container-root-ls](../images/container-root-ls.png "List directory contents")
 
----
+    ---
 
 3. Change to your repository directory and display your current working directory with the following commands:
 
-```shell
-# Change the current working directory from development to /development/git-repo-1
-cd git-repo-1
-```
+    ```shell
+    # Change the current working directory from development to /development/git-repo-1
+    cd git-repo-1
+    ```
 
-```shell
-# Display the current working directory
-pwd
-```
+    ```shell
+    # Display the current working directory
+    pwd
+    ```
 
-![container-cd-repo](../images/container-cd-repo.png "Change to the respository directory")
+    ![container-cd-repo](../images/container-cd-repo.png "Change to the respository directory")
 
----
+    ---
 
 4. Let's take a quick look at the contents of your repository directory, including the hidden files, with the following command.
 
-```shell
-# List the contents of the current directory, including hidden files, in long format
-ls -la
-```
+    ```shell
+    # List the contents of the current directory, including hidden files, in long format
+    ls -la
+    ```
 
-![container-repo-ls](../images/container-repo-ls.png "List all repository files")
+    ![container-repo-ls](../images/container-repo-ls.png "List all repository files")
 
 5. Notice that both of the files in your GitHub repository (**.gitignore** and **README.md**) are now in our Docker Container.
 
----
+    ---
 
 6. View the contents of the **README.md** file with the following command:
 
-```shell
-# Display the contents of the file 'README.md'
-cat README.md
-```
+    ```shell
+    # Display the contents of the file 'README.md'
+    cat README.md
+    ```
 
-![container-cat-readme](../images/container-cat-readme.png "Display the README.md file contents")
+    ![container-cat-readme](../images/container-cat-readme.png "Display the README.md file contents")
+
+    ---
+
+7. There is one item in our repository directory which isn't in our GitHub repository, the **.git** directory. This directory contains all of the details about your local repository and you should rarely, if ever, have to interact with these files. Just to see what the contents of this folder look like, use the following command:
+
+    ```shell
+    # List the contents of the .git directory in long format
+    ls -l .git
+    ```
+
+    ![container-ls-git](../images/container-ls-git.png "List the contents of the .git directory")
 
 ---
-
-6. There is one item in our repository directory which isn't in our GitHub repository, the **.git** directory. This directory contains all of the details about your local repository and you should rarely, if ever, have to interact with these files. Just to see what the contents of this folder look like, use the following command:
-
-```shell
-# List the contents of the .git directory in long format
-ls -l .git
-```
-
-![container-ls-git](../images/container-ls-git.png "List the contents of the .git directory")
 
 We now have a copy of our GitHub repository in our Docker environment. Before we make changes to our local copy of the Git repository, we need to configure a few local Git settings. Click the link below to continue:
 

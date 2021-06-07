@@ -9,13 +9,15 @@ Before we clone our new repository to our Docker Container, let's create a new b
 
 1. Click the **Branch: main** button to expand the **Branch** drop-down menu. Type the name **branch1** for the new branch and then click the text **Create branch: branch1 from 'main'**.
 
-![github-new-branch](../images/github-new-branch.png "Create 'branch1' from 'main'")
+    ![github-new-branch](../images/github-new-branch.png "Create 'branch1' from 'main'")
 
----
+    ---
 
 2. Click the **Branch: branch1** button to expand the **Branch** drop-down menu. Notice that there are now two branches, **main** and **branch1**.
 
-![github-branch-list](../images/github-branch-list.png "List of repository branches")
+    ![github-branch-list](../images/github-branch-list.png "List of repository branches")
+
+---
 
 It's time to get a copy of our GitHub repository into our Docker environment. Click the link below to continue:
 
