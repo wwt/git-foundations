@@ -51,7 +51,7 @@ There are two-steps in the process (download and then run) to create the Docker 
     # Display the contents of the Container operating system release file 
     cat /etc/*-release
     ```
-    
+
     !!! tip
         The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
 
@@ -66,9 +66,9 @@ There are two-steps in the process (download and then run) to create the Docker 
     ```shell
     git --version
     ```
-    
+
     The result of that command should look something like this:
-    
+
     ![git-version](../images/git-version.png "git --version")
 
     ---
