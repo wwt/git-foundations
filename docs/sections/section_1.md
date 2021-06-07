@@ -2,7 +2,8 @@
 
 A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. The Docker Container already has Git software installed and you don't need any Docker experience for these exercises. Just make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download") installed and running on your Windows or macOS computer and we will walk you through the development environment setup.
 
-:bulb:**Note: You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:**
+!!! note
+    :bulb: Note: You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:
 
 ```shell
 docker info
@@ -44,7 +45,7 @@ You will know your Docker Container environment is ready for the Git hands-on ex
 
 2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
 
-:bulb: **Note: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.** 
+:bulb: **Note: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.**
 
 ```shell
 # Display the contents of the Container operating system release file 
