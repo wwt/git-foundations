@@ -10,9 +10,9 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
 
 1. Click the green **Clone** button and notice that GitHub displays an HTTPS URL. Click the **SSH** link to change the display to an SSH URL.
 
-![github-clone-https](../images/github-clone-https.png "Clone repository button default transport")
+    ![github-clone-https](../images/github-clone-https.png "Clone repository button default transport")
 
----
+    ---
 
 2. Click the **Copy** icon, just to the right of the SSH URL, to store the URL on your clipboard.
 
