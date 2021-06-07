@@ -35,7 +35,7 @@ It is possible to commit many changes to a single file at once although doing so
     !!! tip
         An **untracked file** is a file which the local Git repository has not seen before.
 
----
+    ---
 
 3. Issue commands to:
     - Add the **my_script.py** file to the Git staging area.
