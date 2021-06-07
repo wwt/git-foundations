@@ -16,7 +16,7 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
 
 2. Click the **Copy** icon, just to the right of the SSH URL, to store the URL on your clipboard.
 
-![github-clone-ssh](../images/github-clone-ssh.png "Copy repository SSH URL")
+    ![github-clone-ssh](../images/github-clone-ssh.png "Copy repository SSH URL")
 
 ---
 
