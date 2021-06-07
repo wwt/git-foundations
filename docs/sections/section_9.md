@@ -68,9 +68,11 @@ git status
 !!! caution
     Commits to a Git repository require a commit message which should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.
 
-:exclamation: **The `-m` option after the `git commit` command allows you to enter a commit message inline.  If you omit the `-m` option, Git will open the default text editor for the OS (VIM is the default editor for most Linux distributions) and prompt for a commit message.**
+!!! danger
+    The `-m` option after the `git commit` command allows you to enter a commit message inline.  If you omit the `-m` option, Git will open the default text editor for the OS (VIM is the default editor for most Linux distributions) and prompt for a commit message.
 
-:bangbang: **If you happen to end up in the Docker Container VIM editor, press the `esc`key, type `:q!`, and press `Return` or `Enter`.**
+!!! tip
+    If you happen to end up in the Docker Container VIM editor, press the `esc`key, type `:q!`, and press `Return` or `Enter`.
 
 ```shell
 # Move the file 'my_script.py' from the staging area to the repository
