@@ -8,9 +8,9 @@ You have the option to create Git repositories either on your local machine (wit
 
 1. Navigate to [https://github.com/login](https://github.com/login "GitHub.com login") and log in.
 2. The view you see may vary depending on whether or not your GitHub account is new. You should see a green button on the left side of the window which reads either **Create repository**, **New repository**, or something similar.
-   - If you don't see the button, navigate to your GitHub home page with click to the GitHub logo in the upper-left corner of any GitHub window.
+    - If you don't see the button, navigate to your GitHub home page with click to the GitHub logo in the upper-left corner of any GitHub window.
 
-        ![github-new-repo](../images/github-new-repo.png "Create new repository")
+    ![github-new-repo](../images/github-new-repo.png "Create new repository")
 
     ---
 
