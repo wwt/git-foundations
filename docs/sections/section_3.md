@@ -14,20 +14,21 @@ You have the option to create Git repositories either on your local machine (wit
 
 ---
 
-3. You need to enter some information and choose a few options to create the repository.
-   - **Name** — **_git-repo-1_**
-   - **Description** — **_Git Repository \#1_**
-   - Set your repository to **Public**
-   - Tick the box to **Initialize this repository with a README**
-     - :warning: The **Name** and **Description** values provide the initial title and contents for the repository README file.
-   - Expand the **Add .gitignore** dropdown and type or choose **Python**
-   - Click the **Create repository** button
+!!! example
+    You need to enter some information and choose a few options to create the repository.
+    - **Name** — **_git-repo-1_**
+    - **Description** — **_Git Repository \#1_**
+    - Set your repository to **Public**
+    - Tick the box to **Initialize this repository with a README**
+      - :warning: The **Name** and **Description** values provide the initial title and contents for the repository README file.
+    - Expand the **Add .gitignore** dropdown and type or choose **Python**
+    - Click the **Create repository** button
 
 ![github-new-repo-details](../images/github-new-repo-details.png "Add new repository details")
 
 ---
 
-4. Take a look at your new repository! You have two files, **.gitignore** and **README.md**.
+3. Take a look at your new repository! You have two files, **.gitignore** and **README.md**.
 
 ![github-new-repo-complete](../images/github-new-repo-complete.png "New repository files")
 
