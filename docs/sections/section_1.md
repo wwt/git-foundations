@@ -3,19 +3,21 @@
 A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. The Docker Container already has Git software installed and you don't need any Docker experience for these exercises. Just make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download") installed and running on your Windows or macOS computer and we will walk you through the development environment setup.
 
 !!! tip
-    :bulb: You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:
+    You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:
 
 ```shell
 docker info
 ```
 
-:clap: If your output looks something like this, you are all set:
+!!! success
+    If your output looks something like this image, you are all set:
 
 ![docker-info](../images/docker-info.png "docker info")
 
 ---
 
-:exclamation: If you see an error message similiar to the example below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
+!!! failure
+     If you see an error message similiar to the example below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
 
 ![docker-info-bad](../images/docker-info-bad.png "docker info - Docker not running")
 
@@ -45,8 +47,8 @@ You will know your Docker Container environment is ready for the Git hands-on ex
 
 2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
 
-!!! info
-    :bulb: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
+!!! tip
+    The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
 
 ```shell
 # Display the contents of the Container operating system release file 
@@ -74,7 +76,7 @@ The result of that command should look something like this:
 Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:
 
 !!! warning
-    :warning: Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.
+    Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.
 
 ```shell
 control + d (key sequence) # Stops your Container and returns you to your terminal prompt
