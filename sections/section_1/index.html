@@ -638,9 +638,9 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:</p>
-</div>
 <div class="highlight"><pre><span></span><code>docker info
 </code></pre></div>
+</div>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <p>If your output looks something like this image, you are all set:</p>
@@ -672,13 +672,13 @@
 <ol>
 <li>If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:</li>
 </ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the Container operating system release file </span>
+cat /etc/*-release
+</code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The Container will ignore any commands/lines that begin with the <code>#</code> character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.</p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the Container operating system release file </span>
-cat /etc/*-release
-</code></pre></div>
 <ol>
 <li>You are in the Docker Container environment if your output looks like this:</li>
 </ol>
@@ -695,13 +695,13 @@ cat /etc/*-release
 <p>Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.</p>
-</div>
+<p>Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell:</p>
 <div class="highlight"><pre><span></span><code>control + d <span class="o">(</span>key sequence<span class="o">)</span> <span class="c1"># Stops your Container and returns you to your terminal prompt</span>
 docker container start git-foundations <span class="c1"># Restarts your Container in the background</span>
 docker container attach git-foundations <span class="c1"># Returns you to the Container prompt</span>
 docker container rm git-foundations <span class="c1"># Destroys your container so you can start over</span>
 </code></pre></div>
+</div>
 <hr />
 <p>Your environment is set up and ready to use! Not too painful so far, right? Click the link below to get started with Git:</p>
 <p><a href="../section_2/" title="Setup GitHub Authentication">Next Section &gt; Setup GitHub Authentication</a></p>
