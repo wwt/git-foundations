@@ -47,31 +47,31 @@ There are two-steps in the process (download and then run) to create the Docker 
 
 2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
 
-```shell
-# Display the contents of the Container operating system release file 
-cat /etc/*-release
-```
-
-!!! tip
-    The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
+    ```shell
+    # Display the contents of the Container operating system release file 
+    cat /etc/*-release
+    ```
+    
+    !!! tip
+        The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
 
 3. You are in the Docker Container environment if your output looks like this:
 
-![container-release-info](../images/container-release-info.png "cat /etc/*-release")
+    ![container-release-info](../images/container-release-info.png "cat /etc/*-release")
 
----
+    ---
 
 4. Check the version of Git in the environment with the following command:
 
-```shell
-git --version
-```
+    ```shell
+    git --version
+    ```
+    
+    The result of that command should look something like this:
+    
+    ![git-version](../images/git-version.png "git --version")
 
-The result of that command should look something like this:
-
-![git-version](../images/git-version.png "git --version")
-
----
+    ---
 
 Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:
 
