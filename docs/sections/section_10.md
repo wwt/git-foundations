@@ -1,14 +1,14 @@
 # Review Changes in the GitHub Repository
 
-Let's take a look at how the changes we pushed from our local repository impact the GitHub repository.
+Let's take a look at how the changes we pushed from our local Git repository impact the GitHub repository.
 
 ---
 
 ## Local Repository Push Review
 
-1. Return to GitHub and notice some a few things about the repository:
-   - There is still just one commit on the **main** branch; we haven't yet _merged_ the changes we pushed from **branch3** to GitHub.
-   - The GitHub repository now has three branches, up from two before we pushed **branch3** from our local repository to GitHub.
+1. Return to [GitHub](https://github.com "GitHub.com") and notice a few things about the repository:
+   - There is still just one commit on the **main** branch; we haven't yet _merged_ the changes in **branch3** to the **main** branch.
+   - The GitHub repository now has three branches, up from two before we pushed **branch3** from our local Git repository to GitHub.
    - There is a highlighted message indicating a recently pushed branch (**branch3**).
 
 ![github-repo-push-review](../images/github-repo-push-review.png "Review local repository changes in GitHub")
