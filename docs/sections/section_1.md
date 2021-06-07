@@ -2,8 +2,10 @@
 
 A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. The Docker Container already has Git software installed and you don't need any Docker experience for these exercises. Just make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download") installed and running on your Windows or macOS computer and we will walk you through the development environment setup.
 
+```
 !!! note
     :warning: You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:
+```
 
 ```shell
 docker info
