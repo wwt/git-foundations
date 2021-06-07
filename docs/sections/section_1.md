@@ -75,7 +75,7 @@ The result of that command should look something like this:
 
 Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:
 
-!!! warning
+!!! attention
     Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.
 
 ```shell

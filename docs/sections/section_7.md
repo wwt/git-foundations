@@ -39,10 +39,8 @@ git branch -a
    - And an **origin/remotes/branch1** branch.
       - This is the copy of the **branch1** branch in Github.
 
-```
-!!! note
-    :bulb: **Origin** is how our local repository refers to GitHub so **origin/main** represents the **main** branch on GitHub.
-```
+!!! info
+    **Origin** is how our local repository refers to GitHub so **origin/main** represents the **main** branch on GitHub.
 
 ---
 
@@ -142,7 +140,8 @@ git branch
 git branch -d branch2
 ```
 
-:bulb: **Note: Git will not allow you to delete your current, working branch.**
+!!! tip
+    Git will not allow you to delete your current, working branch.
 
 ![git-branch-d-branch2](../images/git-branch-d-branch2.png "Delete branch 'branch2'")
 

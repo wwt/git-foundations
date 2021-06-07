@@ -33,7 +33,8 @@ git status
    - The **my_script.py** file exists and is empty (0 bytes).
    - The **my_script.py** file is in the `Untracked files` section of the `git status` output.
 
-:bulb: **Note: An _untracked file_ is a file which the local Git repository has not seen before.**
+!!! tip
+    An **untracked file** is a file which the local Git repository has not seen before.
 
 ---
 
@@ -64,14 +65,12 @@ git status
      - There are other ways to add a message to a commit, although the `-m` option is, generally, the simplest.
    - Review the status of the local Git repository.
 
-```
-!!! note
-    :warning: Commits to a Git repository require a commit message and the message should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.
-```
+!!! caution
+    Commits to a Git repository require a commit message which should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.
 
 :exclamation: **The `-m` option after the `git commit` command allows you to enter a commit message inline.  If you omit the `-m` option, Git will open the default text editor for the OS (VIM is the default editor for most Linux distributions) and prompt for a commit message.**
 
-:bangbang: **If you happen to end up in the Docker Container VIM editor, press the `esc`key, type `:q!`, and press `Return` or `Enter`.** 
+:bangbang: **If you happen to end up in the Docker Container VIM editor, press the `esc`key, type `:q!`, and press `Return` or `Enter`.**
 
 ```shell
 # Move the file 'my_script.py' from the staging area to the repository
@@ -139,10 +138,8 @@ git status
 git add .
 ```
 
-```
-!!! note
-    :bulb: You may also commit individual files to the staging area.  For example, to stage only the README.md file, use the command `git add README.md`.
-```
+!!! tip
+    You may also commit individual files to the staging area.  For example, to stage only the README.md file, use the command `git add README.md`.
 
 ```shell
 # Display status information for the current git repository
@@ -191,10 +188,8 @@ git log
 
 1. We now have several atomic commits in our local repository which we can now push to our GitHub repository. The `git push` command will synchronize the local Git repository changes with the GitHub repository.
 
-```
-!!! note
-    :bulb: To determine which remote repository a `git push` will send changes to, use either of the commands `git remote --verbose`, `git remote -v`, or `cat .git/config` .
-```
+!!! tip
+    To determine which remote repository a `git push` will send changes to, use either of the commands `git remote --verbose`, `git remote -v`, or `cat .git/config` .
 
 ```shell
 # Determine the remote repository URL
