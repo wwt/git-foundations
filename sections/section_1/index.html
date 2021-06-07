@@ -672,8 +672,6 @@
 </li>
 <li>
 <p>If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:</p>
-</li>
-</ol>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the Container operating system release file </span>
 cat /etc/*-release
 </code></pre></div>
@@ -681,19 +679,21 @@ cat /etc/*-release
 <p class="admonition-title">Tip</p>
 <p>The Container will ignore any commands/lines that begin with the <code>#</code> character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.</p>
 </div>
-<ol>
-<li>You are in the Docker Container environment if your output looks like this:</li>
-</ol>
+</li>
+<li>
+<p>You are in the Docker Container environment if your output looks like this:</p>
 <p><img alt="container-release-info" src="../../images/container-release-info.png" title="cat /etc/*-release" /></p>
 <hr />
-<ol>
-<li>Check the version of Git in the environment with the following command:</li>
-</ol>
+</li>
+<li>
+<p>Check the version of Git in the environment with the following command:</p>
 <div class="highlight"><pre><span></span><code>git --version
 </code></pre></div>
 <p>The result of that command should look something like this:</p>
 <p><img alt="git-version" src="../../images/git-version.png" title="git --version" /></p>
 <hr />
+</li>
+</ol>
 <p>Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
