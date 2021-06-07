@@ -142,8 +142,8 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git branch -d branch2
     ```
 
-!!! tip
-    Git will not allow you to delete your current, working branch.
+    !!! tip
+        Git will not allow you to delete your current, working branch.
 
     ![git-branch-d-branch2](../images/git-branch-d-branch2.png "Delete branch 'branch2'")
 
