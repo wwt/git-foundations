@@ -39,14 +39,10 @@ git branch -a
    - And an **origin/remotes/branch1** branch.
       - This is the copy of the **branch1** branch in Github.
 
-<<<<<<< HEAD
 ```
 !!! note
     :bulb: **Origin** is how our local repository refers to GitHub so **origin/main** represents the **main** branch on GitHub.
 ```
-=======
-:bulb: **NOTE: _Origin_ is how our local repository refers to GitHub so _origin/main_ represents the _main_ branch in GitHub.**
->>>>>>> main
 
 ---
 

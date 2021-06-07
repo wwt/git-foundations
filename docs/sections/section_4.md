@@ -4,14 +4,10 @@ It is common for several people to work on the code or contents within a GitHub 
 
 Before we clone our new repository to our Docker Container, let's create a new branch from the default, **main** branch. This will simulate the scenario that someone else already started working on changes to the repository within their own branch.
 
-<<<<<<< HEAD
 ```
 !!! note
     :bulb: It is more common and generally a best practice to create new branches within local development environments and then to push those branches to GitHub. This step illustrates a point which we will review in a subsequent section.
 ```
-=======
-:bulb: **Note: It is more common and generally a best practice to create new branches within local development environments, and then to push those branches to GitHub. This next few steps illustrate a point which we will review in a subsequent section.**
->>>>>>> main
 
 1. Click the **Branch: main** button to expand the **Branch** drop-down menu. Type the name **branch1** for the new branch and then click the text **Create branch: branch1 from 'main'**.
 
