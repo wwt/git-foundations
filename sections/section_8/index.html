@@ -683,45 +683,48 @@
 <hr />
 <h2 id="append-the-readmemd-file">Append the README.md File</h2>
 <ol>
-<li>From the Docker Container prompt, view the status of your local Git repository with the following command:</li>
-</ol>
+<li>
+<p>From the Docker Container prompt, view the status of your local Git repository with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
 git status
 </code></pre></div>
 <p><img alt="git-status-1" src="../../images/git-status-1.png" title="Display the git repository status" /></p>
-<ol>
-<li>Notice your working branch is <strong>branch3</strong> and that you have no changes to commit (indicated by the <code>nothing to commit</code> output.</li>
-</ol>
+</li>
+<li>
+<p>Notice your working branch is <strong>branch3</strong> and that you have no changes to commit (indicated by the <code>nothing to commit</code> output.</p>
 <hr />
-<ol>
-<li>Write a new line to the <strong>README.md</strong> file with the following command:</li>
-</ol>
+</li>
+<li>
+<p>Write a new line to the <strong>README.md</strong> file with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Append a new line of text (&#39;This is a new line...&#39;&#39;) to the file &#39;README.md&#39;</span>
 <span class="nb">echo</span> <span class="s1">&#39;This is a new line in the README.md file&#39;</span> &gt;&gt; README.md
 </code></pre></div>
 <p><img alt="container-echo-readme" src="../../images/container-echo-readme.png" title="Add a new line of text to 'README.md'" /></p>
 <hr />
-<ol>
-<li>View the changes between the copy of <strong>README.md</strong> in the working directory and the local Git repository with the following command:</li>
-</ol>
+</li>
+<li>
+<p>View the changes between the copy of <strong>README.md</strong> in the working directory and the local Git repository with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display changes between the working and committed files within the git repository</span>
 git diff
 </code></pre></div>
 <p><img alt="git-diff-readme-1" src="../../images/git-diff-readme-1.png" title="Display changes between the working and committed copies of 'README.md'" /></p>
-<ol>
-<li>Notice the <code>+</code> character next to the last line in the <code>git diff</code> output.  This indicates the a change between the <strong>README.md</strong> file in the working directory and the copy of <strong>README.md</strong> which is already in (committed to) the local Git repository.</li>
-</ol>
+</li>
+<li>
+<p>Notice the <code>+</code> character next to the last line in the <code>git diff</code> output.  This indicates the a change between the <strong>README.md</strong> file in the working directory and the copy of <strong>README.md</strong> which is already in (committed to) the local Git repository.</p>
 <hr />
-<ol>
-<li>View the of your local Git repository with the following command:</li>
-</ol>
+</li>
+<li>
+<p>View the of your local Git repository with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
 git status
 </code></pre></div>
 <p><img alt="git-status-2" src="../../images/git-status-2.png" title="Display the git repository status" /></p>
-<ol>
-<li>Notice the <strong>README.md</strong> file in the section, <code>Changes not staged for commit</code>.</li>
+</li>
+<li>
+<p>Notice the <strong>README.md</strong> file in the section, <code>Changes not staged for commit</code>.</p>
+</li>
 </ol>
+<hr />
 <p>We made a change to one of the files in our working directory and next up is the process to move files from the working directory, to the staging area, and to the local repository (HEAD). Click the link below to continue:</p>
 <p><a href="../section_9/" title="SMake Local Git Repository Changes With Atomic Commits">Next Section &gt; Make Local Git Repository Changes With Atomic Commits</a></p>
                 

@@ -711,11 +711,13 @@
 <hr />
 <h2 id="create-and-commit-a-new-python-script-to-the-repository">Create and Commit a New Python Script to the Repository</h2>
 <ol>
-<li>Let's create a new file, a simple Python script, in our repository. The file will be blank to start, but we will add some code to the file shortly. In the next series of commands we will:</li>
+<li>
+<p>Let's create a new file, a simple Python script, in our repository. The file will be blank to start, but we will add some code to the file shortly. In the next series of commands we will:</p>
+<ul>
 <li>Create a Python script.</li>
 <li>List the contents of the repository directory.</li>
 <li>Review the Git repository status.</li>
-</ol>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># Create a new, blank file named &#39;my_script.py&#39;</span>
 touch my_script.py
 </code></pre></div>
@@ -726,25 +728,27 @@ ls -l
 git status
 </code></pre></div>
 <p><img alt="container-touch-my_script" src="../../images/container-touch-my_script.png" title="Create a new Python script file" /></p>
-<ol>
+</li>
 <li>
 <p>Notice the following:</p>
-</li>
-<li>
-<p>The <strong>my_script.py</strong> file exists and is empty (0 bytes).</p>
-</li>
+<ul>
+<li>The <strong>my_script.py</strong> file exists and is empty (0 bytes).</li>
 <li>The <strong>my_script.py</strong> file is in the <code>Untracked files</code> section of the <code>git status</code> output.</li>
-</ol>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>An <strong>untracked file</strong> is a file which the local Git repository has not seen before.</p>
 </div>
+</li>
+</ol>
 <hr />
 <ol>
-<li>Issue commands to:</li>
+<li>
+<p>Issue commands to:</p>
+<ul>
 <li>Add the <strong>my_script.py</strong> file to the Git staging area.</li>
 <li>Review the status of the Git repository.</li>
-</ol>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># Move the &#39;my_script.py&#39; file from the working directory to the staging area</span>
 git add my_script.py
 </code></pre></div>
@@ -752,20 +756,24 @@ git add my_script.py
 git status
 </code></pre></div>
 <p><img alt="git-add-my-script" src="../../images/git-add-my-script.png" title="Add 'my_script.py' to the staging area" /></p>
-<ol>
-<li>Notice that the <strong>my_script.py</strong> file is now in the <code>Changes to be committed</code> section.</li>
+</li>
+<li>
+<p>Notice that the <strong>my_script.py</strong> file is now in the <code>Changes to be committed</code> section.</p>
+<ul>
 <li>This indicates <strong>my_script.py</strong> is in the Git <strong>staging area</strong>.</li>
-</ol>
+</ul>
 <hr />
-<ol>
-<li>Issue commands to:</li>
+</li>
+<li>
+<p>Issue commands to:</p>
+<ul>
 <li>Commit the <strong>my_script.py</strong> file to the local Git repository with the <code>git commit</code> command, followed by the <code>-m</code> option and a message about the commit details.<ul>
 <li>The <code>-m</code> command option prefixes the <strong>required message</strong> that accompanies a commit to a Git repository.</li>
 <li>There are other ways to add a message to a commit, although the <code>-m</code> option is, generally, the simplest.</li>
 </ul>
 </li>
 <li>Review the status of the local Git repository.</li>
-</ol>
+</ul>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>Commits to a Git repository require a commit message which should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.</p>
@@ -785,14 +793,16 @@ git commit -m <span class="s2">&quot;Initial commit of &#39;my_script.py&#39;&qu
 git status
 </code></pre></div>
 <p><img alt="git-commit-my-script" src="../../images/git-commit-my-script.png" title="Commit 'my_script.py' to the local repository" /></p>
-<ol>
-<li>Notice there are no changes to commit. The <strong>README.md</strong> file does have changes although isn't yet staged for commit, we will work on that shortly.</li>
+</li>
+<li>
+<p>Notice there are no changes to commit. The <strong>README.md</strong> file does have changes although isn't yet staged for commit, we will work on that shortly.</p>
+</li>
 </ol>
 <hr />
 <h2 id="add-python-code-to-the-my_scriptpy-file">Add Python Code to the my_script.py File</h2>
 <ol>
-<li>To make changes to the <strong>my_script.py</strong> file, we will add some executable Python code. Use the following commands to add some executable Python code to <strong>my_script.py</strong>:</li>
-</ol>
+<li>
+<p>To make changes to the <strong>my_script.py</strong> file, we will add some executable Python code. Use the following commands to add some executable Python code to <strong>my_script.py</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Python code which collects a name and displays a greeting</span>
 <span class="nb">echo</span> <span class="s1">&#39;#!/usr/bin/env python&#39;</span> &gt;&gt; my_script.py
 <span class="nb">echo</span> <span class="s1">&#39;# This script displays a greeting&#39;</span> &gt;&gt; my_script.py
@@ -801,31 +811,33 @@ git status
 </code></pre></div>
 <p><img alt="container-echo-my-script" src="../../images/container-echo-my-script.png" title="Add code to 'my_script.py'" /></p>
 <hr />
-<ol>
-<li>View the changes between the copy of <strong>my_script.py</strong> file in the working directory and the copy in the local Git repository with the following command:</li>
-</ol>
+</li>
+<li>
+<p>View the changes between the copy of <strong>my_script.py</strong> file in the working directory and the copy in the local Git repository with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display changes between the working and committed files within the git repository</span>
 git diff
 </code></pre></div>
 <p><img alt="git-diff-my-script" src="../../images/git-diff-my-script.png" title="Display changes between the working and committed copies of 'my_script.py'" /></p>
-<ol>
-<li>Notice the <code>+</code> characters next to the last four lines in the <code>git diff</code> output.  This indicates four lines of changes between the <strong>my_script.py</strong> file in the working directory and the copy of <strong>my_script.py</strong> which is already in (committed to) the local Git repository.</li>
-</ol>
+</li>
+<li>
+<p>Notice the <code>+</code> characters next to the last four lines in the <code>git diff</code> output.  This indicates four lines of changes between the <strong>my_script.py</strong> file in the working directory and the copy of <strong>my_script.py</strong> which is already in (committed to) the local Git repository.</p>
 <hr />
-<ol>
-<li>View the status of your local Git repository with the following command:</li>
-</ol>
+</li>
+<li>
+<p>View the status of your local Git repository with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
 git status
 </code></pre></div>
 <p><img alt="git-status-3" src="../../images/git-status-3.png" title="Display the git repository status" /></p>
 <hr />
-<ol>
-<li>We now have two changed files to stage and then commit to the local repository. Issue commands to:</li>
+</li>
+<li>
+<p>We now have two changed files to stage and then commit to the local repository. Issue commands to:</p>
+<ul>
 <li>Move all changed files in the working directory to the staging area.</li>
 <li>Review the repository status.</li>
 <li>Commit the staged changes to the repository.</li>
-</ol>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># Move all changed files from the working directory to the staging area</span>
 git add .
 </code></pre></div>
@@ -840,37 +852,41 @@ git status
 git commit -m <span class="s2">&quot;Appended line to README.md and added commands to my_script.py&quot;</span>
 </code></pre></div>
 <p><img alt="git-add-all" src="../../images/git-add-all.png" title="Stage and commit 'my_script.py' and 'README.md' to the repository" /></p>
-<ol>
-<li>Notice the output from the <code>git status</code> command shows two files in the staging area, in the <code>Changes to be committed</code> section of the output.</li>
-<li>Also notice the output from the <code>git commit</code> command shows <code>two files changed</code> and a combined <code>5 insertions</code> (new lines of text).</li>
-</ol>
+</li>
+<li>
+<p>Notice the output from the <code>git status</code> command shows two files in the staging area, in the <code>Changes to be committed</code> section of the output.</p>
+</li>
+<li>
+<p>Also notice the output from the <code>git commit</code> command shows <code>two files changed</code> and a combined <code>5 insertions</code> (new lines of text).</p>
 <hr />
-<ol>
-<li>View the status of your local Git repository with the following command:</li>
-</ol>
+</li>
+<li>
+<p>View the status of your local Git repository with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
 git status
 </code></pre></div>
 <p><img alt="git-status-4" src="../../images/git-status-4.png" title="Display the git repository status" /></p>
-<ol>
-<li>Notice the working branch, <strong>branch3</strong> shows no changes to commit.</li>
-</ol>
+</li>
+<li>
+<p>Notice the working branch, <strong>branch3</strong> shows no changes to commit.</p>
 <hr />
-<ol>
-<li>Sometimes it is necessary to roll-back to a previous repository commit or to understand the history of changes to a repository (who did what to which files).  You can review the complete commit history for a repository with the <code>git log</code> command.</li>
-</ol>
+</li>
+<li>
+<p>Sometimes it is necessary to roll-back to a previous repository commit or to understand the history of changes to a repository (who did what to which files).  You can review the complete commit history for a repository with the <code>git log</code> command.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display the logged git history for the repository</span>
 git log
 </code></pre></div>
 <p><img alt="git-log" src="../../images/git-log.png" title="Display the git commit history" /></p>
-<ol>
-<li>Notice how information about the most recent commit is at the top of the <code>git log</code> output, and how the <strong>commit messages</strong> for each commit in the log provide important information about the changes a particular commit includes.  This is one reason descriptive commit messages are important.</li>
+</li>
+<li>
+<p>Notice how information about the most recent commit is at the top of the <code>git log</code> output, and how the <strong>commit messages</strong> for each commit in the log provide important information about the changes a particular commit includes.  This is one reason descriptive commit messages are important.</p>
+</li>
 </ol>
 <hr />
 <h2 id="push-committed-changes-to-github">Push Committed Changes to GitHub</h2>
 <ol>
-<li>We now have several atomic commits in our local repository which we can now push to our GitHub repository. The <code>git push</code> command will synchronize the local Git repository changes with the GitHub repository.</li>
-</ol>
+<li>
+<p>We now have several atomic commits in our local repository which we can now push to our GitHub repository. The <code>git push</code> command will synchronize the local Git repository changes with the GitHub repository.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>To determine which remote repository a <code>git push</code> will send changes to, use either of the commands <code>git remote --verbose</code>, <code>git remote -v</code>, or <code>cat .git/config</code> .</p>
@@ -880,29 +896,34 @@ git remote --verbose
 </code></pre></div>
 <p><img alt="git-remote-verbose" src="../../images/git-remote-verbose.png" title="Display the remote repository URL" /></p>
 <hr />
-<ol>
-<li>Attempt to push local Git repository changes to GitHub with the following command:</li>
-</ol>
+</li>
+<li>
+<p>Attempt to push local Git repository changes to GitHub with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Push local repository changes to a remote repository</span>
 git push
 </code></pre></div>
 <p><img alt="git-push-1" src="../../images/git-push-1.png" title="Push local repository changes to GitHub" /></p>
-<ol>
-<li>Notice that we receive a <code>fatal</code> error message when we attempt to use the <code>git push</code> command. GitHub does not have a branch which matches the working branch in our local repository (<strong>branch3</strong>) and, therefore, returns an error.</li>
+</li>
+<li>
+<p>Notice that we receive a <code>fatal</code> error message when we attempt to use the <code>git push</code> command. GitHub does not have a branch which matches the working branch in our local repository (<strong>branch3</strong>) and, therefore, returns an error.</p>
+<ul>
 <li>Before we can push changes with a simple <code>git push</code> command, we need to create <strong>branch3</strong> in GitHub.</li>
 <li>Notice in the output, after the <code>fatal</code> error, Git is friendly enough to display the exact command to both create <strong>branch3</strong> in GitHub and then push our commits to GitHub.</li>
-</ol>
+</ul>
 <hr />
-<ol>
-<li>Initiate the <code>git push</code> again with the following command:</li>
-</ol>
+</li>
+<li>
+<p>Initiate the <code>git push</code> again with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Push local repository changes, including the local branch, to a remote repository</span>
 git push --set-upstream origin branch3
 </code></pre></div>
 <p><img alt="git-push-set-upstream" src="../../images/git-push-set-upstream.png" title="Display the remote repository URL and create a remote branch named 'branch3'" /></p>
-<ol>
-<li>Notice that Git creates a new branch, <strong>branch3</strong>, in GitHub, and pushes the local Git repository <strong>branch3</strong> commits to the new GitHub <strong>branch3</strong>.</li>
+</li>
+<li>
+<p>Notice that Git creates a new branch, <strong>branch3</strong>, in GitHub, and pushes the local Git repository <strong>branch3</strong> commits to the new GitHub <strong>branch3</strong>.</p>
+</li>
 </ol>
+<hr />
 <p>Next we will take a look at our GitHub repository to review the changes we pushed from our local Git repository. Click the link below to continue:</p>
 <p><a href="../section_10/" title="Review Changes in the GitHub Repository">Next Section &gt; Review Changes in the GitHub Repository</a></p>
                 

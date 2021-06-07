@@ -726,8 +726,8 @@
 <hr />
 <h2 id="edit-git-configuration-files">Edit Git Configuration Files</h2>
 <ol>
-<li>From your Docker container prompt, configure a <strong>system-wide</strong> Git <strong>username</strong> and <strong>email address</strong> with the following commands:</li>
-</ol>
+<li>
+<p>From your Docker container prompt, configure a <strong>system-wide</strong> Git <strong>username</strong> and <strong>email address</strong> with the following commands:</p>
 <div class="highlight"><pre><span></span><code>git config --system user.name <span class="s2">&quot;Your Name - System&quot;</span>
 <span class="c1"># Replace &#39;Your Name&#39; with your first/last name</span>
 
@@ -736,25 +736,24 @@ git config --system user.email <span class="s2">&quot;git_docker_container@wwt.c
 </code></pre></div>
 <p><img alt="git-config-system" src="../../images/git-config-system.png" title="Set system-wide git configuration properties" /></p>
 <hr />
-<ol>
-<li>Review the <strong>system-wide</strong> Git configuration file with the following command:</li>
-</ol>
+</li>
+<li>
+<p>Review the <strong>system-wide</strong> Git configuration file with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the file /etc/gitconfig</span>
 cat /etc/gitconfig
 </code></pre></div>
 <p><img alt="container-cat-git-system" src="../../images/container-cat-git-system.png" title="Review system-wide git configuration" /></p>
-<ol>
+</li>
 <li>
 <p>Notice the <strong>name</strong> and <strong>email</strong> values which are part of the Git <strong>system</strong> configuration file. Right now, these settings apply to all Git repositories for all users in our environment.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Typically, you would simply enter your name without the <strong>- System</strong> suffix. This suffix will allow us to distinguish which configuration settings take precedence when configuration file overlap occurs.</p>
+</div>
+<hr />
 </li>
 <li>
-<p>Typically, you would simply enter your name without the <strong>- System</strong> suffix. This suffix will allow us to distinguish which configuration settings take precedence when configuration file overlap occurs.</p>
-</li>
-</ol>
-<hr />
-<ol>
-<li>Configure a <strong>Global</strong> Git <strong>username</strong> and <strong>email address</strong> with the following commands:</li>
-</ol>
+<p>Configure a <strong>Global</strong> Git <strong>username</strong> and <strong>email address</strong> with the following commands:</p>
 <div class="highlight"><pre><span></span><code>git config --global user.name <span class="s2">&quot;Your Name - Global&quot;</span>
 <span class="c1"># Replace &#39;Your Name&#39; with your first/last name</span>
 
@@ -763,46 +762,46 @@ git config --global user.email <span class="s2">&quot;your.email@your_domain.com
 </code></pre></div>
 <p><img alt="git-config-global" src="../../images/git-config-global.png" title="Set global git configuration properties" /></p>
 <hr />
-<ol>
-<li>Review the Git <strong>global</strong> configuration file with the following command:</li>
-</ol>
+</li>
+<li>
+<p>Review the Git <strong>global</strong> configuration file with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the file /root/.gitconfig</span>
 <span class="c1"># ~/ is shorthand for the home directory for the current user</span>
 cat ~/.gitconfig
 </code></pre></div>
 <p><img alt="container-cat-git-global" src="../../images/container-cat-git-global.png" title="Review global git configuration" /></p>
-<ol>
+</li>
 <li>
 <p>Notice the <strong>name</strong> and <strong>email</strong> which values are part of the Git <strong>global</strong> configuration file. Right now, these settings apply to all Git repositories for our current user profile. Effectively, this is all of the repositories in our Docker environment, which means the Git <strong>system</strong> configuration settings no longer apply.</p>
+<ul>
+<li>Again, you would normally enter your name without the <strong>- Global</strong> suffix.</li>
+</ul>
+<hr />
 </li>
 <li>
-<p>Again, you would normally enter your name without the <strong>- Global</strong> suffix.</p>
-</li>
-</ol>
-<hr />
-<ol>
-<li>To configure a Git <strong>name</strong> or <strong>email</strong> for a <strong>local repository</strong>, make sure your working directory is that of the repository you want to configure (you may display your current working directory with the <code>pwd</code> command). Configure the <strong>local repository</strong> Git <strong>username</strong> with the following command:</li>
-</ol>
+<p>To configure a Git <strong>name</strong> or <strong>email</strong> for a <strong>local repository</strong>, make sure your working directory is that of the repository you want to configure (you may display your current working directory with the <code>pwd</code> command). Configure the <strong>local repository</strong> Git <strong>username</strong> with the following command:</p>
 <div class="highlight"><pre><span></span><code>git config user.name <span class="s2">&quot;Your Name - Repo&quot;</span>
 <span class="c1"># Replace &#39;Your Name&#39; with your first/last name</span>
 </code></pre></div>
 <p><img alt="git-config-repo" src="../../images/git-config-repo.png" title="Set repository git configuration properties" /></p>
 <hr />
-<ol>
-<li>Review the <strong>local</strong> Git configuration file for the <strong>git-repo-1</strong> repository with the following command:</li>
-</ol>
+</li>
+<li>
+<p>Review the <strong>local</strong> Git configuration file for the <strong>git-repo-1</strong> repository with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the file .git/config</span>
 cat .git/config
 </code></pre></div>
 <p><img alt="container-cat-git-repo" src="../../images/container-cat-git-repo.png" title="Review global git configuration" /></p>
-<ol>
-<li>Notice there is a <strong>name</strong> value but no <strong>email</strong> value in the <strong>local repository</strong> configuration file.</li>
-</ol>
+</li>
+<li>
+<p>Notice there is a <strong>name</strong> value but no <strong>email</strong> value in the <strong>local repository</strong> configuration file.</p>
 <hr />
+</li>
+</ol>
 <h2 id="review-effective-git-configuration-settings">Review Effective Git Configuration Settings</h2>
 <ol>
-<li>Since we just set Git configuration values in three separate places, we need to determine which values Git will use when we commit changes to our repository. To do that enter the following commands:</li>
-</ol>
+<li>
+<p>Since we just set Git configuration values in three separate places, we need to determine which values Git will use when we commit changes to our repository. To do that enter the following commands:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display the current working directory</span>
 <span class="nb">pwd</span>
 </code></pre></div>
@@ -813,13 +812,13 @@ git config user.name
 git config user.email
 </code></pre></div>
 <p><img alt="git-config-repo-check" src="../../images/git-config-repo-check.png" title="Review effective git configuration settings" /></p>
-<ol>
-<li>We set a <strong>user.name</strong> value within the <strong>local repository</strong> and Git returns that value (notice the <strong>repo</strong> name suffix). Since we didn't set a local repository email, Git looks to the next higher level configuration file, the <strong>global</strong> Git configuration file, for an email address and displays that address.</li>
-</ol>
+</li>
+<li>
+<p>We set a <strong>user.name</strong> value within the <strong>local repository</strong> and Git returns that value (notice the <strong>repo</strong> name suffix). Since we didn't set a local repository email, Git looks to the next higher level configuration file, the <strong>global</strong> Git configuration file, for an email address and displays that address.</p>
 <hr />
-<ol>
-<li>If we change our working directory such that we are no longer within this repository, we can see the difference in the effective Git configuration for repositories without specific configurations. Use the following commands to navigate to a different directory and check Git configuration settings:</li>
-</ol>
+</li>
+<li>
+<p>If we change our working directory such that we are no longer within this repository, we can see the difference in the effective Git configuration for repositories without specific configurations. Use the following commands to navigate to a different directory and check Git configuration settings:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Change the current working directory from /development/git-repo-1 to /development</span>
 <span class="nb">cd</span> ..
 </code></pre></div>
@@ -833,13 +832,13 @@ git config user.name
 git config user.email
 </code></pre></div>
 <p><img alt="git-config-global-check" src="../../images/git-config-global-check.png" title="Review effective git configuration settings in a different directory" /></p>
-<ol>
-<li>Outside our repository directory we see the both the <strong>user.name</strong> and <strong>user.email</strong> values come from the <strong>global</strong> configuration file (notice the <strong>Global</strong> suffix after the <strong>username</strong>).</li>
-</ol>
+</li>
+<li>
+<p>Outside our repository directory we see the both the <strong>user.name</strong> and <strong>user.email</strong> values come from the <strong>global</strong> configuration file (notice the <strong>Global</strong> suffix after the <strong>username</strong>).</p>
 <hr />
-<ol>
-<li>Change the working directory back to the local GIt repository directory before we continue with the following command:</li>
-</ol>
+</li>
+<li>
+<p>Change the working directory back to the local GIt repository directory before we continue with the following command:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Change the current working directory from development to /development/git-repo-1</span>
 <span class="nb">cd</span> git-repo-1
 </code></pre></div>
@@ -847,6 +846,9 @@ git config user.email
 <span class="nb">pwd</span>
 </code></pre></div>
 <p><img alt="container-cd-repo-1" src="../../images/container-cd-repo-1.png" title="Return to the git repository directory" /></p>
+</li>
+</ol>
+<hr />
 <p>We have all of the Git configuration settings in place to start working with our Git repository. Click the link below to continue:</p>
 <p><a href="../section_7/" title="Manage Local Git Branches">Next Section &gt; Manage Local Git Branches</a></p>
                 
