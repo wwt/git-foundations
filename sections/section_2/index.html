@@ -723,7 +723,7 @@
                 <h1 id="setup-github-authentication">Setup GitHub Authentication</h1>
 <h2 id="github-version-control-overview">GitHub Version Control Overview</h2>
 <p>Git is a distributed Version Control System (VCS) which means any copy of any Git repository can function independently of any other copies of the same Git repository. A Git repository can reside on any single computer, Container, etc. and there are also hosted or managed Git solutions which provide a central location to aggregate changes to version-controlled files.</p>
-<p><a href="https://github.com" title="GitHub.com">GitHub</a> is one example of a hosted or managed Git solution.  These hosted/managed solutions allow many people to run local instances of Git software on their computers and keep their version-controlled files, source code, documentation, etc. (container within Git repositories) in sync with one another.</p>
+<p><a href="https://github.com" title="GitHub.com">GitHub</a> is one example of a hosted or managed Git solution.  These hosted/managed solutions allow many people to run local instances of Git software on their computers and keep their version-controlled files, source code, documentation, etc. in sync with one another.</p>
 <ul>
 <li>This remainder of this walkthrough will show you how to:</li>
 <li>Create a centralized Git repository on GitHub.</li>
@@ -738,7 +738,7 @@
 <li>HTTPS with basic authentication (username and password) or API key.</li>
 <li>SSH with public/private key authentication.</li>
 </ol>
-<p>Either choice is just as good as the other. In this environment we use SSH because it allows us to secure communication without having manage credentials or API keys. We will set up SSH authentication before we create a GitHub repository.</p>
+<p>Either choice is just as good as the other. In this environment, we use SSH because it allows us to secure communication without having to manage credentials or API keys. We will set up SSH authentication before we create a GitHub repository.</p>
 <hr />
 <h2 id="generate-an-ssh-key-pair">Generate an SSH Key Pair</h2>
 <ol>
@@ -748,7 +748,7 @@
 ssh-keygen
 </code></pre></div>
 <ol>
-<li>After you enter this command and press your Return/Enter key, you may press your Return/Enter three more times, to accept the default storage location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:</li>
+<li>After you enter this command and press your Return/Enter key, you may press your Return/Enter <strong>three more times</strong>, to accept the default storage location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:</li>
 </ol>
 <p><img alt="container-ssh-keygen" src="../../images/container-ssh-keygen.png" title="ssh-keygen" /></p>
 <hr />
@@ -761,7 +761,7 @@ cat ~/.ssh/id_rsa.pub
 <p><img alt="❗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2757.svg" title=":exclamation:" /> <strong>Note: Treat your SSH keys as if they were any other form of credentials and do not share them with anyone.</strong></p>
 <p><img alt="container-ssh-key" src="../../images/container-ssh-key.png" title="cat ~/.ssh/id_rsa.pub" /></p>
 <ol>
-<li>Copy the full contents of the file to your clipboard, including the <strong>ssh-rsa</strong> at the beginning of the file and the <strong>root@<em>container_id</em></strong> at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.</li>
+<li>Copy the full contents of the SSH public key output to your clipboard, including the <strong>ssh-rsa</strong> at the beginning of the file and the <strong>root@<em>container_id</em></strong> at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.</li>
 </ol>
 <hr />
 <h2 id="setup-github-ssh-key-authentication">Setup GitHub SSH Key Authentication</h2>

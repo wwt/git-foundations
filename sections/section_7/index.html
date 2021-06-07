@@ -679,11 +679,11 @@
                 
                 
                 <h1 id="manage-local-git-branches">Manage Local Git Branches</h1>
-<p>Our Git environment is ready for us to start work on our repository. Typically, especially on a project with many contributors, Git branches allow each contributor to have as many non-overlapping copies of the repository as they need to make and manage their changes. We will do some basic work with branches, so we can, later, contribute our changes to the main branch of the GitHub repository.</p>
+<p>Our Git environment is ready for us to start work on our repository. Typically, especially on a project with many contributors, Git branches allow each contributor to have as many non-overlapping copies of the repository as they need, to make and manage their changes. We will do some basic work with branches, so we can, later, contribute our changes to the <strong>main</strong> branch of the GitHub repository.</p>
 <hr />
 <h2 id="view-create-switch-to-remove-branches">View, Create, Switch To, &amp; Remove Branches</h2>
 <ol>
-<li>From the Docker Container prompt, list your <em>local</em> branches with the following command:</li>
+<li>From the Docker Container prompt, list your <em>local</em> Git branches with the following command:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display all local git branches</span>
 git branch
@@ -691,10 +691,10 @@ git branch
 <p><img alt="git-branch-1" src="../../images/git-branch-1.png" title="Display local git branches" /></p>
 <ol>
 <li>
-<p>Notice that only the <strong>main</strong> branch cloned to your local repository from GitHub.</p>
+<p>Notice that only the <strong>main</strong> branch cloned to your local Git repository from GitHub.</p>
 </li>
 <li>
-<p>This is normal/correct behavior; only the <strong>main</strong> branch clones from GitHub because other branches (like the <strong>branch1</strong> branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the <strong>main</strong> branch of the repository.</p>
+<p>This is normal/expected behavior; only the <strong>main</strong> branch clones from GitHub because other branches (like the <strong>branch1</strong> branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the <strong>main</strong> branch of the GitHub repository.</p>
 </li>
 <li>The asterisk to the left of <strong>"main"</strong> indicates that <strong>main</strong> is our current, working branch.</li>
 </ol>
@@ -721,7 +721,7 @@ git branch -a
 </ul>
 </li>
 </ol>
-<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /> <strong>NOTE: <em>Origin</em> is how our local repository refers to GitHub so <em>origin/main</em> represents the <em>main</em> branch on GitHub.</strong></p>
+<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /> <strong>NOTE: <em>Origin</em> is how our local repository refers to GitHub so <em>origin/main</em> represents the <em>main</em> branch in GitHub.</strong></p>
 <hr />
 <ol>
 <li>Create a new, local branch named <strong>branch2</strong>, with the following command:</li>
@@ -795,7 +795,7 @@ git branch
 </code></pre></div>
 <p><img alt="git-branch-4" src="../../images/git-branch-4.png" title="Display local git branches" /></p>
 <ol>
-<li>Notice the asterisk next to <strong>branch3</strong> to indicate that <strong>branch3</strong> is our current, working branch.</li>
+<li>Notice the asterisk next to <strong>branch3</strong> which indicates that <strong>branch3</strong> is our current, working branch.</li>
 </ol>
 <hr />
 <ol>
@@ -804,10 +804,11 @@ git branch
 <div class="highlight"><pre><span></span><code><span class="c1"># Delete the local branch named &#39;branch2&#39;</span>
 git branch -d branch2
 </code></pre></div>
+<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /> <strong>Note: Git will not allow you to delete your current, working branch.</strong></p>
 <p><img alt="git-branch-d-branch2" src="../../images/git-branch-d-branch2.png" title="Delete branch 'branch2'" /></p>
 <hr />
 <ol>
-<li>Review your branches with the following command:</li>
+<li>Review your local branches with the following command:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display all local git branches</span>
 git branch
