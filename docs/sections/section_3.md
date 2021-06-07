@@ -12,7 +12,7 @@ You have the option to create Git repositories either on your local machine (wit
 
         ![github-new-repo](../images/github-new-repo.png "Create new repository")
 
----
+    ---
 
     !!! example
         You need to enter some information and choose a few options to create the repository:
