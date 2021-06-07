@@ -5,9 +5,9 @@ A WWT-built Docker Image provides a ready-to-use environment for the Git hands-o
 !!! tip
     You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:
 
-```shell
-docker info
-```
+    ```shell
+    docker info
+    ```
 
 !!! success
     If your output looks something like this image, you are all set:
@@ -47,13 +47,13 @@ You will know your Docker Container environment is ready for the Git hands-on ex
 
 2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
 
-!!! tip
-    The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
-
 ```shell
 # Display the contents of the Container operating system release file 
 cat /etc/*-release
 ```
+
+!!! tip
+    The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
 
 3. You are in the Docker Container environment if your output looks like this:
 
@@ -76,14 +76,14 @@ The result of that command should look something like this:
 Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:
 
 !!! attention
-    Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.
+    Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell:
 
-```shell
-control + d (key sequence) # Stops your Container and returns you to your terminal prompt
-docker container start git-foundations # Restarts your Container in the background
-docker container attach git-foundations # Returns you to the Container prompt
-docker container rm git-foundations # Destroys your container so you can start over
-```
+    ```shell
+    control + d (key sequence) # Stops your Container and returns you to your terminal prompt
+    docker container start git-foundations # Restarts your Container in the background
+    docker container attach git-foundations # Returns you to the Container prompt
+    docker container rm git-foundations # Destroys your container so you can start over
+    ```
 
 ---
 
