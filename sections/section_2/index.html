@@ -758,7 +758,9 @@ ssh-keygen
 <div class="highlight"><pre><span></span><code><span class="c1"># Displays the contents of the new SSH public key file</span>
 cat ~/.ssh/id_rsa.pub
 </code></pre></div>
-<p><img alt="❗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2757.svg" title=":exclamation:" /> <strong>Note: Treat your SSH keys as if they were any other form of credentials and do not share them with anyone.</strong></p>
+<div class="highlight"><pre><span></span><code>!!! note
+    :exclamation: Treat your SSH keys as if they were any other form of credentials and do not share them with anyone.
+</code></pre></div>
 <p><img alt="container-ssh-key" src="../../images/container-ssh-key.png" title="cat ~/.ssh/id_rsa.pub" /></p>
 <ol>
 <li>Copy the full contents of the SSH public key output to your clipboard, including the <strong>ssh-rsa</strong> at the beginning of the file and the <strong>root@<em>container_id</em></strong> at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.</li>

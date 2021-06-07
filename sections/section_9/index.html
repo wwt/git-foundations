@@ -763,16 +763,18 @@ git status
 </li>
 <li>Review the status of the local Git repository.</li>
 </ol>
-<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /> <strong>Note: Commits to a Git repository require a commit message and the message should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.</strong></p>
+<div class="highlight"><pre><span></span><code>!!! note
+    :warning: Commits to a Git repository require a commit message and the message should describe changes adequately enough that someone else can understand the overall theme or intent of the changes.
+</code></pre></div>
 <p><img alt="❗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2757.svg" title=":exclamation:" /> <strong>The <code>-m</code> option after the <code>git commit</code> command allows you to enter a commit message inline.  If you omit the <code>-m</code> option, Git will open the default text editor for the OS (VIM is the default editor for most Linux distributions) and prompt for a commit message.</strong></p>
 <p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> <strong>If you happen to end up in the Docker Container VIM editor, press the <code>esc</code>key, type <code>:q!</code>, and press <code>Return</code> or <code>Enter</code>.</strong> </p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Move the file &#39;my_script.py&#39; from the staging area to the repository</span>
 git commit -m <span class="s2">&quot;Initial commit of &#39;my_script.py&#39;&quot;</span>
 </code></pre></div>
-<p><div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
 git status
 </code></pre></div>
-<img alt="git-commit-my-script" src="../../images/git-commit-my-script.png" title="Commit 'my_script.py' to the local repository" /></p>
+<p><img alt="git-commit-my-script" src="../../images/git-commit-my-script.png" title="Commit 'my_script.py' to the local repository" /></p>
 <ol>
 <li>Notice there are no changes to commit. The <strong>README.md</strong> file does have changes although isn't yet staged for commit, we will work on that shortly.</li>
 </ol>
@@ -817,7 +819,9 @@ git status
 <div class="highlight"><pre><span></span><code><span class="c1"># Move all changed files from the working directory to the staging area</span>
 git add .
 </code></pre></div>
-<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /> <strong>Note: You may also commit individual files to the staging area.  For example, to stage only the README.md file, use the command <code>git add README.md</code>. </strong></p>
+<div class="highlight"><pre><span></span><code>!!! note
+    :bulb: You may also commit individual files to the staging area.  For example, to stage only the README.md file, use the command `git add README.md`.
+</code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
 git status
 </code></pre></div>
@@ -856,7 +860,9 @@ git log
 <ol>
 <li>We now have several atomic commits in our local repository which we can now push to our GitHub repository. The <code>git push</code> command will synchronize the local Git repository changes with the GitHub repository.</li>
 </ol>
-<p><img alt="💡" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4a1.svg" title=":bulb:" /> <strong>Note: To determine which remote repository a <code>git push</code> will send changes to, use either of the commands <code>git remote --verbose</code>, <code>git remote -v</code>, or <code>cat .git/config</code> .</strong></p>
+<div class="highlight"><pre><span></span><code>!!! note
+    :bulb: To determine which remote repository a `git push` will send changes to, use either of the commands `git remote --verbose`, `git remote -v`, or `cat .git/config` .
+</code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="c1"># Determine the remote repository URL</span>
 git remote --verbose
 </code></pre></div>
