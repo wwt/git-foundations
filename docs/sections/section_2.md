@@ -4,7 +4,7 @@
 
 Git is a distributed Version Control System (VCS) which means any copy of any Git repository can function independently of any other copies of the same Git repository. A Git repository can reside on any single computer, Container, etc. and there are also hosted or managed Git solutions which provide a central location to aggregate changes to version-controlled files.
 
-[GitHub](https://github.com "GitHub.com") is one example of a hosted or managed Git solution.  These hosted/managed solutions allow many people to run local instances of Git software on their computers and keep their version-controlled files, source code, documentation, etc. (container within Git repositories) in sync with one another.
+[GitHub](https://github.com "GitHub.com") is one example of a hosted or managed Git solution.  These hosted/managed solutions allow many people to run local instances of Git software on their computers and keep their version-controlled files, source code, documentation, etc. in sync with one another.
 
 - This remainder of this walkthrough will show you how to:
   - Create a centralized Git repository on GitHub.
@@ -21,7 +21,7 @@ Before we setup a GitHub repository, it's a good idea to consider how our local 
 1. HTTPS with basic authentication (username and password) or API key.
 2. SSH with public/private key authentication.
 
-Either choice is just as good as the other. In this environment we use SSH because it allows us to secure communication without having manage credentials or API keys. We will set up SSH authentication before we create a GitHub repository.
+Either choice is just as good as the other. In this environment, we use SSH because it allows us to secure communication without having to manage credentials or API keys. We will set up SSH authentication before we create a GitHub repository.
 
 ---
 
@@ -34,7 +34,7 @@ Either choice is just as good as the other. In this environment we use SSH becau
 ssh-keygen
 ```
 
-2. After you enter this command and press your Return/Enter key, you may press your Return/Enter three more times, to accept the default storage location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:
+2. After you enter this command and press your Return/Enter key, you may press your Return/Enter **three more times**, to accept the default storage location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:
 
 ![container-ssh-keygen](../images/container-ssh-keygen.png "ssh-keygen")
 
@@ -51,7 +51,7 @@ cat ~/.ssh/id_rsa.pub
 
 ![container-ssh-key](../images/container-ssh-key.png "cat ~/.ssh/id_rsa.pub")
 
-4. Copy the full contents of the file to your clipboard, including the **ssh-rsa** at the beginning of the file and the **root@_container_id_** at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.
+4. Copy the full contents of the SSH public key output to your clipboard, including the **ssh-rsa** at the beginning of the file and the **root@_container_id_** at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.
 
 ---
 
