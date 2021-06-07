@@ -47,10 +47,14 @@ You will know your Docker Container environment is ready for the Git hands-on ex
 
 2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
 
+<<<<<<< HEAD
 ```
 !!! note
     :bulb: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
 ```
+=======
+:bulb: **Note: The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  The purpose of these comment lines is to explain specifically what the subsequent commands do.** 
+>>>>>>> main
 
 ```shell
 # Display the contents of the Container operating system release file 
@@ -77,10 +81,14 @@ The result of that command should look something like this:
 
 Here is a quick reference for some other Docker commands which will help you manage your Git hands-on environment:
 
+<<<<<<< HEAD
 ```
 !!! note
     :warning: Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.
 ```
+=======
+:bulb: **Note: Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.), not from within the Docker container shell.**
+>>>>>>> main
 
 ```shell
 control + d (key sequence) # Stops your Container and returns you to your terminal prompt
@@ -91,6 +99,6 @@ docker container rm git-foundations # Destroys your container so you can start o
 
 ---
 
-Your environment is set up and ready to use! Not to painful so far, right? Click the link below to get started with Git:
+Your environment is set up and ready to use! Not too painful so far, right? Click the link below to get started with Git:
 
 [Next Section > Setup GitHub Authentication](section_2.md "Setup GitHub Authentication")

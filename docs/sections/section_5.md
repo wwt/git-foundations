@@ -1,12 +1,12 @@
 # Clone a GitHub Repository to Your Computer
 
-Now it's time for us to work with our GitHub repository, and we start by copying or **cloning** the repository to our local Docker Container environment.
+Now it's time for us to work with the files in our GitHub repository, and we start by copying or **cloning** the repository to our local Docker Container environment.
 
 ---
 
 ## Copy The Repository SSH URL
 
-We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to HTTPS transport which adds an extra step (entering your username and password) to the cloning process.  The SSH keys we setup in [Section 2](section_2.md "Setup GitHub Authentication") allows our Docker Container and GitHub to communicate with each other without repeatedly prompting for credentials.
+We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to HTTPS transport, which adds an extra step (entering your username and password) to the cloning process.  The SSH keys we setup in [Section 2](section_2.md "Setup GitHub Authentication") allow our Docker Container and GitHub to communicate with each other without repeatedly prompting for credentials.
 
 1. Click the green **Clone** button and notice that GitHub displays an HTTPS URL. Click the **SSH** link to change the display to an SSH URL.
 
@@ -22,19 +22,23 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
 
 ## Clone & Review The Repository
 
-1. From the Docker Container prompt, type the command `git clone` and then paste **_your repository URL_** as in this **_example_** (your repository URL will be different than in the example below):
+1. Return to your Docker Container prompt, type the command `git clone`, paste **_your repository URL_**, as shown in the example below (your repository URL will be different than the example in the in the following code block), and press your Return/Enter key:
 
 ```shell
 # Download a new copy of a GitHub repository to a local system (our Container, in this case)
 git clone git@github.com:your-repository-url/git-repo-1.git
 ```
 
+<<<<<<< HEAD
 ```
 !!! note
     :warning: You will likely see a prompt which asks you to confirm the authenticity of GitHub's SSH RSA fingerprint. You may safely type `yes` and press Return/Enter to continue.
 ```
+=======
+:bulb:**Note: You will likely see a prompt which asks you to confirm the authenticity of GitHub's SSH RSA fingerprint. You may safely type `yes` and press Return/Enter to continue.**
+>>>>>>> main
 
-The result of that command should look something like this:
+The result of the `git clone` command should look something like this:
 
 ![git-clone](../images/git-clone.png "Clone GitHub repository")
 
@@ -91,7 +95,7 @@ cat README.md
 
 ---
 
-6. There is one item in our repository directory which isn't in our GitHub repository, the **.git** directory. This directory contains all the details about your local repository and you should rarely, if ever, have to interact with these files. Just to see what the contents of this folder look like, use the following command:
+6. There is one item in our repository directory which isn't in our GitHub repository, the **.git** directory. This directory contains all of the details about your local repository and you should rarely, if ever, have to interact with these files. Just to see what the contents of this folder look like, use the following command:
 
 ```shell
 # List the contents of the .git directory in long format
@@ -100,6 +104,6 @@ ls -l .git
 
 ![container-ls-git](../images/container-ls-git.png "List the contents of the .git directory")
 
-We now have a copy of our GitHub repo in our Docker environment. Before we make changes to our local copy of the repository, we need to configure a few local Git settings. Click the link below to continue:
+We now have a copy of our GitHub repository in our Docker environment. Before we make changes to our local copy of the Git repository, we need to configure a few local Git settings. Click the link below to continue:
 
 [Next Section > View & Configure Local Git Settings on Your Computer](section_6.md "View & Configure Local Git Settings on Your Computer")

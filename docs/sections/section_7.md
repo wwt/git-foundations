@@ -1,12 +1,12 @@
 # Manage Local Git Branches
 
-Our Git environment is ready for us to start work on our repository. Typically, especially on a project with many contributors, Git branches allow each contributor to have as many non-overlapping copies of the repository as they need to make and manage their changes. We will do some basic work with branches, so we can, later, contribute our changes to the main branch of the GitHub repository.
+Our Git environment is ready for us to start work on our repository. Typically, especially on a project with many contributors, Git branches allow each contributor to have as many non-overlapping copies of the repository as they need, to make and manage their changes. We will do some basic work with branches, so we can, later, contribute our changes to the **main** branch of the GitHub repository.
 
 ---
 
 ## View, Create, Switch To, & Remove Branches
 
-1. From the Docker Container prompt, list your _local_ branches with the following command:
+1. From the Docker Container prompt, list your _local_ Git branches with the following command:
 
 ```shell
 # Display all local git branches
@@ -15,9 +15,9 @@ git branch
 
 ![git-branch-1](../images/git-branch-1.png "Display local git branches")
 
-2. Notice that only the **main** branch cloned to your local repository from GitHub.
+2. Notice that only the **main** branch cloned to your local Git repository from GitHub.
 
-   - This is normal/correct behavior; only the **main** branch clones from GitHub because other branches (like the **branch1** branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the **main** branch of the repository.
+   - This is normal/expected behavior; only the **main** branch clones from GitHub because other branches (like the **branch1** branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the **main** branch of the GitHub repository.
    - The asterisk to the left of **"main"** indicates that **main** is our current, working branch.
 
 ---
@@ -39,10 +39,14 @@ git branch -a
    - And an **origin/remotes/branch1** branch.
       - This is the copy of the **branch1** branch in Github.
 
+<<<<<<< HEAD
 ```
 !!! note
     :bulb: **Origin** is how our local repository refers to GitHub so **origin/main** represents the **main** branch on GitHub.
 ```
+=======
+:bulb: **NOTE: _Origin_ is how our local repository refers to GitHub so _origin/main_ represents the _main_ branch in GitHub.**
+>>>>>>> main
 
 ---
 
@@ -131,7 +135,7 @@ git branch
 
 ![git-branch-4](../images/git-branch-4.png "Display local git branches")
 
-16. Notice the asterisk next to **branch3** to indicate that **branch3** is our current, working branch.
+16. Notice the asterisk next to **branch3** which indicates that **branch3** is our current, working branch.
 
 ---
 
@@ -142,11 +146,13 @@ git branch
 git branch -d branch2
 ```
 
+:bulb: **Note: Git will not allow you to delete your current, working branch.**
+
 ![git-branch-d-branch2](../images/git-branch-d-branch2.png "Delete branch 'branch2'")
 
 ---
 
-18. Review your branches with the following command:
+18. Review your local branches with the following command:
 
 ```shell
 # Display all local git branches
