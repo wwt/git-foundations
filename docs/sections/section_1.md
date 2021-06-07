@@ -79,11 +79,6 @@ Here is a quick reference for some other Docker commands which will help you man
 
 ```
 !!! note
-    :warning: Github usernames are case-sensitive, so be sure to double-check your filename
-```
-
-```
-!!! note
     :warning: Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell.
 ```
 
