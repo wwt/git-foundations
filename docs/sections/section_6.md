@@ -5,12 +5,19 @@ Git requires very little information before we can start to make local repositor
 Git has several tiers of configuration files, and we will explore the three most common:
 
 - **System-wide** — **_/etc/gitconfig_**
+
   - Applies to all repositories for _all_ users on a system.
+
 - **Global** — **_~/.gitconfig_**
+
   - Applies to all repositories for a _single_ user on a system.
+
   - Supersedes any overlapping **system-wide** settings.
+
 - **Local repository** — **_repository_folder/.git/config_**
+
   - Applies to a single repository.
+
   - Supersedes any overlapping **global** and **system-wide** settings.
 
 ---
