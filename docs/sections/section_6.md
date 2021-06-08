@@ -6,19 +6,25 @@ Git has several tiers of configuration files, and we will explore the three most
 
 - **System-wide** — **_/etc/gitconfig_**
 
-  - Applies to all repositories for _all_ users on a system.
+  + Applies to all repositories for _all_ users on a system.
 
 - **Global** — **_~/.gitconfig_**
 
-  - Applies to all repositories for a _single_ user on a system.
-
-  - Supersedes any overlapping **system-wide** settings.
+  * Applies to all repositories for a _single_ user on a system.
+  * Supersedes any overlapping **system-wide** settings.
 
 - **Local repository** — **_repository_folder/.git/config_**
 
-  - Applies to a single repository.
+    - Applies to a single repository.
+    - Supersedes any overlapping **global** and **system-wide** settings.
 
-  - Supersedes any overlapping **global** and **system-wide** settings.
+- Nulla et rhoncus turpis. Mauris ultricies elementum leo. Duis efficitur
+  accumsan nibh eu mattis. Vivamus tempus velit eros, porttitor placerat nibh
+  lacinia sed. Aenean in finibus diam.
+
+    * Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+    * Nam vulputate tincidunt fringilla.
+    * Nullam dignissim ultrices urna non auctor.
 
 ---
 
