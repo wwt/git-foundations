@@ -79,7 +79,7 @@ Here is a quick reference for some other Docker commands which will help you man
     Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell:
 
     ```shell
-    control + d (key sequence) # Stops your Container and returns you to your terminal prompt
+    ++control+d++ # Stops your Container and returns you to your terminal prompt
     docker container start git-foundations # Restarts your Container in the background
     docker container attach git-foundations # Returns you to the Container prompt
     docker container rm git-foundations # Destroys your container so you can start over

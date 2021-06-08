@@ -34,7 +34,7 @@ Before we setup a GitHub repository, it's a good idea to consider how our local 
     ssh-keygen
     ```
 
-2. After you enter this command and press your ++enter++ key, you may press your ++enter++ key **three more times**, to accept the default storage location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:
+2. After you enter this command and press your ++enter++ or ++"return"++ key, you may press your ++enter++ or ++"return"++ key **three more times**, to accept the default storage location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:
 
     ![container-ssh-keygen](../images/container-ssh-keygen.png "ssh-keygen")
 
