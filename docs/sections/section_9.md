@@ -71,7 +71,7 @@ It is possible to commit many changes to a single file at once although doing so
         The `-m` option after the `git commit` command allows you to enter a commit message inline.  If you omit the `-m` option, Git will open the default text editor for the OS (VIM is the default editor for most Linux distributions) and prompt for a commit message.
 
     !!! tip
-        If you happen to end up in the Docker Container VIM editor, press the `esc`key, type `:q!`, and press `Return` or `Enter`.
+        If you happen to end up in the Docker Container VIM editor, press the ++esc++ key, type ++:++, ++q++, ++!++, and press ++enter++.
 
     ```shell
     # Move the file 'my_script.py' from the staging area to the repository
