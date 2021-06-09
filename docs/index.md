@@ -13,7 +13,7 @@ Git is a distributed source control management (SCM) tool. This walkthrough is a
 
 1. A Windows or macOS computer with [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download").
 
-   - If you are new to Docker, here are the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
+   - If you are new to Docker, here is the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation").
 
    - Alternatively, you can [install Docker in a Linux Environment](https://docs.docker.com/engine/install/ "Install Docker in a Linux Environment") and complete the walkthrough.
 
