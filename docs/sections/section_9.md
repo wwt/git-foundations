@@ -26,7 +26,7 @@ It is possible to commit many changes to a single file at once although doing so
     git status
     ```
 
-    ![container-touch-my_script](../images/container-touch-my_script.png "Create a new Python script file")
+    [![container-touch-my_script](../images/container-touch-my_script.png "Create a new Python script file")](/git-foundations/images/container-touch-my_script.png){target=_blank}
 
 2. Notice the following:
     - The **my_script.py** file exists and is empty (0 bytes).
@@ -51,7 +51,7 @@ It is possible to commit many changes to a single file at once although doing so
     git status
     ```
 
-    ![git-add-my-script](../images/git-add-my-script.png "Add 'my_script.py' to the staging area")
+    [![git-add-my-script](../images/git-add-my-script.png "Add 'my_script.py' to the staging area")](/git-foundations/images/git-add-my-script.png){target=_blank}
 
 4. Notice that the **my_script.py** file is now in the `Changes to be committed` section.
     - This indicates **my_script.py** is in the Git **staging area**.
@@ -83,7 +83,7 @@ It is possible to commit many changes to a single file at once although doing so
     git status
     ```
 
-    ![git-commit-my-script](../images/git-commit-my-script.png "Commit 'my_script.py' to the local repository")
+    [![git-commit-my-script](../images/git-commit-my-script.png "Commit 'my_script.py' to the local repository")](/git-foundations/images/git-commit-my-script.png){target=_blank}
 
 6. Notice there are no changes to commit. The **README.md** file does have changes although isn't yet staged for commit, we will work on that shortly.
 
@@ -101,7 +101,7 @@ It is possible to commit many changes to a single file at once although doing so
     echo 'print(f"It is nice to meet you, {name})' >> my_script.py
     ```
 
-    ![container-echo-my-script](../images/container-echo-my-script.png "Add code to 'my_script.py'")
+    [![container-echo-my-script](../images/container-echo-my-script.png "Add code to 'my_script.py'")](/git-foundations/images/container-echo-my-script.png){target=_blank}
 
     ---
 
@@ -112,7 +112,7 @@ It is possible to commit many changes to a single file at once although doing so
     git diff
     ```
 
-    ![git-diff-my-script](../images/git-diff-my-script.png "Display changes between the working and committed copies of 'my_script.py'")
+    [![git-diff-my-script](../images/git-diff-my-script.png "Display changes between the working and committed copies of 'my_script.py'")](/git-foundations/images/git-diff-my-script.png){target=_blank}
 
 3. Notice the `+` characters next to the last four lines in the `git diff` output.  This indicates four lines of changes between the **my_script.py** file in the working directory and the copy of **my_script.py** which is already in (committed to) the local Git repository.
 
@@ -125,7 +125,7 @@ It is possible to commit many changes to a single file at once although doing so
     git status
     ```
 
-    ![git-status-3](../images/git-status-3.png "Display the git repository status")
+    [![git-status-3](../images/git-status-3.png "Display the git repository status")](/git-foundations/images/git-status-3.png){target=_blank}
 
     ---
 
@@ -152,7 +152,7 @@ It is possible to commit many changes to a single file at once although doing so
     git commit -m "Appended line to README.md and added commands to my_script.py"
     ```
 
-    ![git-add-all](../images/git-add-all.png "Stage and commit 'my_script.py' and 'README.md' to the repository")
+    [![git-add-all](../images/git-add-all.png "Stage and commit 'my_script.py' and 'README.md' to the repository")](/git-foundations/images/git-add-all.png){target=_blank}
 
 6. Notice the output from the `git status` command shows two files in the staging area, in the `Changes to be committed` section of the output.
 
@@ -167,7 +167,7 @@ It is possible to commit many changes to a single file at once although doing so
     git status
     ```
 
-    ![git-status-4](../images/git-status-4.png "Display the git repository status")
+    [![git-status-4](../images/git-status-4.png "Display the git repository status")](/git-foundations/images/git-status-4.png){target=_blank}
 
 9. Notice the working branch, **branch3** shows no changes to commit.
 
@@ -180,7 +180,7 @@ It is possible to commit many changes to a single file at once although doing so
     git log
     ```
 
-    ![git-log](../images/git-log.png "Display the git commit history")
+    [![git-log](../images/git-log.png "Display the git commit history")](/git-foundations/images/git-log.png){target=_blank}
 
 11. Notice how information about the most recent commit is at the top of the `git log` output, and how the **commit messages** for each commit in the log provide important information about the changes a particular commit includes.  This is one reason descriptive commit messages are important.
 
@@ -198,7 +198,7 @@ It is possible to commit many changes to a single file at once although doing so
     git remote --verbose
     ```
 
-    ![git-remote-verbose](../images/git-remote-verbose.png "Display the remote repository URL")
+    [![git-remote-verbose](../images/git-remote-verbose.png "Display the remote repository URL")](/git-foundations/images/git-remote-verbose.png){target=_blank}
 
     ---
 
@@ -209,7 +209,7 @@ It is possible to commit many changes to a single file at once although doing so
     git push
     ```
 
-    ![git-push-1](../images/git-push-1.png "Push local repository changes to GitHub")
+    [![git-push-1](../images/git-push-1.png "Push local repository changes to GitHub")](/git-foundations/images/git-push-1.png){target=_blank}
 
 3. Notice that we receive a `fatal` error message when we attempt to use the `git push` command. GitHub does not have a branch which matches the working branch in our local repository (**branch3**) and, therefore, returns an error.
     - Before we can push changes with a simple `git push` command, we need to create **branch3** in GitHub.
@@ -224,7 +224,7 @@ It is possible to commit many changes to a single file at once although doing so
     git push --set-upstream origin branch3
     ```
 
-    ![git-push-set-upstream](../images/git-push-set-upstream.png "Display the remote repository URL and create a remote branch named 'branch3'")
+    [![git-push-set-upstream](../images/git-push-set-upstream.png "Display the remote repository URL and create a remote branch named 'branch3'")](/git-foundations/images/git-push-set-upstream.png){target=_blank}
 
 5. Notice that Git creates a new branch, **branch3**, in GitHub, and pushes the local Git repository **branch3** commits to the new GitHub **branch3**.
 

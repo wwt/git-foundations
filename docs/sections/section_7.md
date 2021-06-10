@@ -13,7 +13,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git branch
     ```
 
-    ![git-branch-1](../images/git-branch-1.png "Display local git branches")
+    [![git-branch-1](../images/git-branch-1.png "Display local git branches")](/git-foundations/images/git-branch-1.png){target=_blank}
 
 2. Notice that only the **main** branch cloned to your local Git repository from GitHub.
 
@@ -29,7 +29,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git branch -a
     ```
 
-    ![git-branch-a-1](../images/git-branch-a-1.png "Display all local and remote git repository branches")
+    [![git-branch-a-1](../images/git-branch-a-1.png "Display all local and remote git repository branches")](/git-foundations/images/git-branch-a-1.png){target=_blank}
 
 4. Notice how we see:
     - A **main** branch.
@@ -51,7 +51,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git branch branch2
     ```
 
-    ![git-branch-branch2](../images/git-branch-branch2.png "Create a new local branch named 'branch2'")
+    [![git-branch-branch2](../images/git-branch-branch2.png "Create a new local branch named 'branch2'")](/git-foundations/images/git-branch-branch2.png){target=_blank}
 
     ---
 
@@ -62,7 +62,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git branch
     ```
 
-    ![git-branch-2](../images/git-branch-2.png "Display all local git branches")
+    [![git-branch-2](../images/git-branch-2.png "Display all local git branches")](/git-foundations/images/git-branch-2.png){target=_blank}
 
 7. Notice your new branch, **branch2** and also that the asterisk next to **main** tells us that, even though we just created **branch2**, our working branch is still **main**.
 
@@ -75,7 +75,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git branch -a
     ```
 
-    ![git-branch-a-2](../images/git-branch-a-2.png "Display all local and remote git repository branches")
+    [![git-branch-a-2](../images/git-branch-a-2.png "Display all local and remote git repository branches")](/git-foundations/images/git-branch-a-2.png){target=_blank}
 
 9. Notice that **branch2** does not exist as a remote branch in GitHub. This is normal behavior and something we will work with later on.
 
@@ -88,7 +88,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git checkout branch2
     ```
 
-    ![git-checkout-branch2](../images/git-checkout-branch2.png "Switch to branch 'branch2'")
+    [![git-checkout-branch2](../images/git-checkout-branch2.png "Switch to branch 'branch2'")](/git-foundations/images/git-checkout-branch2.png){target=_blank}
 
     ---
 
@@ -99,7 +99,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git branch
     ```
 
-    ![git-branch-3](../images/git-branch-3.png "Display local git branches")
+    [![git-branch-3](../images/git-branch-3.png "Display local git branches")](/git-foundations/images/git-branch-3.png){target=_blank}
 
 12. Notice the asterisk next to **branch2** which indicates that **branch2** is our current, working branch.
 
@@ -112,7 +112,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git checkout -b branch3
     ```
 
-    ![git-checkout-b-branch3](../images/git-checkout-b-branch3.png "Create and switch to a new branch named 'branch3'")
+    [![git-checkout-b-branch3](../images/git-checkout-b-branch3.png "Create and switch to a new branch named 'branch3'")](/git-foundations/images/git-checkout-b-branch3.png){target=_blank}
 
 14. The `git checkout` command allows you to switch between branches.
     - The `git checkout` command with the `-b` flag creates a new branch _and_ switches to the new branch.
@@ -129,7 +129,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git branch
     ```
 
-    ![git-branch-4](../images/git-branch-4.png "Display local git branches")
+    [![git-branch-4](../images/git-branch-4.png "Display local git branches")](/git-foundations/images/git-branch-4.png){target=_blank}
 
 16. Notice the asterisk next to **branch3** which indicates that **branch3** is our current, working branch.
 
@@ -145,7 +145,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     !!! tip
         Git will not allow you to delete your current, working branch.
 
-    ![git-branch-d-branch2](../images/git-branch-d-branch2.png "Delete branch 'branch2'")
+    [![git-branch-d-branch2](../images/git-branch-d-branch2.png "Delete branch 'branch2'")](/git-foundations/images/git-branch-d-branch2.png){target=_blank}
 
     ---
 
@@ -156,7 +156,7 @@ Our Git environment is ready for us to start work on our repository. Typically, 
     git branch
     ```
 
-    ![git-branch-5](../images/git-branch-5.png "Display local git branches")
+    [![git-branch-5](../images/git-branch-5.png "Display local git branches")](/git-foundations/images/git-branch-5.png){target=_blank}
 
 19. Notice that **branch2** is no longer available.
 

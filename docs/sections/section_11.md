@@ -8,7 +8,7 @@ A **pull request** is GitHub's terminology for starting the process to merge cha
 
 1. Locate and click the green **Compare & pull request** button:
 
-    ![github-pull-request-initiate](../images/github-pull-request-initiate.png "Initiate pull request")
+    [![github-pull-request-initiate](../images/github-pull-request-initiate.png "Initiate pull request")](/git-foundations/images/github-pull-request-initiate.png){target=_blank}
 
 2. Add the following details to the **pull request**:
     - **Title - _Branch3_**
@@ -19,7 +19,7 @@ A **pull request** is GitHub's terminology for starting the process to merge cha
 
 3. Click the green **Create pull request** button:
 
-    ![github-pull-request-open](../images/github-pull-request-open.png "Create pull request")
+    [![github-pull-request-open](../images/github-pull-request-open.png "Create pull request")](/git-foundations/images/github-pull-request-open.png){target=_blank}
 
 ---
 
@@ -27,7 +27,7 @@ A **pull request** is GitHub's terminology for starting the process to merge cha
 
 1. Review the details of the **pull request** and then click the green **Merge pull request** button:
 
-    ![github-pull-request-merge](../images/github-pull-request-merge.png "Merge pull request")
+    [![github-pull-request-merge](../images/github-pull-request-merge.png "Merge pull request")](/git-foundations/images/github-pull-request-merge.png){target=_blank}
 
     ---
 
@@ -35,7 +35,7 @@ A **pull request** is GitHub's terminology for starting the process to merge cha
 
 3. Click the green **Confirm merge** button to complete the **pull request**.
 
-    ![github-pull-request-merge-confirm](../images/github-pull-request-merge-confirm.png "Confirm pull request merge")
+    [![github-pull-request-merge-confirm](../images/github-pull-request-merge-confirm.png "Confirm pull request merge")](/git-foundations/images/github-pull-request-merge-confirm.png){target=_blank}
 
 ---
 
@@ -45,19 +45,19 @@ A **pull request** is GitHub's terminology for starting the process to merge cha
 
 2. In some cases, you may want to retain branches after you merge their changes into the **main** branch, or any other branch. In this case, we will remove **branch3** to keep from cluttering the repository with a history of every branch. Click the **Delete branch** button to remove **branch3** from GitHub.
 
-    ![github-pull-branch-delete](../images/github-pull-branch-delete.png "Delete branch 'branch3'")
+    [![github-pull-branch-delete](../images/github-pull-branch-delete.png "Delete branch 'branch3'")](/git-foundations/images/github-pull-branch-delete.png){target=_blank}
 
     ---
 
 3. Click the **git-repo-1** link at the top of the window to return to the repository home page.
 
-    ![github-pull-branch-delete-done](../images/github-pull-branch-delete-done.png "Return to repository home page")
+    [![github-pull-branch-delete-done](../images/github-pull-branch-delete-done.png "Return to repository home page")](/git-foundations/images/github-pull-branch-delete-done.png){target=_blank}
 
     ---
 
 4. Notice the message which indicates the merge of the **pull request**.
 
-    ![github-pull-request-complete](../images/github-pull-request-complete.png "Review pull request success message")
+    [![github-pull-request-complete](../images/github-pull-request-complete.png "Review pull request success message")](/git-foundations/images/github-pull-request-complete.png){target=_blank}
 
 ---
 

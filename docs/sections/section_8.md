@@ -13,7 +13,7 @@ Let's make a change to one of the files in our local Git repository and see how 
     git status
     ```
 
-    ![git-status-1](../images/git-status-1.png "Display the git repository status")
+    [![git-status-1](../images/git-status-1.png "Display the git repository status")](/git-foundations/images/git-status-1.png){target=_blank}
 
 2. Notice your working branch is **branch3** and that you have no changes to commit (indicated by the `nothing to commit` output.
 
@@ -26,7 +26,7 @@ Let's make a change to one of the files in our local Git repository and see how 
     echo 'This is a new line in the README.md file' >> README.md
     ```
 
-    ![container-echo-readme](../images/container-echo-readme.png "Add a new line of text to 'README.md'")
+    [![container-echo-readme](../images/container-echo-readme.png "Add a new line of text to 'README.md'")](/git-foundations/images/container-echo-readme.png){target=_blank}
 
     ---
 
@@ -37,7 +37,7 @@ Let's make a change to one of the files in our local Git repository and see how 
     git diff
     ```
 
-    ![git-diff-readme-1](../images/git-diff-readme-1.png "Display changes between the working and committed copies of 'README.md'")
+    [![git-diff-readme-1](../images/git-diff-readme-1.png "Display changes between the working and committed copies of 'README.md'")](/git-foundations/images/git-diff-readme-1.png){target=_blank}
 
 5. Notice the `+` character next to the last line in the `git diff` output.  This indicates the a change between the **README.md** file in the working directory and the copy of **README.md** which is already in (committed to) the local Git repository.
 
@@ -50,7 +50,7 @@ Let's make a change to one of the files in our local Git repository and see how 
     git status
     ```
 
-    ![git-status-2](../images/git-status-2.png "Display the git repository status")
+    [![git-status-2](../images/git-status-2.png "Display the git repository status")](/git-foundations/images/git-status-2.png){target=_blank}
 
 7. Notice the **README.md** file in the section, `Changes not staged for commit`.
 

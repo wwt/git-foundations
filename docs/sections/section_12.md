@@ -13,7 +13,7 @@ The GitHub repository has a new version of the **main** branch but the **main** 
     git pull
     ```
 
-    ![git-pull-branch3](../images/git-pull-branch3.png "Pull branch3 from GitHub")
+    [![git-pull-branch3](../images/git-pull-branch3.png "Pull branch3 from GitHub")](/git-foundations/images/git-pull-branch3.png){target=_blank}
 
 2. Notice the last two lines of the output which indicate Git attempted to pull changes from GitHub and merge those changes with **branch3** in the local Git repository.
 
@@ -28,7 +28,7 @@ The GitHub repository has a new version of the **main** branch but the **main** 
     git branch
     ```
 
-    ![git-branch-6](../images/git-branch-6.png "Display local git branches")
+    [![git-branch-6](../images/git-branch-6.png "Display local git branches")](/git-foundations/images/git-branch-6.png){target=_blank}
 
 4. Notice **branch3** remains in your local repository and is the current, working branch.
 
@@ -41,7 +41,7 @@ The GitHub repository has a new version of the **main** branch but the **main** 
     git checkout main
     ```
 
-    ![git-checkout-main](../images/git-checkout-main.png "Switch to branch 'main'")
+    [![git-checkout-main](../images/git-checkout-main.png "Switch to branch 'main'")](/git-foundations/images/git-checkout-main.png){target=_blank}
 
 6. Notice the message which indicates the local Git repository branch **main** is behind the GitHub **main** branch (**origin/main**) by three commits and can be fast-forwarded (synchronized with the latest changes).
 
@@ -54,7 +54,7 @@ The GitHub repository has a new version of the **main** branch but the **main** 
     git pull
     ```
 
-    ![git-pull-main](../images/git-pull-main.png "Pull the branch 'main' from GitHub and merge changes with the local branch 'main'")
+    [![git-pull-main](../images/git-pull-main.png "Pull the branch 'main' from GitHub and merge changes with the local branch 'main'")](/git-foundations/images/git-pull-main.png){target=_blank}
 
 8. Notice the output which indicates the file changes and insertions.
 
@@ -67,7 +67,7 @@ The GitHub repository has a new version of the **main** branch but the **main** 
     git branch -d branch3
     ```
 
-    ![git-branch-d-branch3](../images/git-branch-d-branch3.png "Delete branch 'branch3'")
+    [![git-branch-d-branch3](../images/git-branch-d-branch3.png "Delete branch 'branch3'")](/git-foundations/images/git-branch-d-branch3.png){target=_blank}
 
     ---
 
@@ -78,7 +78,7 @@ The GitHub repository has a new version of the **main** branch but the **main** 
     git branch
     ```
 
-    ![git-branch-7](../images/git-branch-7.png "Display local branches")
+    [![git-branch-7](../images/git-branch-7.png "Display local branches")](/git-foundations/images/git-branch-7.png){target=_blank}
 
 11. Notice that **main** is now the only branch in your local Git repository.
 
