@@ -752,7 +752,7 @@ ssh-keygen
 </li>
 <li>
 <p>After you enter this command and press your <span class="keys"><kbd class="key-enter">Enter</kbd></span> or <span class="keys"><kbd>Return</kbd></span> key, you may press your <span class="keys"><kbd class="key-enter">Enter</kbd></span> or <span class="keys"><kbd>Return</kbd></span> key <strong>three more times</strong>, to accept the default storage location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:</p>
-<p><img alt="container-ssh-keygen" src="../../images/container-ssh-keygen.png" title="ssh-keygen" /></p>
+<p><a href="/git-foundations/images/container-ssh-keygen.png" target="_blank"><img alt="container-ssh-keygen" src="../../images/container-ssh-keygen.png" title="ssh-keygen" /></a></p>
 <hr />
 </li>
 <li>
@@ -764,7 +764,7 @@ cat ~/.ssh/id_rsa.pub
 <p class="admonition-title">Caution</p>
 <p>Treat your SSH keys as if they were any other form of credentials and do not share them with anyone.</p>
 </div>
-<p><img alt="container-ssh-key" src="../../images/container-ssh-key.png" title="cat ~/.ssh/id_rsa.pub" /></p>
+<p><a href="/git-foundations/images/container-ssh-key.png" target="_blank"><img alt="container-ssh-key" src="../../images/container-ssh-key.png" title="cat ~/.ssh/id_rsa.pub" /></a></p>
 </li>
 <li>
 <p>Copy the full contents of the SSH public key output to your clipboard, including the <strong>ssh-rsa</strong> at the beginning of the file and the <strong>root@<em>container_id</em></strong> at the end of the file. We will share the text from this file with GitHub to establish mutual trust between our Container and GitHub.</p>
@@ -775,27 +775,27 @@ cat ~/.ssh/id_rsa.pub
 <ol>
 <li>
 <p>Navigate to <a href="https://github.com/login" target="_blank" title="GitHub Login">https://github.com/login</a>, log in, click the <strong>Profile</strong> icon in the upper-right corner of the window, and choose <strong>Settings</strong>.</p>
-<p><img alt="github-settings" src="../../images/github-settings.png" title="GitHub settings access" /></p>
+<p><a href="/git-foundations/images/github-settings" target="_blank"><img alt="github-settings" src="../../images/github-settings.png" title="GitHub settings access" /></a></p>
 <hr />
 </li>
 <li>
 <p>Click on the <strong>SSH and GPG keys</strong> tab on the left side of the window.</p>
-<p><img alt="github-profile" src="../../images/github-profile.png" title="GitHub profile" /></p>
+<p><a href="/git-foundations/images/github-profile.png" target="_blank"><img alt="github-profile" src="../../images/github-profile.png" title="GitHub profile" /></a></p>
 <hr />
 </li>
 <li>
 <p>Click the green, <strong>New SSH key</strong> button</p>
-<p><img alt="github-ssh-keys" src="../../images/github-ssh-keys.png" title="GitHub SSH keys" /></p>
+<p><a href="/git-foundations/images/github-ssh-keys.png" target="_blank"><img alt="github-ssh-keys" src="../../images/github-ssh-keys.png" title="GitHub SSH keys" /></a></p>
 <hr />
 </li>
 <li>
 <p>Provide a title for the SSH key (any title you like is just fine), paste the SSH key file text from your Container into the <strong>Key</strong> field, and click the green, <strong>Add SSH key</strong> button.</p>
-<p><img alt="github-add-ssh-key" src="../../images/github-add-ssh-key.png" title="GitHub create SSH key" /></p>
+<p><a href="/git-foundations/images/github-add-ssh-key.png" target="_blank"><img alt="github-add-ssh-key" src="../../images/github-add-ssh-key.png" title="GitHub create SSH key" /></a></p>
 <hr />
 </li>
 <li>
 <p>Confirm that GitHub now has a copy of your container's SSH public key.</p>
-<p><img alt="github-new-ssh-key" src="../../images/github-new-ssh-key.png" title="GitHub new SSH key" /></p>
+<p><a href="/git-foundations/images/github-new-ssh-key.png" target="_blank"><img alt="github-new-ssh-key" src="../../images/github-new-ssh-key.png" title="GitHub new SSH key" /></a></p>
 </li>
 </ol>
 <hr />
