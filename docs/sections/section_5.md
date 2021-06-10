@@ -10,13 +10,13 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
 
 1. Click the green **Clone** button and notice that GitHub displays an HTTPS URL. Click the **SSH** link to change the display to an SSH URL.
 
-    ![github-clone-https](../images/github-clone-https.png "Clone repository button default transport")
+    [![github-clone-https](../images/github-clone-https.png "Clone repository button default transport")](/git-foundations/images/github-clone-https.png){target=_blank}
 
     ---
 
 2. Click the **Copy** icon, just to the right of the SSH URL, to store the URL on your clipboard.
 
-    ![github-clone-ssh](../images/github-clone-ssh.png "Copy repository SSH URL")
+    [![github-clone-ssh](../images/github-clone-ssh.png "Copy repository SSH URL")](/git-foundations/images/github-clone-ssh.png){target=_blank}
 
 ---
 
@@ -34,7 +34,7 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
 
     The result of the `git clone` command should look something like this:
 
-    ![git-clone](../images/git-clone.png "Clone GitHub repository")
+    [![git-clone](../images/git-clone.png "Clone GitHub repository")](/git-foundations/images/git-clone.png){target=_blank}
 
     ---
 
@@ -45,7 +45,7 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
     ls -l
     ```
 
-    ![container-root-ls](../images/container-root-ls.png "List directory contents")
+    [![container-root-ls](../images/container-root-ls.png "List directory contents")](/git-foundations/images/container-root-ls.png){target=_blank}
 
     ---
 
@@ -61,7 +61,7 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
     pwd
     ```
 
-    ![container-cd-repo](../images/container-cd-repo.png "Change to the respository directory")
+    [![container-cd-repo](../images/container-cd-repo.png "Change to the respository directory")](/git-foundations/images/container-cd-repo.png){target=_blank}
 
     ---
 
@@ -72,7 +72,7 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
     ls -la
     ```
 
-    ![container-repo-ls](../images/container-repo-ls.png "List all repository files")
+    [![container-repo-ls](../images/container-repo-ls.png "List all repository files")](/git-foundations/images/container-repo-ls.png){target=_blank}
 
 5. Notice that both of the files in your GitHub repository (**.gitignore** and **README.md**) are now in our Docker Container.
 
@@ -85,7 +85,7 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
     cat README.md
     ```
 
-    ![container-cat-readme](../images/container-cat-readme.png "Display the README.md file contents")
+    [![container-cat-readme](../images/container-cat-readme.png "Display the README.md file contents")](/git-foundations/images/container-cat-readme.png){target=_blank}
 
     ---
 
@@ -96,7 +96,7 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
     ls -l .git
     ```
 
-    ![container-ls-git](../images/container-ls-git.png "List the contents of the .git directory")
+    [![container-ls-git](../images/container-ls-git.png "List the contents of the .git directory")](/git-foundations/images/container-ls-git.png){target=_blank}
 
 ---
 
