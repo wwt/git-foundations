@@ -60,7 +60,7 @@ Before we setup a GitHub repository, it's a good idea to consider how our local 
 
 1. Navigate to [https://github.com/login](https://github.com/login "GitHub Login"){target=_blank}, log in, click the **Profile** icon in the upper-right corner of the window, and choose **Settings**.
 
-    [![github-settings](../images/github-settings.png "GitHub settings access")](/git-foundations/images/github-settings){target=_blank}
+    [![github-settings](../images/github-settings.png "GitHub settings access")](/git-foundations/images/github-settings.png){target=_blank}
 
     ---
 
