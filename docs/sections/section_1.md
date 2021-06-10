@@ -19,7 +19,7 @@ A WWT-built Docker Image provides a ready-to-use environment for the Git hands-o
 !!! failure
      If you see an error message similiar to the example below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation"){target=_blank}.
 
-[![docker-info-bad](../images/docker-info-bad.png "docker info - Docker not running")]/git-foundations/images/docker-info-bad.png){target=_blank}
+[![docker-info-bad](../images/docker-info-bad.png "docker info - Docker not running")](/git-foundations/images/docker-info-bad.png){target=_blank}
 
 ---
 
@@ -41,7 +41,7 @@ There are two-steps in the process (download and then run) to create the Docker 
 
     You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt changes to `/development#`:
 
-    [![docker-container-run](../images/docker-container-run.png "docker container run -it --name git-foundations wwt01/alpine-network-dev")]/git-foundations/images/docker-container-run.png){target=_blank}
+    [![docker-container-run](../images/docker-container-run.png "docker container run -it --name git-foundations wwt01/alpine-network-dev")](/git-foundations/images/docker-container-run.png){target=_blank}
 
     ---
 
@@ -57,7 +57,7 @@ There are two-steps in the process (download and then run) to create the Docker 
 
 3. You are in the Docker Container environment if your output looks like this:
 
-    [![container-release-info](../images/container-release-info.png "cat /etc/*-release")]/git-foundations/images/container-release-info.png){target=_blank}
+    [![container-release-info](../images/container-release-info.png "cat /etc/*-release")](/git-foundations/images/container-release-info.png){target=_blank}
 
     ---
 
@@ -69,7 +69,7 @@ There are two-steps in the process (download and then run) to create the Docker 
 
     The result of that command should look something like this:
 
-    [![git-version](../images/git-version.png "git --version")]/git-foundations/images/git-version.png){target=_blank}
+    [![git-version](../images/git-version.png "git --version")](/git-foundations/images/git-version.png){target=_blank}
 
     ---
 
