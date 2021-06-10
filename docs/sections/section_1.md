@@ -12,9 +12,7 @@ A WWT-built Docker Image provides a ready-to-use environment for the Git hands-o
 !!! success
     If your output looks something like this image, you are all set:
 
-[![docker-info](../images/docker-info.png "docker info")](/images/docker-info.png){target=_blank}
-
-[![docker-info](../images/docker-info.png "docker info")](https://wwt.github.io/git-foundations/images/docker-info.png){target=_blank}
+[![docker-info](../images/docker-info.png "docker info")](/git-foundations/images/docker-info.png){target=_blank}
 
 ---
 
