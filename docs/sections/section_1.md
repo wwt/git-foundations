@@ -14,9 +14,7 @@ A WWT-built Docker Image provides a ready-to-use environment for the Git hands-o
 
 [![docker-info](../images/docker-info.png "docker info")](../images/docker-info.png)
 
-[![docker-info](../images/docker-info.png "docker info"){target=_blank}](../images/docker-info.png)
-
-[![docker-info](../images/docker-info.png "docker info")](..images/docker-info.png){target=_blank}
+[![docker-info](../images/docker-info.png "docker info")](images/docker-info.png){target=_blank}
 
 ---
 
