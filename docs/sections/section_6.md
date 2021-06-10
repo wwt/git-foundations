@@ -40,7 +40,7 @@ For the purpose of familiarization with the process to configure different Git c
     # For demonstration purposes, do not replace this email address
     ```
 
-    ![git-config-system](../images/git-config-system.png "Set system-wide git configuration properties")
+    [![git-config-system](../images/git-config-system.png "Set system-wide git configuration properties")](/git-foundations/images/git-config-system.png){target=_blank}
 
     ---
 
@@ -51,7 +51,7 @@ For the purpose of familiarization with the process to configure different Git c
     cat /etc/gitconfig
     ```
 
-    ![container-cat-git-system](../images/container-cat-git-system.png "Review system-wide git configuration")
+    [![container-cat-git-system](../images/container-cat-git-system.png "Review system-wide git configuration")](/git-foundations/images/container-cat-git-system.png){target=_blank}
 
 3. Notice the **name** and **email** values which are part of the Git **system** configuration file. Right now, these settings apply to all Git repositories for all users in our environment.
 
@@ -70,7 +70,7 @@ For the purpose of familiarization with the process to configure different Git c
     # Replace 'your.email@your_domain.com' with your email address
     ```
 
-    ![git-config-global](../images/git-config-global.png "Set global git configuration properties")
+    [![git-config-global](../images/git-config-global.png "Set global git configuration properties")](/git-foundations/images/git-config-global.png){target=_blank}
 
     ---
 
@@ -82,7 +82,7 @@ For the purpose of familiarization with the process to configure different Git c
     cat ~/.gitconfig
     ```
 
-    ![container-cat-git-global](../images/container-cat-git-global.png "Review global git configuration")
+    [![container-cat-git-global](../images/container-cat-git-global.png "Review global git configuration")](/git-foundations/images/container-cat-git-global.png){target=_blank}
 
 6. Notice the **name** and **email** which values are part of the Git **global** configuration file. Right now, these settings apply to all Git repositories for our current user profile. Effectively, this is all of the repositories in our Docker environment, which means the Git **system** configuration settings no longer apply.
 
@@ -97,7 +97,7 @@ For the purpose of familiarization with the process to configure different Git c
     # Replace 'Your Name' with your first/last name
     ```
 
-    ![git-config-repo](../images/git-config-repo.png "Set repository git configuration properties")
+    [![git-config-repo](../images/git-config-repo.png "Set repository git configuration properties")](/git-foundations/images/git-config-repo.png){target=_blank}
 
     ---
 
@@ -108,7 +108,7 @@ For the purpose of familiarization with the process to configure different Git c
     cat .git/config
     ```
 
-    ![container-cat-git-repo](../images/container-cat-git-repo.png "Review global git configuration")
+    [![container-cat-git-repo](../images/container-cat-git-repo.png "Review global git configuration")](/git-foundations/images/container-cat-git-repo.png){target=_blank}
 
 9. Notice there is a **name** value but no **email** value in the **local repository** configuration file.
 
@@ -133,7 +133,7 @@ For the purpose of familiarization with the process to configure different Git c
     git config user.email
     ```
 
-    ![git-config-repo-check](../images/git-config-repo-check.png "Review effective git configuration settings")
+    [![git-config-repo-check](../images/git-config-repo-check.png "Review effective git configuration settings")](/git-foundations/images/git-config-repo-check.png){target=_blank}
 
 2. We set a **user.name** value within the **local repository** and Git returns that value (notice the **repo** name suffix). Since we didn't set a local repository email, Git looks to the next higher level configuration file, the **global** Git configuration file, for an email address and displays that address.
 
@@ -161,7 +161,7 @@ For the purpose of familiarization with the process to configure different Git c
     git config user.email
     ```
 
-    ![git-config-global-check](../images/git-config-global-check.png "Review effective git configuration settings in a different directory")
+    [![git-config-global-check](../images/git-config-global-check.png "Review effective git configuration settings in a different directory")](/git-foundations/images/git-config-global-check.png){target=_blank}
 
 4. Outside our repository directory we see the both the **user.name** and **user.email** values come from the **global** configuration file (notice the **Global** suffix after the **username**).
 
@@ -179,7 +179,7 @@ For the purpose of familiarization with the process to configure different Git c
     pwd
     ```
 
-    ![container-cd-repo-1](../images/container-cd-repo-1.png "Return to the git repository directory")
+    [![container-cd-repo-1](../images/container-cd-repo-1.png "Return to the git repository directory")](/git-foundations/images/container-cd-repo-1.png){target=_blank}
 
 ---
 

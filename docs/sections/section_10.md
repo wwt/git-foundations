@@ -11,7 +11,7 @@ Let's take a look at how the changes we pushed from our local Git repository imp
     - The GitHub repository now has three branches, up from two before we pushed **branch3** from our local Git repository to GitHub.
     - There is a highlighted message indicating a recently pushed branch (**branch3**).
 
-    ![github-repo-push-review](../images/github-repo-push-review.png "Review local repository changes in GitHub")
+    [![github-repo-push-review](../images/github-repo-push-review.png "Review local repository changes in GitHub")](/git-foundations/images/github-repo-push-review.png){target=_blank}
 
     ---
 
@@ -19,7 +19,7 @@ Let's take a look at how the changes we pushed from our local Git repository imp
 
 3. Click on **branch3**:
 
-    ![github-repo-push-branch-list](../images/github-repo-push-branch-list.png "Switch to branch 'branch3'")
+    [![github-repo-push-branch-list](../images/github-repo-push-branch-list.png "Switch to branch 'branch3'")](/git-foundations/images/github-repo-push-branch-list.png){target=_blank}
 
     ---
 
@@ -28,7 +28,7 @@ Let's take a look at how the changes we pushed from our local Git repository imp
 
 5. Click on the **3 commits** link to review the individual commits.
 
-    ![github-repo-branch3-review](../images/github-repo-branch3-review.png "Review branch 'branch3'")
+    [![github-repo-branch3-review](../images/github-repo-branch3-review.png "Review branch 'branch3'")](/git-foundations/images/github-repo-branch3-review.png){target=_blank}
 
     ---
 
@@ -37,7 +37,7 @@ Let's take a look at how the changes we pushed from our local Git repository imp
     - We can also see the two atomic commits from our local Git repository along with the messages we added with the `git commit -m` commands.
     - Even though the `git push` command sent all of our local repository to GitHub at once, the individual atomic commits remain separate and reviewable.
 
-    ![github-repo-branch3-commits](../images/github-repo-branch3-commits.png "Review branch 'branch3' commits")
+    [![github-repo-branch3-commits](../images/github-repo-branch3-commits.png "Review branch 'branch3' commits")](/git-foundations/images/github-repo-branch3-commits.png){target=_blank}
 
 7. Click the **git-repo-1** link at the top of the window to return to the repository home page.
 

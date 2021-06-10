@@ -10,7 +10,7 @@ You have the option to create Git repositories either on your local machine (wit
 2. The view you see may vary depending on whether or not your GitHub account is new. You should see a green button on the left side of the window which reads either **Create repository**, **New repository**, or something similar.
     - If you don't see the button, navigate to your GitHub home page with click to the GitHub logo in the upper-left corner of any GitHub window.
 
-    ![github-new-repo](../images/github-new-repo.png "Create new repository")
+    [![github-new-repo](../images/github-new-repo.png "Create new repository")](/git-foundations/images/github-new-repo.png){target=_blank}
 
     ---
 
@@ -31,13 +31,13 @@ You have the option to create Git repositories either on your local machine (wit
 
         - Click the **Create repository** button
 
-    ![github-new-repo-details](../images/github-new-repo-details.png "Add new repository details")
+    [![github-new-repo-details](../images/github-new-repo-details.png "Add new repository details")](/git-foundations/images/github-new-repo-details.png){target=_blank}
 
     ---
 
 3. Take a look at your new repository! You have two files, **.gitignore** and **README.md**.
 
-    ![github-new-repo-complete](../images/github-new-repo-complete.png "New repository files")
+   [![github-new-repo-complete](../images/github-new-repo-complete.png "New repository files")](/git-foundations/images/github-new-repo-complete.png){target=_blank}
 
 ---
 
