@@ -6,7 +6,7 @@ Let's take a look at how the changes we pushed from our local Git repository imp
 
 ## Local Repository Push Review
 
-1. Return to [GitHub](https://github.com "GitHub.com") and notice a few things about the repository:
+1. Return to [GitHub](https://github.com "GitHub.com"){target=_blank} and notice a few things about the repository:
     - There is still just one commit on the **main** branch; we haven't yet _merged_ the changes in **branch3** to the **main** branch.
     - The GitHub repository now has three branches, up from two before we pushed **branch3** from our local Git repository to GitHub.
     - There is a highlighted message indicating a recently pushed branch (**branch3**).
