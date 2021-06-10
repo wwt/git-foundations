@@ -5,6 +5,7 @@
         "context": ".."
     },
     "extensions": [
+        "docsmsft.docs-markdown",
         "docsmsft.docs-yaml",
         "davidanson.vscode-markdownlint",
         "redhat.vscode-yaml"
