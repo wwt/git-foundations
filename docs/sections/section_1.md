@@ -48,7 +48,7 @@ There are two-steps in the process (download and then run) to create the Docker 
 2. If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:
 
     ```shell
-    # Display the contents of the Container operating system release file 
+    # Display the contents of the Container operating system release file
     cat /etc/*-release
     ```
 
