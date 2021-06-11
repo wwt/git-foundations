@@ -1,8 +1,10 @@
 ---
-#
+# This action performs a lint of markdown files in the repository
 
+# Name of the action
 name: Markdown Linting
 
+# Events which trigger the action
 on:
   push:
   pull_request:
