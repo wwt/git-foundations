@@ -6,6 +6,8 @@ LABEL maintainer="Tim Hull <tim.hull@wwt.com>"
 
 WORKDIR /app
 
+EXPOSE 8000
+
 RUN apt-get update && \
     apt-get install -y git
 
