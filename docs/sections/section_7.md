@@ -17,8 +17,9 @@ Our Git environment is ready for us to start work on our repository. Typically, 
 
 2. Notice that only the **main** branch cloned to your local Git repository from GitHub.
 
-    - This is normal/expected behavior; only the **main** branch clones from GitHub because other branches (like the **branch1** branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the **main** branch of the GitHub repository.
-    - The asterisk to the left of **"main"** indicates that **main** is our current, working branch.
+    !!! info
+        - This is normal/expected behavior; only the **main** branch clones from GitHub because other branches (like the **branch1** branch we created in GitHub) are likely other peoples' work in-progress and any work we do should originate from the **main** branch of the GitHub repository.
+        - The asterisk to the left of **"main"** indicates that **main** is our current, working branch.
 
     ---
 

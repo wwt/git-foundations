@@ -24,7 +24,8 @@ Git has several tiers of configuration files, and we will explore the three most
 
 It is most typical for people to add their **name** and **email address** to their **global** configuration settings, thereby making it possible to perform Git operations on any repository within their user profile. If a few Git repositories within a user profile require a different **name** or **email address** combination, it is typical to set those at the **local repository** level, on a case-by-case basis.
 
-For the purpose of familiarization with the process to configure different Git configuration files, we will configure our Docker environment in a somewhat non-typical, although functional way.
+!!! note
+    For the purpose of familiarization with the process to configure different Git configuration files, we will configure our Docker environment in a somewhat non-typical, although functional way.
 
 ---
 

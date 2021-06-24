@@ -22,7 +22,13 @@ We mentioned GitHub supports two transports, HTTPS and SSH. GitHub defaults to H
 
 ## Clone & Review The Repository
 
-1. Return to your Docker Container prompt, type the command `git clone`, paste **_your repository URL_**, as shown in the example below (your repository URL will be different than the example in the in the following code block), and press your ++enter++ or ++"Return"++ key:
+1. Return to your Docker Container prompt and then:
+    - Type the command `git clone`
+    - Paste **_your repository URL_**, as shown in the example below
+    - Press your ++enter++ or ++"Return"++ key:
+
+    !!! tip
+        Your repository URL will be different than the example in the in the following code block)
 
     ```shell
     # Download a new copy of a GitHub repository to a local system (our Container, in this case)
