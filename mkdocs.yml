@@ -1,5 +1,6 @@
 ---
 site_name: "Git Foundations Hands-On Walktrough"
+site_url: "https://wwt.github.io/git-foundations"
 nav:
   - Home: index.md
   - Setup:
