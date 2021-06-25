@@ -10,6 +10,9 @@
         "davidanson.vscode-markdownlint",
         "redhat.vscode-yaml"
     ],
+    "forwardPorts": [
+        8000
+    ],
     "settings": {
         "[yaml]": {
             "editor.insertSpaces": true,

@@ -6,22 +6,23 @@ Git is a distributed Version Control System (VCS) which means any copy of any Gi
 
 [GitHub](https://github.com "GitHub.com"){target=_blank} is one example of a hosted or managed Git solution.  These hosted/managed solutions allow many people to run local instances of Git software on their computers and keep their version-controlled files, source code, documentation, etc. in sync with one another.
 
-- This remainder of this walkthrough will show you how to:
-  - Create a centralized Git repository on GitHub.
-  - Synchronize the GitHub repository with our local Git environment (the 'git-foundations' Docker Container).
-  - Make changes to the local Git repository.
-  - Merge local Git repository changes to GitHub.
+The remainder of this walkthrough will show you how to:
+
+1. Create a centralized Git repository on GitHub.
+2. Synchronize the GitHub repository with our local Git environment (the 'git-foundations' Docker Container).
+3. Make changes to the local Git repository.
+4. Merge local Git repository changes to GitHub.
 
 ---
 
 ## GitHub Authentication Overview
 
-Before we setup a GitHub repository, it's a good idea to consider how our local Git environment (the 'git-foundations' Container) will authenticate to GitHub during repository synchronization events (clone, pull, push, etc). GitHub supports two types of secure transport, each with their own authentication mechanism(s):
+Before we setup a GitHub repository, it's a good idea to consider how our local Git environment (the **git-foundations** Container) will authenticate to GitHub during repository synchronization events (clone, pull, push, etc). GitHub supports two types of secure transport, each with their own authentication mechanism(s):
 
 1. HTTPS with basic authentication (username and password) or API key.
 2. SSH with public/private key authentication.
 
-    Either choice is just as good as the other. In this environment, we use SSH because it allows us to secure communication without having to manage credentials or API keys. We will set up SSH authentication before we create a GitHub repository.
+    Either choice is just as good as the other. In this environment, we use SSH because it allows us to secure communication without having to manage credentials or API keys. We will first set up SSH authentication before we create a GitHub repository.
 
     ---
 

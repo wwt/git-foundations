@@ -6,7 +6,7 @@ The GitHub repository has a new version of the **main** branch but the **main** 
 
 ## Pull Changes from GitHub
 
-1. From the Docker Container terminal, attempt to **pull** (download and merge) the latest changes from GitHub to your local repository with the following command:
+1. From the Docker Container terminal, attempt to **pull** (download/fetch and merge) the latest changes from GitHub to your local repository with the following command:
 
     ```shell
     # Download and merge changes from the remote repository to the local repository
@@ -99,6 +99,8 @@ The GitHub repository has a new version of the **main** branch but the **main** 
 :white_check_mark: Merged changes in GitHub with a pull request.
 
 :white_check_mark: Synchronized merged GitHub changes to your local Git environment.
+
+---
 
 Click the link below to go to the last section and finish things up:
 

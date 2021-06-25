@@ -1,6 +1,6 @@
 # Hands-On Environment Setup
 
-A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. The Docker Container already has Git software installed and you don't need any Docker experience for these exercises. Just make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download"){target=_blank} installed and running on your Windows or macOS computer and we will walk you through the development environment setup.
+A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. The Docker Image already has Git software installed and you don't need any Docker experience for these exercises. Just make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download"){target=_blank} installed and running on your Windows or macOS computer and we will walk you through the development environment setup.
 
 !!! tip
     You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:
@@ -16,14 +16,14 @@ A WWT-built Docker Image provides a ready-to-use environment for the Git hands-o
 
 ---
 
-!!! failure
+!!! failure "Error"
      If you see an error message similiar to the example below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the [Docker Desktop Installation Documentation](https://docs.docker.com/desktop/ "Docker Desktop Installation Documentation"){target=_blank}.
 
 [![docker-info-bad](../images/docker-info-bad.png "docker info - Docker not running")](/git-foundations/images/docker-info-bad.png){target=_blank}
 
 ---
 
-There are two-steps in the process (download and then run) to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps with a single command.
+There are two-steps in the process to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps (download and then run) with a single command.
 
 1. Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and enter the following command:
 
@@ -33,11 +33,12 @@ There are two-steps in the process (download and then run) to create the Docker 
 
     This command performs the following actions:
 
-    - Downloads the 'wwt01/alpine-network-dev' Image from [Docker Hub](https://hub.docker.com/r/wwt01/alpine-network-dev "WWT Development Docker Image on Docker Hub"){target=_blank}.
-    - Creates a Docker Container with the name 'git-foundations'.
-    - Attaches to the terminal of the 'git-foundations' Container.
+    - Downloads the **wwt01/alpine-network-dev** Image from [Docker Hub](https://hub.docker.com/r/wwt01/alpine-network-dev "WWT Development Docker Image on Docker Hub"){target=_blank}.
+    - Creates a Docker Container with the name **git-foundations**.
+    - Attaches to the terminal of the **git-foundations** Container.
 
-    Expect the first run of this command to take a few minutes, while Docker Desktop downloads the Image from Docker Hub. Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.
+    !!! tip
+        Expect the first run of this command to take a few minutes, while Docker Desktop downloads the Image from Docker Hub. Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.
 
     You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt changes to `/development#`:
 
@@ -53,7 +54,7 @@ There are two-steps in the process (download and then run) to create the Docker 
     ```
 
     !!! tip
-        The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.
+        The Container will ignore any commands/lines that begin with the `#` character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  The purpose of these comment lines is to explain specifically what the subsequent commands do.
 
 3. You are in the Docker Container environment if your output looks like this:
 
