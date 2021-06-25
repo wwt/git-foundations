@@ -9,6 +9,8 @@
       
       
       
+        <link rel="canonical" href="https://wwt.github.io/git-foundations/sections/section_2/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
     
@@ -724,21 +726,21 @@
 <h2 id="github-version-control-overview">GitHub Version Control Overview</h2>
 <p>Git is a distributed Version Control System (VCS) which means any copy of any Git repository can function independently of any other copies of the same Git repository. A Git repository can reside on any single computer, Container, etc. and there are also hosted or managed Git solutions which provide a central location to aggregate changes to version-controlled files.</p>
 <p><a href="https://github.com" target="_blank" title="GitHub.com">GitHub</a> is one example of a hosted or managed Git solution.  These hosted/managed solutions allow many people to run local instances of Git software on their computers and keep their version-controlled files, source code, documentation, etc. in sync with one another.</p>
-<ul>
-<li>This remainder of this walkthrough will show you how to:</li>
+<p>The remainder of this walkthrough will show you how to:</p>
+<ol>
 <li>Create a centralized Git repository on GitHub.</li>
 <li>Synchronize the GitHub repository with our local Git environment (the 'git-foundations' Docker Container).</li>
 <li>Make changes to the local Git repository.</li>
 <li>Merge local Git repository changes to GitHub.</li>
-</ul>
+</ol>
 <hr />
 <h2 id="github-authentication-overview">GitHub Authentication Overview</h2>
-<p>Before we setup a GitHub repository, it's a good idea to consider how our local Git environment (the 'git-foundations' Container) will authenticate to GitHub during repository synchronization events (clone, pull, push, etc). GitHub supports two types of secure transport, each with their own authentication mechanism(s):</p>
+<p>Before we setup a GitHub repository, it's a good idea to consider how our local Git environment (the <strong>git-foundations</strong> Container) will authenticate to GitHub during repository synchronization events (clone, pull, push, etc). GitHub supports two types of secure transport, each with their own authentication mechanism(s):</p>
 <ol>
 <li>HTTPS with basic authentication (username and password) or API key.</li>
 <li>
 <p>SSH with public/private key authentication.</p>
-<p>Either choice is just as good as the other. In this environment, we use SSH because it allows us to secure communication without having to manage credentials or API keys. We will set up SSH authentication before we create a GitHub repository.</p>
+<p>Either choice is just as good as the other. In this environment, we use SSH because it allows us to secure communication without having to manage credentials or API keys. We will first set up SSH authentication before we create a GitHub repository.</p>
 <hr />
 </li>
 </ol>

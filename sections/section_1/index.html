@@ -9,6 +9,8 @@
       
       
       
+        <link rel="canonical" href="https://wwt.github.io/git-foundations/sections/section_1/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
     
@@ -634,7 +636,7 @@
                 
                 
                 <h1 id="hands-on-environment-setup">Hands-On Environment Setup</h1>
-<p>A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. The Docker Container already has Git software installed and you don't need any Docker experience for these exercises. Just make sure you have <a href="https://www.docker.com/products/docker-desktop" target="_blank" title="Docker Desktop Download">Docker Desktop</a> installed and running on your Windows or macOS computer and we will walk you through the development environment setup.</p>
+<p>A WWT-built Docker Image provides a ready-to-use environment for the Git hands-on exercises. The Docker Image already has Git software installed and you don't need any Docker experience for these exercises. Just make sure you have <a href="https://www.docker.com/products/docker-desktop" target="_blank" title="Docker Desktop Download">Docker Desktop</a> installed and running on your Windows or macOS computer and we will walk you through the development environment setup.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:</p>
@@ -648,12 +650,12 @@
 <p><a href="/git-foundations/images/docker-info.png" target="_blank"><img alt="docker-info" src="../../images/docker-info.png" title="docker info" /></a></p>
 <hr />
 <div class="admonition failure">
-<p class="admonition-title">Failure</p>
+<p class="admonition-title">Error</p>
 <p>If you see an error message similiar to the example below, make sure you installed Docker Desktop and that Docker Desktop is running.  You may also review the <a href="https://docs.docker.com/desktop/" target="_blank" title="Docker Desktop Installation Documentation">Docker Desktop Installation Documentation</a>.</p>
 </div>
 <p><a href="/git-foundations/images/docker-info-bad.png" target="_blank"><img alt="docker-info-bad" src="../../images/docker-info-bad.png" title="docker info - Docker not running" /></a></p>
 <hr />
-<p>There are two-steps in the process (download and then run) to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps with a single command.</p>
+<p>There are two-steps in the process to create the Docker Container we need from the WWT-built Docker Image, but we will accomplish both steps (download and then run) with a single command.</p>
 <ol>
 <li>
 <p>Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and enter the following command:</p>
@@ -661,11 +663,14 @@
 </code></pre></div>
 <p>This command performs the following actions:</p>
 <ul>
-<li>Downloads the 'wwt01/alpine-network-dev' Image from <a href="https://hub.docker.com/r/wwt01/alpine-network-dev" target="_blank" title="WWT Development Docker Image on Docker Hub">Docker Hub</a>.</li>
-<li>Creates a Docker Container with the name 'git-foundations'.</li>
-<li>Attaches to the terminal of the 'git-foundations' Container.</li>
+<li>Downloads the <strong>wwt01/alpine-network-dev</strong> Image from <a href="https://hub.docker.com/r/wwt01/alpine-network-dev" target="_blank" title="WWT Development Docker Image on Docker Hub">Docker Hub</a>.</li>
+<li>Creates a Docker Container with the name <strong>git-foundations</strong>.</li>
+<li>Attaches to the terminal of the <strong>git-foundations</strong> Container.</li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>Expect the first run of this command to take a few minutes, while Docker Desktop downloads the Image from Docker Hub. Docker Desktop stores the Image on your computer, so subsequent runs of this command will only take a split second.</p>
+</div>
 <p>You will know your Docker Container environment is ready for the Git hands-on exercises when your terminal prompt changes to <code>/development#</code>:</p>
 <p><a href="/git-foundations/images/docker-container-run.png" target="_blank"><img alt="docker-container-run" src="../../images/docker-container-run.png" title="docker container run -it --name git-foundations wwt01/alpine-network-dev" /></a></p>
 <hr />
@@ -677,7 +682,7 @@ cat /etc/*-release
 </code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>The Container will ignore any commands/lines that begin with the <code>#</code> character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  These purpose of these comment lines is to explain specifically what the subsequent commands do.</p>
+<p>The Container will ignore any commands/lines that begin with the <code>#</code> character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  The purpose of these comment lines is to explain specifically what the subsequent commands do.</p>
 </div>
 </li>
 <li>
