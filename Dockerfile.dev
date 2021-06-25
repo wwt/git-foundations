@@ -6,13 +6,17 @@ LABEL maintainer="Tim Hull <tim.hull@wwt.com>"
 
 WORKDIR /app
 
-EXPOSE 8000
+# TCP 8000 for MkDocs server
+EXPOSE 8000/tcp
 
+# Update repositories and install Git
 RUN apt-get update && \
     apt-get install -y git
 
+# Copy requirements files to Image
 COPY requirements-dev.txt requirements-dev.txt
 
+# Install Python packages
 RUN python -m pip install --upgrade pip && \
     python -m pip install -r requirements-dev.txt && \
     rm requirements-dev.txt
