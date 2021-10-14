@@ -86,19 +86,19 @@ The GitHub repository has a new version of the **main** branch but the **main** 
 
 :star: You did it! You:
 
-:white_check_mark: Set up a new GitHub repository.
+- [x] Set up a new GitHub repository.
 
-:white_check_mark: Set up a local Git environment in a Docker Container.
+- [x] Set up a local Git environment in a Docker Container.
 
-:white_check_mark: Managed local Git repository branches.
+- [x] Managed local Git repository branches.
 
-:white_check_mark: Staged and committed local Git repository changes.
+- [x] Staged and committed local Git repository changes.
 
-:white_check_mark: Pushed branches and changes from your local Git environment to GitHub.
+- [x] Pushed branches and changes from your local Git environment to GitHub.
 
-:white_check_mark: Merged changes in GitHub with a pull request.
+- [x] Merged changes in GitHub with a pull request.
 
-:white_check_mark: Synchronized merged GitHub changes to your local Git environment.
+- [x] Synchronized merged GitHub changes to your local Git environment.
 
 ---
 
