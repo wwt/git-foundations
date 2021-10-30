@@ -1,5 +1,8 @@
 # MkDocs Core
 mkdocs-material
 
+# MkDocs Version Management
+pip-tools
+
 # Python
 yamllint
