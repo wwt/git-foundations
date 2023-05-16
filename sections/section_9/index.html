@@ -585,20 +585,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#add-python-code-to-the-my_scriptpy-file" class="md-nav__link">
-    Add Python Code to the my_script.py File
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#push-committed-changes-to-github" class="md-nav__link">
-    Push Committed Changes to GitHub
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -738,20 +724,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#add-python-code-to-the-my_scriptpy-file" class="md-nav__link">
-    Add Python Code to the my_script.py File
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#push-committed-changes-to-github" class="md-nav__link">
-    Push Committed Changes to GitHub
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -777,15 +749,18 @@
 <li>List the contents of the repository directory.</li>
 <li>Review the Git repository status.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Create a new, blank file named &#39;my_script.py&#39;</span>
-touch my_script.py
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># List the contents of the current directory in long format</span>
-ls -l
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
-git status
-</code></pre></div>
+<p>```shell</p>
+<h1 id="create-a-new-blank-file-named-my_scriptpy">Create a new, blank file named 'my_script.py'</h1>
+<p>touch my_script.py
+```</p>
+<p>```shell</p>
+<h1 id="list-the-contents-of-the-current-directory-in-long-format">List the contents of the current directory in long format</h1>
+<p>ls -l
+```</p>
+<p>```shell</p>
+<h1 id="display-status-information-for-the-current-git-repository">Display status information for the current git repository</h1>
+<p>git status
+```</p>
 <p><a href="/git-foundations/images/container-touch-my_script.png" target="_blank"><img alt="container-touch-my_script" src="../../images/container-touch-my_script.png" title="Create a new Python script file" /></a></p>
 </li>
 <li>
@@ -806,12 +781,14 @@ git status
 <li>Add the <strong>my_script.py</strong> file to the Git staging area.</li>
 <li>Review the status of the Git repository.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Move the &#39;my_script.py&#39; file from the working directory to the staging area</span>
-git add my_script.py
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
-git status
-</code></pre></div>
+<p>```shell</p>
+<h1 id="move-the-my_scriptpy-file-from-the-working-directory-to-the-staging-area">Move the 'my_script.py' file from the working directory to the staging area</h1>
+<p>git add my_script.py
+```</p>
+<p>```shell</p>
+<h1 id="display-status-information-for-the-current-git-repository_1">Display status information for the current git repository</h1>
+<p>git status
+```</p>
 <p><a href="/git-foundations/images/git-add-my-script.png" target="_blank"><img alt="git-add-my-script" src="../../images/git-add-my-script.png" title="Add 'my_script.py' to the staging area" /></a></p>
 </li>
 <li>
@@ -843,12 +820,14 @@ git status
 <p class="admonition-title">Tip</p>
 <p>If you happen to end up in the Docker Container VIM editor, press the <span class="keys"><kbd class="key-escape">Esc</kbd></span> key, type <span class="keys"><kbd class="key-colon">:</kbd></span>, <span class="keys"><kbd class="key-q">Q</kbd></span>, <span class="keys"><kbd class="key-exclam">!</kbd></span>, and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> or <span class="keys"><kbd>Return</kbd></span>.</p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Move the file &#39;my_script.py&#39; from the staging area to the repository</span>
-git commit -m <span class="s2">&quot;Initial commit of &#39;my_script.py&#39;&quot;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
-git status
-</code></pre></div>
+<p>```shell</p>
+<h1 id="move-the-file-my_scriptpy-from-the-staging-area-to-the-repository">Move the file 'my_script.py' from the staging area to the repository</h1>
+<p>git commit -m "Initial commit of 'my_script.py'"
+```</p>
+<p>```shell</p>
+<h1 id="display-status-information-for-the-current-git-repository_2">Display status information for the current git repository</h1>
+<p>git status
+```</p>
 <p><a href="/git-foundations/images/git-commit-my-script.png" target="_blank"><img alt="git-commit-my-script" src="../../images/git-commit-my-script.png" title="Commit 'my_script.py' to the local repository" /></a></p>
 </li>
 <li>
@@ -860,20 +839,22 @@ git status
 <ol>
 <li>
 <p>To make changes to the <strong>my_script.py</strong> file, we will add some executable Python code. Use the following commands to add some executable Python code to <strong>my_script.py</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Python code which collects a name and displays a greeting</span>
-<span class="nb">echo</span> <span class="s1">&#39;#!/usr/bin/env python&#39;</span> &gt;&gt; my_script.py
-<span class="nb">echo</span> <span class="s1">&#39;# This script displays a greeting&#39;</span> &gt;&gt; my_script.py
-<span class="nb">echo</span> <span class="s1">&#39;name = input(&quot;What is your name? &quot;)&#39;</span> &gt;&gt; my_script.py
-<span class="nb">echo</span> <span class="s1">&#39;print(f&quot;It is nice to meet you, {name})&#39;</span> &gt;&gt; my_script.py
-</code></pre></div>
+<p>```shell</p>
+<h1 id="python-code-which-collects-a-name-and-displays-a-greeting">Python code which collects a name and displays a greeting</h1>
+<p>echo '#!/usr/bin/env python' &gt;&gt; my_script.py
+echo '# This script displays a greeting' &gt;&gt; my_script.py
+echo 'name = input("What is your name? ")' &gt;&gt; my_script.py
+echo 'print(f"It is nice to meet you, {name})' &gt;&gt; my_script.py
+```</p>
 <p><a href="/git-foundations/images/container-echo-my-script.png" target="_blank"><img alt="container-echo-my-script" src="../../images/container-echo-my-script.png" title="Add code to 'my_script.py'" /></a></p>
 <hr />
 </li>
 <li>
 <p>View the changes between the copy of <strong>my_script.py</strong> file in the working directory and the copy in the local Git repository with the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display changes between the working and committed files within the git repository</span>
-git diff
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-changes-between-the-working-and-committed-files-within-the-git-repository">Display changes between the working and committed files within the git repository</h1>
+<p>git diff
+```</p>
 <p><a href="/git-foundations/images/git-diff-my-script.png" target="_blank"><img alt="git-diff-my-script" src="../../images/git-diff-my-script.png" title="Display changes between the working and committed copies of 'my_script.py'" /></a></p>
 </li>
 <li>
@@ -882,9 +863,10 @@ git diff
 </li>
 <li>
 <p>View the status of your local Git repository with the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
-git status
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-status-information-for-the-current-git-repository_3">Display status information for the current git repository</h1>
+<p>git status
+```</p>
 <p><a href="/git-foundations/images/git-status-3.png" target="_blank"><img alt="git-status-3" src="../../images/git-status-3.png" title="Display the git repository status" /></a></p>
 <hr />
 </li>
@@ -895,19 +877,22 @@ git status
 <li>Review the repository status.</li>
 <li>Commit the staged changes to the repository.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Move all changed files from the working directory to the staging area</span>
-git add .
-</code></pre></div>
+<p>```shell</p>
+<h1 id="move-all-changed-files-from-the-working-directory-to-the-staging-area">Move all changed files from the working directory to the staging area</h1>
+<p>git add .
+```</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You may also commit individual files to the staging area.  For example, to stage only the README.md file, use the command <code>git add README.md</code>.</p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
-git status
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Commit all staged files to the repository with a descriptive comment</span>
-git commit -m <span class="s2">&quot;Appended line to README.md and added commands to my_script.py&quot;</span>
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-status-information-for-the-current-git-repository_4">Display status information for the current git repository</h1>
+<p>git status
+```</p>
+<p>```shell</p>
+<h1 id="commit-all-staged-files-to-the-repository-with-a-descriptive-comment">Commit all staged files to the repository with a descriptive comment</h1>
+<p>git commit -m "Appended line to README.md and added commands to my_script.py"
+```</p>
 <p><a href="/git-foundations/images/git-add-all.png" target="_blank"><img alt="git-add-all" src="../../images/git-add-all.png" title="Stage and commit 'my_script.py' and 'README.md' to the repository" /></a></p>
 </li>
 <li>
@@ -919,9 +904,10 @@ git commit -m <span class="s2">&quot;Appended line to README.md and added comman
 </li>
 <li>
 <p>View the status of your local Git repository with the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display status information for the current git repository</span>
-git status
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-status-information-for-the-current-git-repository_5">Display status information for the current git repository</h1>
+<p>git status
+```</p>
 <p><a href="/git-foundations/images/git-status-4.png" target="_blank"><img alt="git-status-4" src="../../images/git-status-4.png" title="Display the git repository status" /></a></p>
 </li>
 <li>
@@ -930,9 +916,10 @@ git status
 </li>
 <li>
 <p>Sometimes it is necessary to roll-back to a previous repository commit or to understand the history of changes to a repository (who did what to which files).  You can review the complete commit history for a repository with the <code>git log</code> command.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the logged git history for the repository</span>
-git log
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-the-logged-git-history-for-the-repository">Display the logged git history for the repository</h1>
+<p>git log
+```</p>
 <p><a href="/git-foundations/images/git-log.png" target="_blank"><img alt="git-log" src="../../images/git-log.png" title="Display the git commit history" /></a></p>
 </li>
 <li>
@@ -948,17 +935,19 @@ git log
 <p class="admonition-title">Tip</p>
 <p>To determine which remote repository a <code>git push</code> will send changes to, use either of the commands <code>git remote --verbose</code>, <code>git remote -v</code>, or <code>cat .git/config</code> .</p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Determine the remote repository URL</span>
-git remote --verbose
-</code></pre></div>
+<p>```shell</p>
+<h1 id="determine-the-remote-repository-url">Determine the remote repository URL</h1>
+<p>git remote --verbose
+```</p>
 <p><a href="/git-foundations/images/git-remote-verbose.png" target="_blank"><img alt="git-remote-verbose" src="../../images/git-remote-verbose.png" title="Display the remote repository URL" /></a></p>
 <hr />
 </li>
 <li>
 <p>Attempt to push local Git repository changes to GitHub with the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Push local repository changes to a remote repository</span>
-git push
-</code></pre></div>
+<p>```shell</p>
+<h1 id="push-local-repository-changes-to-a-remote-repository">Push local repository changes to a remote repository</h1>
+<p>git push
+```</p>
 <p><a href="/git-foundations/images/git-push-1.png" target="_blank"><img alt="git-push-1" src="../../images/git-push-1.png" title="Push local repository changes to GitHub" /></a></p>
 </li>
 <li>
@@ -971,9 +960,10 @@ git push
 </li>
 <li>
 <p>Initiate the <code>git push</code> again with the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Push local repository changes, including the local branch, to a remote repository</span>
-git push --set-upstream origin branch3
-</code></pre></div>
+<p>```shell</p>
+<h1 id="push-local-repository-changes-including-the-local-branch-to-a-remote-repository">Push local repository changes, including the local branch, to a remote repository</h1>
+<p>git push --set-upstream origin branch3
+```</p>
 <p><a href="/git-foundations/images/git-push-set-upstream.png" target="_blank"><img alt="git-push-set-upstream" src="../../images/git-push-set-upstream.png" title="Display the remote repository URL and create a remote branch named 'branch3'" /></a></p>
 </li>
 <li>

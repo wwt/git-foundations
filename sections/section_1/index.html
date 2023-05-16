@@ -695,8 +695,8 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can use your terminal/shell program to confirm your Docker environment is ready for use with the following command:</p>
-<div class="highlight"><pre><span></span><code>docker info
-</code></pre></div>
+<p><code>shell
+docker info</code></p>
 </div>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
@@ -714,8 +714,8 @@
 <ol>
 <li>
 <p>Open your terminal/shell program (iTerm, PowerShell, Bash, etc.) and enter the following command:</p>
-<div class="highlight"><pre><span></span><code>docker container run -it --name git-foundations wwt01/alpine-network-dev
-</code></pre></div>
+<p><code>shell
+docker container run -it --name git-foundations wwt01/alpine-network-dev</code></p>
 <p>This command performs the following actions:</p>
 <ul>
 <li>Downloads the <strong>wwt01/alpine-network-dev</strong> Image from <a href="https://hub.docker.com/r/wwt01/alpine-network-dev" target="_blank" title="WWT Development Docker Image on Docker Hub">Docker Hub</a>.</li>
@@ -732,9 +732,10 @@
 </li>
 <li>
 <p>If you aren't sure whether you are at your computer's terminal prompt or the prompt within the Docker Container, you can use this command to check:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the Container operating system release file</span>
-cat /etc/*-release
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-the-contents-of-the-container-operating-system-release-file">Display the contents of the Container operating system release file</h1>
+<p>cat /etc/*-release
+```</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The Container will ignore any commands/lines that begin with the <code>#</code> character, treating those lines as inline comments.  Throughout the walkthrough documentation, you may copy entire blocks of commands and paste them in the Container terminal.  The purpose of these comment lines is to explain specifically what the subsequent commands do.</p>
@@ -747,8 +748,8 @@ cat /etc/*-release
 </li>
 <li>
 <p>Check the version of Git in the environment with the following command:</p>
-<div class="highlight"><pre><span></span><code>git --version
-</code></pre></div>
+<p><code>shell
+git --version</code></p>
 <p>The result of that command should look something like this:</p>
 <p><a href="/git-foundations/images/git-version.png" target="_blank"><img alt="git-version" src="../../images/git-version.png" title="git --version" /></a></p>
 <hr />
@@ -758,11 +759,11 @@ cat /etc/*-release
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Run these commands from your local terminal shell (Windows PowerShell, macOS Terminal, etc.) and not from within the Docker container shell:</p>
-<div class="highlight"><pre><span></span><code>control + d <span class="o">(</span>key sequence<span class="o">)</span> <span class="c1"># Stops your Container and returns you to your terminal prompt</span>
-docker container start git-foundations <span class="c1"># Restarts your Container in the background</span>
-docker container attach git-foundations <span class="c1"># Returns you to the Container prompt</span>
-docker container rm git-foundations <span class="c1"># Destroys your container so you can start over</span>
-</code></pre></div>
+<p><code>shell
+control + d (key sequence) # Stops your Container and returns you to your terminal prompt
+docker container start git-foundations # Restarts your Container in the background
+docker container attach git-foundations # Returns you to the Container prompt
+docker container rm git-foundations # Destroys your container so you can start over</code></p>
 </div>
 <hr />
 <p>Your environment is set up and ready to use! Not too painful so far, right? Click the link below to get started with Git:</p>

@@ -550,13 +550,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#review-effective-git-configuration-settings" class="md-nav__link">
-    Review Effective Git Configuration Settings
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -745,13 +738,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#review-effective-git-configuration-settings" class="md-nav__link">
-    Review Effective Git Configuration Settings
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -802,20 +788,21 @@
 <ol>
 <li>
 <p>From your Docker container prompt, configure a <strong>system-wide</strong> Git <strong>username</strong> and <strong>email address</strong> with the following commands:</p>
-<div class="highlight"><pre><span></span><code>git config --system user.name <span class="s2">&quot;Your Name - System&quot;</span>
-<span class="c1"># Replace &#39;Your Name&#39; with your first/last name</span>
-
-git config --system user.email <span class="s2">&quot;git_docker_container@wwt.com&quot;</span>
-<span class="c1"># For demonstration purposes, do not replace this email address</span>
-</code></pre></div>
+<p>```shell
+git config --system user.name "Your Name - System"</p>
+<h1 id="replace-your-name-with-your-firstlast-name">Replace 'Your Name' with your first/last name</h1>
+<p>git config --system user.email "git_docker_container@wwt.com"</p>
+<h1 id="for-demonstration-purposes-do-not-replace-this-email-address">For demonstration purposes, do not replace this email address</h1>
+<p>```</p>
 <p><a href="/git-foundations/images/git-config-system.png" target="_blank"><img alt="git-config-system" src="../../images/git-config-system.png" title="Set system-wide git configuration properties" /></a></p>
 <hr />
 </li>
 <li>
 <p>Review the <strong>system-wide</strong> Git configuration file with the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the file /etc/gitconfig</span>
-cat /etc/gitconfig
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-the-contents-of-the-file-etcgitconfig">Display the contents of the file /etc/gitconfig</h1>
+<p>cat /etc/gitconfig
+```</p>
 <p><a href="/git-foundations/images/container-cat-git-system.png" target="_blank"><img alt="container-cat-git-system" src="../../images/container-cat-git-system.png" title="Review system-wide git configuration" /></a></p>
 </li>
 <li>
@@ -828,21 +815,22 @@ cat /etc/gitconfig
 </li>
 <li>
 <p>Configure a <strong>Global</strong> Git <strong>username</strong> and <strong>email address</strong> with the following commands:</p>
-<div class="highlight"><pre><span></span><code>git config --global user.name <span class="s2">&quot;Your Name - Global&quot;</span>
-<span class="c1"># Replace &#39;Your Name&#39; with your first/last name</span>
-
-git config --global user.email <span class="s2">&quot;your.email@your_domain.com&quot;</span>
-<span class="c1"># Replace &#39;your.email@your_domain.com&#39; with your email address</span>
-</code></pre></div>
+<p>```shell
+git config --global user.name "Your Name - Global"</p>
+<h1 id="replace-your-name-with-your-firstlast-name_1">Replace 'Your Name' with your first/last name</h1>
+<p>git config --global user.email "your.email@your_domain.com"</p>
+<h1 id="replace-youremailyour_domaincom-with-your-email-address">Replace 'your.email@your_domain.com' with your email address</h1>
+<p>```</p>
 <p><a href="/git-foundations/images/git-config-global.png" target="_blank"><img alt="git-config-global" src="../../images/git-config-global.png" title="Set global git configuration properties" /></a></p>
 <hr />
 </li>
 <li>
 <p>Review the Git <strong>global</strong> configuration file with the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the file /root/.gitconfig</span>
-<span class="c1"># ~/ is shorthand for the home directory for the current user</span>
-cat ~/.gitconfig
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-the-contents-of-the-file-rootgitconfig">Display the contents of the file /root/.gitconfig</h1>
+<h1 id="is-shorthand-for-the-home-directory-for-the-current-user">~/ is shorthand for the home directory for the current user</h1>
+<p>cat ~/.gitconfig
+```</p>
 <p><a href="/git-foundations/images/container-cat-git-global.png" target="_blank"><img alt="container-cat-git-global" src="../../images/container-cat-git-global.png" title="Review global git configuration" /></a></p>
 </li>
 <li>
@@ -854,17 +842,19 @@ cat ~/.gitconfig
 </li>
 <li>
 <p>To configure a Git <strong>name</strong> or <strong>email</strong> for a <strong>local repository</strong>, make sure your working directory is that of the repository you want to configure (you may display your current working directory with the <code>pwd</code> command). Configure the <strong>local repository</strong> Git <strong>username</strong> with the following command:</p>
-<div class="highlight"><pre><span></span><code>git config user.name <span class="s2">&quot;Your Name - Repo&quot;</span>
-<span class="c1"># Replace &#39;Your Name&#39; with your first/last name</span>
-</code></pre></div>
+<p>```shell
+git config user.name "Your Name - Repo"</p>
+<h1 id="replace-your-name-with-your-firstlast-name_2">Replace 'Your Name' with your first/last name</h1>
+<p>```</p>
 <p><a href="/git-foundations/images/git-config-repo.png" target="_blank"><img alt="git-config-repo" src="../../images/git-config-repo.png" title="Set repository git configuration properties" /></a></p>
 <hr />
 </li>
 <li>
 <p>Review the <strong>local</strong> Git configuration file for the <strong>git-repo-1</strong> repository with the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the contents of the file .git/config</span>
-cat .git/config
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-the-contents-of-the-file-gitconfig">Display the contents of the file .git/config</h1>
+<p>cat .git/config
+```</p>
 <p><a href="/git-foundations/images/container-cat-git-repo.png" target="_blank"><img alt="container-cat-git-repo" src="../../images/container-cat-git-repo.png" title="Review global git configuration" /></a></p>
 </li>
 <li>
@@ -876,15 +866,18 @@ cat .git/config
 <ol>
 <li>
 <p>Since we just set Git configuration values in three separate places, we need to determine which values Git will use when we commit changes to our repository. To do that enter the following commands:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the current working directory</span>
-<span class="nb">pwd</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the user name that Git will use for commits within the current directory</span>
-git config user.name
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the email address that Git will use for commits to the current repository</span>
-git config user.email
-</code></pre></div>
+<p>```shell</p>
+<h1 id="display-the-current-working-directory">Display the current working directory</h1>
+<p>pwd
+```</p>
+<p>```shell</p>
+<h1 id="display-the-user-name-that-git-will-use-for-commits-within-the-current-directory">Display the user name that Git will use for commits within the current directory</h1>
+<p>git config user.name
+```</p>
+<p>```shell</p>
+<h1 id="display-the-email-address-that-git-will-use-for-commits-to-the-current-repository">Display the email address that Git will use for commits to the current repository</h1>
+<p>git config user.email
+```</p>
 <p><a href="/git-foundations/images/git-config-repo-check.png" target="_blank"><img alt="git-config-repo-check" src="../../images/git-config-repo-check.png" title="Review effective git configuration settings" /></a></p>
 </li>
 <li>
@@ -893,18 +886,22 @@ git config user.email
 </li>
 <li>
 <p>If we change our working directory such that we are no longer within this repository, we can see the difference in the effective Git configuration for repositories without specific configurations. Use the following commands to navigate to a different directory and check Git configuration settings:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Change the current working directory from /development/git-repo-1 to /development</span>
-<span class="nb">cd</span> ..
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the current working directory</span>
-<span class="nb">pwd</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the user name that Git will use for commits within the current directory</span>
-git config user.name
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the email address that Git will use for commits within the current directory</span>
-git config user.email
-</code></pre></div>
+<p>```shell</p>
+<h1 id="change-the-current-working-directory-from-developmentgit-repo-1-to-development">Change the current working directory from /development/git-repo-1 to /development</h1>
+<p>cd ..
+```</p>
+<p>```shell</p>
+<h1 id="display-the-current-working-directory_1">Display the current working directory</h1>
+<p>pwd
+```</p>
+<p>```shell</p>
+<h1 id="display-the-user-name-that-git-will-use-for-commits-within-the-current-directory_1">Display the user name that Git will use for commits within the current directory</h1>
+<p>git config user.name
+```</p>
+<p>```shell</p>
+<h1 id="display-the-email-address-that-git-will-use-for-commits-within-the-current-directory">Display the email address that Git will use for commits within the current directory</h1>
+<p>git config user.email
+```</p>
 <p><a href="/git-foundations/images/git-config-global-check.png" target="_blank"><img alt="git-config-global-check" src="../../images/git-config-global-check.png" title="Review effective git configuration settings in a different directory" /></a></p>
 </li>
 <li>
@@ -913,12 +910,14 @@ git config user.email
 </li>
 <li>
 <p>Change the working directory back to the local GIt repository directory before we continue with the following command:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Change the current working directory from development to /development/git-repo-1</span>
-<span class="nb">cd</span> git-repo-1
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># Display the current working directory</span>
-<span class="nb">pwd</span>
-</code></pre></div>
+<p>```shell</p>
+<h1 id="change-the-current-working-directory-from-development-to-developmentgit-repo-1">Change the current working directory from development to /development/git-repo-1</h1>
+<p>cd git-repo-1
+```</p>
+<p>```shell</p>
+<h1 id="display-the-current-working-directory_2">Display the current working directory</h1>
+<p>pwd
+```</p>
 <p><a href="/git-foundations/images/container-cd-repo-1.png" target="_blank"><img alt="container-cd-repo-1" src="../../images/container-cd-repo-1.png" title="Return to the git repository directory" /></a></p>
 </li>
 </ol>
