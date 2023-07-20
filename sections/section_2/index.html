@@ -433,6 +433,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setup-github-ssh-key-authentication" class="md-nav__link">
+    Setup GitHub SSH Key Authentication
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -752,6 +759,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setup-github-ssh-key-authentication" class="md-nav__link">
+    Setup GitHub SSH Key Authentication
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -791,10 +805,9 @@
 <ol>
 <li>
 <p>From the Docker Container prompt, generate an SSH key pair with the following command:</p>
-<p>```shell</p>
-<h1 id="generate-a-new-publicprivate-ssh-key-pair">Generate a new public/private SSH key pair</h1>
-<p>ssh-keygen
-```</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Generate a new public/private SSH key pair</span>
+ssh-keygen
+</code></pre></div>
 </li>
 <li>
 <p>After you enter this command and press your <span class="keys"><kbd class="key-enter">Enter</kbd></span> or <span class="keys"><kbd>Return</kbd></span> key, you may press your <span class="keys"><kbd class="key-enter">Enter</kbd></span> or <span class="keys"><kbd>Return</kbd></span> key <strong>three more times</strong>, to accept the default storage location for the key and to accept and confirm the default, blank passphrase. Your terminal output will look something like this:</p>
@@ -803,10 +816,9 @@
 </li>
 <li>
 <p>Display the new SSH public key file in the terminal with this command:</p>
-<p>```shell</p>
-<h1 id="displays-the-contents-of-the-new-ssh-public-key-file">Displays the contents of the new SSH public key file</h1>
-<p>cat ~/.ssh/id_rsa.pub
-```</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Displays the contents of the new SSH public key file</span>
+cat<span class="w"> </span>~/.ssh/id_rsa.pub
+</code></pre></div>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>Treat your SSH keys as if they were any other form of credentials and do not share them with anyone.</p>
